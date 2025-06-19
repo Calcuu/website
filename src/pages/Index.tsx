@@ -411,7 +411,7 @@ const Index = () => {
       <section className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-16">
-            Wij zijn benieuwd of jij dit ook vindt?
+            Wij zijn benieuwd of jij ook herkent dat ...
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -420,21 +420,21 @@ const Index = () => {
                 question:
                   "Het maken van een offerte een saai en tijdrovend proces is?",
                 description:
-                  "Meer tijd voor schilderen, minder tijd achter de computer",
+                  "Overdag het werk opnemen en s'avonds thuis alles uitwerken / calculeren en dan digitaal omzetten naar een offerte.",
                 isMiddle: false,
               },
               {
                 question:
-                  "Het inschatten van materiaal en uren best wel moeilijk is?",
+                  "Het inschatten van materialen en uren best wel moeilijk is?",
                 description:
-                  "Consistente offertes en betere calculaties voor je team",
+                  "Je daarom eerst maar begint met een liter en dan zie je wel weer. Maar dat je ergens halverwege de dag je verf op is.",
                 isMiddle: true,
               },
               {
                 question:
-                  "Je per project niet altijd direct inzicht hebt in al je kosten?",
+                  "Je eigenlijk niet precies weet hoeveel kosten je hebt gemaakt.",
                 description:
-                  "Ook voor kleinere klussen altijd een professionele offerte",
+                  "Ja, je schat het allemaal een beetje in. Plusminus zoveel verf en zoveel uren. Maar precies weten doe je het niet.",
                 isMiddle: false,
               },
             ].map((audience, index) => (
