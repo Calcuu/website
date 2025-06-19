@@ -702,8 +702,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Left Side - Text and Buttons */}
-            <div className="space-y-8">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-calcuu-secondary leading-tight">
+            <div className="space-y-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-calcuu-secondary leading-tight">
                 Benieuwd hoe Calcuu jou kan helpen?{" "}
                 <span className="text-calcuu-primary">
                   Neem vandaag contact met ons op.
@@ -727,16 +727,26 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right Side - Image */}
+            {/* Right Side - Rectangle */}
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/scherm-afbeelding-2025-06-19-om-21.54.36-372ea7?format=webp&width=800"
-                  alt="Calcuu team helping customers"
-                  className="w-full h-auto object-cover"
-                />
-                {/* Purple overlay */}
-                <div className="absolute inset-0 bg-calcuu-primary/10 mix-blend-multiply"></div>
+              <div className="w-full h-80 bg-gradient-to-br from-calcuu-primary/20 via-calcuu-primary/10 to-calcuu-accent/20 rounded-3xl shadow-xl flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-calcuu-primary/30 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-calcuu-secondary mb-2">
+                    Contact Opnemen
+                  </h3>
+                  <p className="text-calcuu-text-sub">
+                    Bel ons of stuur een bericht
+                  </p>
+                </div>
               </div>
 
               {/* Decorative elements */}
