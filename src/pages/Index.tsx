@@ -325,7 +325,6 @@ const Index = () => {
               <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail justify-start ml-auto flex flex-col">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
-                    <div className="text-4xl mb-4">🛠️</div>
                     <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
                       Directe offreren
                     </h3>
@@ -348,7 +347,6 @@ const Index = () => {
               <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail justify-start ml-auto flex flex-col">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
-                    <div className="text-4xl mb-4">🛠️</div>
                     <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
                       Alles-in-één
                     </h3>
