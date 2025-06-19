@@ -703,9 +703,11 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Left Side - Text and Buttons */}
             <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-calcuu-secondary leading-tight">
-                Benieuwd hoe Calcuu jou kan helpen?{" "}
-                <span className="text-calcuu-primary">
+              <h2 className="text-2xl md:text-3xl text-calcuu-secondary leading-tight">
+                <span className="font-normal">
+                  Benieuwd hoe Calcuu jou kan helpen?
+                </span>{" "}
+                <span className="text-calcuu-primary font-bold">
                   Neem vandaag contact met ons op.
                 </span>
               </h2>
@@ -714,13 +716,13 @@ const Index = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300"
+                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 rounded-lg transition-all duration-300 h-12"
                 >
                   Boek een Demo
                 </Button>
                 <Button
                   size="lg"
-                  className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300"
+                  className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold text-lg px-8 rounded-lg transition-all duration-300 h-12"
                 >
                   Contact Ons
                 </Button>
