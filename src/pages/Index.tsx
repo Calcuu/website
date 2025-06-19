@@ -576,9 +576,14 @@ const Index = () => {
       <section className="py-16 lg:py-24 bg-calcuu-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-6">
               Waarom Calcuu voor jou de beste keuze is!
             </h2>
+            <p className="text-lg text-calcuu-text-sub text-center mb-16 max-w-3xl mx-auto">
+              Ontdek de voordelen die Calcuu biedt en zie waarom duizenden
+              schilders al zijn overgestapt naar deze slimme manier van
+              offreren.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
