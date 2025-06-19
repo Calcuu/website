@@ -552,15 +552,15 @@ const Index = () => {
                       "Genereer een professionele offerte en verstuur deze direct naar je klant via e-mail of print ter plekke uit.",
                   },
                 ].map((step, index) => (
-                  <div key={index} className="flex gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 bg-calcuu-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  <div key={index} className="flex gap-6 group">
+                    <div className="flex-shrink-0 w-12 h-12 bg-calcuu-primary text-white rounded-full flex items-center justify-center font-bold text-lg transition-all duration-300 hover:scale-110 hover:shadow-lg hover:z-10 relative cursor-pointer">
                       {step.number}
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-calcuu-secondary mb-2">
+                    <div className="flex-1 transition-all duration-300 group-hover:translate-x-2">
+                      <h3 className="text-xl font-semibold text-calcuu-secondary mb-2 transition-all duration-300 group-hover:text-calcuu-primary">
                         {step.title}
                       </h3>
-                      <p className="text-calcuu-text-sub leading-relaxed">
+                      <p className="text-calcuu-text-sub leading-relaxed transition-all duration-300 group-hover:text-calcuu-secondary">
                         {step.description}
                       </p>
                     </div>
