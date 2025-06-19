@@ -585,13 +585,13 @@ const Index = () => {
               notities.
             </p>
 
-            {/* 3 Feature Boxes */}
+            {/* 6 Feature Boxes - 2 Rows x 3 Columns */}
             <div className="relative mx-8">
               {/* Center to sides glow effect - wider spread */}
               <div className="absolute -inset-x-16 -inset-y-8 bg-gradient-to-r from-calcuu-primary/5 via-calcuu-primary/15 to-calcuu-primary/5 blur-2xl"></div>
               <div className="absolute -inset-x-20 -inset-y-4 bg-gradient-to-r from-calcuu-primary/3 via-transparent to-calcuu-primary/3 blur-xl"></div>
 
-              <div className="relative flex justify-center gap-3.5 max-w-full mx-auto px-4">
+              <div className="relative grid grid-cols-3 grid-rows-2 gap-3.5 w-full mx-auto px-4">
                 {[
                   {
                     icon: (
@@ -635,10 +635,51 @@ const Index = () => {
                     description:
                       "Controleer je berekeningen eenvoudig voordat je verstuurt.",
                   },
+                  {
+                    icon: (
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" />
+                      </svg>
+                    ),
+                    title: "Professionele Output",
+                    description:
+                      "Categoriseer projecten voor efficiënte organisatie.",
+                  },
+                  {
+                    icon: (
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M15.5 14H20.5L22 15.5V20.5L20.5 22H15.5L14 20.5V15.5L15.5 14ZM18.5 17.5C18.5 16.67 17.83 16 17 16S15.5 16.67 15.5 17.5 16.17 19 17 19 18.5 18.33 18.5 17.5ZM13 19H5V17H13V19ZM13 15H5V13H13V15ZM13 11H5V9H13V11ZM13 7H5V5H13V7Z" />
+                      </svg>
+                    ),
+                    title: "Kostenbeheer",
+                    description:
+                      "Automatisch screenen op onrealistische kosten.",
+                  },
+                  {
+                    icon: (
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2ZM4 14L6 21L10.5 18.5L15 21L17 14H4Z" />
+                      </svg>
+                    ),
+                    title: "Naadloze Integratie",
+                    description: "Eenvoudig integreren met bestaande systemen.",
+                  },
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className="bg-white rounded-2xl p-6 transition-all duration-300 relative h-60 w-68 shadow-lg"
+                    className="bg-white rounded-lg p-6 transition-all duration-300 relative h-60 shadow-lg"
                   >
                     <div className="flex flex-col items-center text-center h-full">
                       <div className="mb-4 mt-2">{feature.icon}</div>
