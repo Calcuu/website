@@ -589,62 +589,104 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {[
                 {
-                  icon: "📱",
+                  icon: (
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20V6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4V4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z" />
+                    </svg>
+                  ),
                   title: "Visuele Interface",
                   description:
-                    "Intuïtieve tekenfunctie waarmee je snel en eenvoudig je projecten kunt schetsen en oppervlaktes bepalen.",
+                    "Intuïtieve tekenfunctie waarmee je snel en eenvoudig je projecten kunt schetsen.",
                 },
                 {
-                  icon: "📊",
+                  icon: (
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM17 12H15L13.5 9.5L12 12H10L7 7H17V12Z" />
+                    </svg>
+                  ),
                   title: "Automatische Berekening",
                   description:
-                    "Slimme algoritmes berekenen automatisch materiaalverbruik en uren om menselijke fouten te voorkomen.",
+                    "Slimme algoritmes berekenen automatisch materiaalverbruik en uren.",
                 },
                 {
-                  icon: "✅",
+                  icon: (
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
+                    </svg>
+                  ),
                   title: "Nauwkeurige Offertes",
                   description:
-                    "Controleer je berekeningen eenvoudig en zorg ervoor dat alle kosten kloppen voordat je verstuurt.",
+                    "Controleer je berekeningen eenvoudig voordat je verstuurt.",
                 },
                 {
-                  icon: "📄",
+                  icon: (
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" />
+                    </svg>
+                  ),
                   title: "Professionele Output",
                   description:
-                    "Categoriseer projecten op type werk voor efficiënte organisatie en eenvoudig terugvinden in je systeem.",
+                    "Categoriseer projecten voor efficiënte organisatie.",
                 },
                 {
-                  icon: "🔍",
+                  icon: (
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M15.5 14H20.5L22 15.5V20.5L20.5 22H15.5L14 20.5V15.5L15.5 14ZM18.5 17.5C18.5 16.67 17.83 16 17 16S15.5 16.67 15.5 17.5 16.17 19 17 19 18.5 18.33 18.5 17.5ZM13 19H5V17H13V19ZM13 15H5V13H13V15ZM13 11H5V9H13V11ZM13 7H5V5H13V7Z" />
+                    </svg>
+                  ),
                   title: "Kostenbeheer",
-                  description:
-                    "Automatisch screenen op onrealistische kosten om alleen geldige offertes te versturen en fouten te voorkomen.",
+                  description: "Automatisch screenen op onrealistische kosten.",
                 },
                 {
-                  icon: "🔄",
+                  icon: (
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2ZM4 14L6 21L10.5 18.5L15 21L17 14H4Z" />
+                    </svg>
+                  ),
                   title: "Naadloze Integratie",
-                  description:
-                    "Onze oplossingen kunnen eenvoudig geïntegreerd worden met je bestaande systemen of als standalone gebruikt.",
+                  description: "Eenvoudig integreren met bestaande systemen.",
                 },
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 transition-all duration-300 relative"
+                  className="bg-white rounded-2xl p-6 transition-all duration-300 relative h-60 w-80"
                   style={{
                     boxShadow:
                       "0 0 40px rgba(91, 41, 222, 0.9), 0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                   }}
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="text-2xl flex-shrink-0 mt-1">
-                      {feature.icon}
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-calcuu-secondary mb-2">
-                        {feature.title}
-                      </h3>
-                      <p className="text-calcuu-text-sub leading-relaxed text-sm">
-                        {feature.description}
-                      </p>
-                    </div>
+                  <div className="flex flex-col items-center text-center h-full">
+                    <div className="mb-4 mt-2">{feature.icon}</div>
+                    <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
+                      {feature.title}
+                    </h3>
+                    <p className="text-calcuu-text-sub leading-relaxed text-sm flex-1">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
               ))}
