@@ -14,11 +14,24 @@ export default {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1200px",
       },
     },
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+      },
       colors: {
+        // Calcuu brand colors
+        "calcuu-primary": "#5B29DE",
+        "calcuu-secondary": "#242447",
+        "calcuu-accent": "#FF9720",
+        "calcuu-success": "#54DA69",
+        "calcuu-white": "#FFFFFF",
+        "calcuu-background": "#F9F9F9",
+        "calcuu-detail": "#EBEBEB",
+        "calcuu-text-sub": "#7E7E7E",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
