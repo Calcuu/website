@@ -95,8 +95,8 @@ const Index = () => {
                   avonduren
                 </h1>
                 <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-2xl">
-                  Slimme calculatie-app voor vakschilders. Van tekening naar
-                  professionele offerte in enkele minuten.
+                  Calcuu is de slimme calculatie-app voor vakschilders. Van
+                  tekening naar professionele offerte in enkele minuten.
                 </p>
               </div>
 
