@@ -295,7 +295,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Left Block - Spans 1 column */}
             <div className="lg:col-span-1">
-              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full">
+              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full mr-0.5 -mb-1">
                 <div className="text-4xl mb-4">📐</div>
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
                   Visuele Calculatie
@@ -309,19 +309,20 @@ const Index = () => {
             </div>
 
             {/* Right Side - 2 blocks in column */}
-            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full">
+            <div className="lg:col-span-2 flex flex-col gap-8 justify-start -ml-px">
+              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full ml-auto flex flex-col justify-start items-start">
                 <div className="text-4xl mb-4">📄</div>
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
                   Direct Offreren
                 </h3>
                 <p className="text-calcuu-text-sub leading-relaxed">
-                  Genereer professionele offertes ter plekke bij de klant. Print
-                  of mail direct vanuit de app.
+                  Genereer professionele offertes ter plekke bij de klant.
+                  <br />
+                  Print of mail direct vanuit de app.
                 </p>
               </div>
 
-              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full">
+              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full ml-auto flex flex-col justify-start items-start">
                 <div className="text-4xl mb-4">🛠️</div>
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
                   Alles-in-één
