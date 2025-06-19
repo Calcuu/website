@@ -411,30 +411,46 @@ const Index = () => {
       <section className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-16">
-            Perfect voor elke schilder
+            Wij zijn benieuwd of dit ook voor jou geldt?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "ZZP Schilders",
+                questionStarter: "Herken jij ook dat ...",
+                question: "Offerte maken een saai",
+                questionLine2: "en tijdrovend is?",
                 description:
                   "Meer tijd voor schilderen, minder tijd achter de computer",
               },
               {
-                title: "Schildersbedrijven",
+                questionStarter: "Vindt jij ook dat ...",
+                question:
+                  "Materiaal gebruik van projecten moeilijk in te schatten is?",
+                questionLine2: "",
                 description:
                   "Consistente offertes en betere calculaties voor je team",
               },
               {
-                title: "Klussen & Onderhoud",
+                questionStarter: "Ervaar jij ook dat ...",
+                question: "Je niet altijd direct inzicht hebt in al je kosten?",
+                questionLine2: "",
                 description:
                   "Ook voor kleinere klussen altijd een professionele offerte",
               },
             ].map((audience, index) => (
               <div key={index} className="text-center p-6">
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                  {audience.title}
+                  {audience.questionStarter}
+                </h3>
+                <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
+                  {audience.question}
+                  {audience.questionLine2 && (
+                    <>
+                      <br />
+                      {audience.questionLine2}
+                    </>
+                  )}
                 </h3>
                 <p className="text-calcuu-text-sub leading-relaxed">
                   {audience.description}
