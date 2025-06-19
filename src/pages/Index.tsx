@@ -427,7 +427,7 @@ const Index = () => {
                 question:
                   "Het inschatten van materialen en uren best wel moeilijk is?",
                 description:
-                  "Je daarom eerst maar begint met een liter en dan zie je wel weer. Maar dat je ergens halverwege de dag je verf op is.",
+                  "Je eerst maar eens begint met één liter verf en dat je er al snel achter komt dat je tekort hebt en je weer verf moet halen.",
                 isMiddle: true,
               },
               {
