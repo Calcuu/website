@@ -584,10 +584,71 @@ const Index = () => {
               meer hebt van het gebruiken van meerdere app's en zoekrakende
               notities.
             </p>
+
+            {/* 6 Feature Boxes */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {[
+                {
+                  icon: "📱",
+                  title: "Visuele Interface",
+                  description:
+                    "Intuïtieve tekenfunctie waarmee je snel en eenvoudig je projecten kunt schetsen en oppervlaktes bepalen.",
+                },
+                {
+                  icon: "📊",
+                  title: "Automatische Berekening",
+                  description:
+                    "Slimme algoritmes berekenen automatisch materiaalverbruik en uren om menselijke fouten te voorkomen.",
+                },
+                {
+                  icon: "✅",
+                  title: "Nauwkeurige Offertes",
+                  description:
+                    "Controleer je berekeningen eenvoudig en zorg ervoor dat alle kosten kloppen voordat je verstuurt.",
+                },
+                {
+                  icon: "📄",
+                  title: "Professionele Output",
+                  description:
+                    "Categoriseer projecten op type werk voor efficiënte organisatie en eenvoudig terugvinden in je systeem.",
+                },
+                {
+                  icon: "🔍",
+                  title: "Kostenbeheer",
+                  description:
+                    "Automatisch screenen op onrealistische kosten om alleen geldige offertes te versturen en fouten te voorkomen.",
+                },
+                {
+                  icon: "🔄",
+                  title: "Naadloze Integratie",
+                  description:
+                    "Onze oplossingen kunnen eenvoudig geïntegreerd worden met je bestaande systemen of als standalone gebruikt.",
+                },
+              ].map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-calcuu-detail/20 backdrop-blur-sm relative"
+                >
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-calcuu-primary/5 via-transparent to-calcuu-accent/5 rounded-2xl"></div>
+
+                  <div className="relative z-10">
+                    <div className="text-4xl mb-6 flex items-center justify-center w-16 h-16 bg-calcuu-primary/10 rounded-2xl mx-auto">
+                      <span className="text-2xl">{feature.icon}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-calcuu-secondary mb-4 text-center">
+                      {feature.title}
+                    </h3>
+                    <p className="text-calcuu-text-sub leading-relaxed text-center text-sm">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
-
       {/* Pricing Section */}
       <section id="pricing" className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
