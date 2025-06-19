@@ -697,6 +697,56 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/* Contact/Demo Section */}
+      <section className="py-16 lg:py-24 bg-calcuu-background">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            {/* Left Side - Text and Buttons */}
+            <div className="space-y-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-calcuu-secondary leading-tight">
+                Benieuwd hoe Calcuu jou kan helpen?{" "}
+                <span className="text-calcuu-primary">
+                  Neem vandaag contact met ons op.
+                </span>
+              </h2>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300"
+                >
+                  Boek een Demo
+                </Button>
+                <Button
+                  size="lg"
+                  className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300"
+                >
+                  Contact Ons
+                </Button>
+              </div>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/scherm-afbeelding-2025-06-19-om-21.54.36-372ea7?format=webp&width=800"
+                  alt="Calcuu team helping customers"
+                  className="w-full h-auto object-cover"
+                />
+                {/* Purple overlay */}
+                <div className="absolute inset-0 bg-calcuu-primary/10 mix-blend-multiply"></div>
+              </div>
+
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-calcuu-primary/20 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-calcuu-accent/20 rounded-full blur-xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section id="pricing" className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
