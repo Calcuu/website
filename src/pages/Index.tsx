@@ -627,12 +627,13 @@ const Index = () => {
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-calcuu-detail/20 backdrop-blur-sm relative"
+                  className="bg-white rounded-2xl p-6 transition-all duration-300 relative"
+                  style={{
+                    boxShadow:
+                      "0 0 20px rgba(91, 41, 222, 0.7), 0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+                  }}
                 >
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-calcuu-primary/5 via-transparent to-calcuu-accent/5 rounded-2xl"></div>
-
-                  <div className="relative z-10 flex items-start gap-4">
+                  <div className="flex items-start gap-4">
                     <div className="text-2xl flex-shrink-0 mt-1">
                       {feature.icon}
                     </div>
