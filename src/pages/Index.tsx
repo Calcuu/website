@@ -461,15 +461,15 @@ const Index = () => {
             {/* Header */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-calcuu-secondary mb-6 tracking-tight">
-                Slimme Offerte Creatie in 4 Stappen
+                Offerte Maken doe je in 4 Stappen
               </h2>
               <p className="text-lg text-calcuu-text-sub max-w-3xl mx-auto">
-                Blijf voorop met ons{" "}
+                Maak het jezelf gemakkelijk en gebruik de&nbsp;
                 <span className="font-semibold text-calcuu-secondary">
-                  goed-gedocumenteerde
-                </span>{" "}
-                platform. Kies voor het Calcuu Platform om je workflow te
-                automatiseren of integreer onze functionaliteiten apart.
+                  Calcuu app&nbsp;
+                </span>
+                <br />
+                om het offerte proces te versnellen en te vereenvoudigen..
               </p>
             </div>
 
@@ -531,7 +531,7 @@ const Index = () => {
                     number: "1",
                     title: "Teken Je Project",
                     description:
-                      "Maak een schets van het te schilderen object direct in de app. Voeg eenvoudig kamers, ramen en deuren toe via onze intuïtieve interface.",
+                      "Maak een schets van het te schilderen object direct in de app. Voeg eenvoudig kamers, ramen en deuren toe via onze visuele interface.",
                   },
                   {
                     number: "2",
