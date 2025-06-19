@@ -16,7 +16,10 @@ const Index = () => {
                 alt="Calcuu Logo"
                 className="w-8 h-8 lg:w-10 lg:h-10"
               />
-              <span className="text-xl lg:text-2xl font-bold text-calcuu-secondary" style={{ fontFamily: 'Toxigenesis, sans-serif' }}>
+              <span
+                className="text-xl lg:text-2xl font-bold text-calcuu-secondary"
+                style={{ fontFamily: "Toxigenesis, sans-serif" }}
+              >
                 CALCUU
               </span>
             </div>
@@ -60,8 +63,18 @@ const Index = () => {
 
               {/* Mobile Menu Button */}
               <button className="md:hidden p-2 text-calcuu-secondary hover:text-calcuu-primary transition-colors">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               </button>
             </div>
@@ -78,8 +91,8 @@ const Index = () => {
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
                   Stop met het maken van&nbsp;
-                  <span className="text-calcuu-primary">offertes</span>{" "}
-                  in de avonduren
+                  <span className="text-calcuu-primary">offertes</span> in de
+                  avonduren
                 </h1>
                 <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-2xl">
                   Calcuu is de slimme calculatie-app voor vakschilders. Van
@@ -95,13 +108,13 @@ const Index = () => {
                 >
                   Probeer Gratis
                 </Button>
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
-                    >
-                      Bekijk demo video
-                    </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
+                >
+                  Bekijk demo video
+                </Button>
               </div>
             </div>
 
@@ -134,18 +147,37 @@ const Index = () => {
       <section className="py-16 lg:py-20 bg-calcuu-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-
             {/* Block 1 */}
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
                 <div className="w-12 h-12 bg-calcuu-primary/10 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-calcuu-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+                  <svg
+                    className="w-6 h-6 text-calcuu-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"
+                    />
                   </svg>
                 </div>
                 <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
               </div>
@@ -153,7 +185,8 @@ const Index = () => {
                 Automatische berekeningen
               </h3>
               <p className="text-calcuu-text-sub leading-relaxed">
-                Laat de app het werk doen. Voer je project in en krijg direct nauwkeurige calculaties voor materiaal en arbeid.
+                Laat de app het werk doen. Voer je project in en krijg direct
+                nauwkeurige calculaties voor materiaal en arbeid.
               </p>
             </div>
 
@@ -161,13 +194,33 @@ const Index = () => {
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
                 <div className="w-12 h-12 bg-calcuu-success/10 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-calcuu-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  <svg
+                    className="w-6 h-6 text-calcuu-success"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
                   </svg>
                 </div>
                 <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
               </div>
@@ -175,7 +228,8 @@ const Index = () => {
                 Professionele offertes
               </h3>
               <p className="text-calcuu-text-sub leading-relaxed">
-                Genereer direct ter plekke professionele offertes die indruk maken op je klanten en je bedrijf serieus laten overkomen.
+                Genereer direct ter plekke professionele offertes die indruk
+                maken op je klanten en je bedrijf serieus laten overkomen.
               </p>
             </div>
 
@@ -183,13 +237,33 @@ const Index = () => {
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
                 <div className="w-12 h-12 bg-calcuu-success/10 rounded-xl flex items-center justify-center">
-                  <svg className="w-6 h-6 text-calcuu-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-6 h-6 text-calcuu-success"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                 </div>
                 <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
               </div>
@@ -197,10 +271,10 @@ const Index = () => {
                 Bespaar tijd
               </h3>
               <p className="text-calcuu-text-sub leading-relaxed">
-                Van uren naar minuten. Besteed je avonden aan wat echt belangrijk is in plaats van achter de computer zitten.
+                Van uren naar minuten. Besteed je avonden aan wat echt
+                belangrijk is in plaats van achter de computer zitten.
               </p>
             </div>
-
           </div>
         </div>
       </section>
@@ -213,7 +287,9 @@ const Index = () => {
               Bereken en verstuur de offerte direct op locatie.
             </h2>
             <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-3xl mx-auto">
-              Geen gedoe meer met ingewikkelde spreadsheets of handmatige berekeningen. Maak professionele offertes voor binnen- en buitenwerk in minuten, geen uren.
+              Geen gedoe meer met ingewikkelde spreadsheets of handmatige
+              berekeningen. Maak professionele offertes voor binnen- en
+              buitenwerk in minuten, geen uren.
             </p>
           </div>
 
@@ -227,10 +303,13 @@ const Index = () => {
                       Visuele Calculatie
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Teken je project direct in de app en krijg automatisch nauwkeurige berekeningen voor materiaal, arbeid en totaalprijs.
+                      Teken je project direct in de app en krijg automatisch
+                      nauwkeurige berekeningen voor materiaal, arbeid en
+                      totaalprijs.
                       <br />
                       <br />
-                      Zowel met het binnen- als buitenwerk worden alle kozijnen, ramen, deuren, direct berekend.
+                      Zowel met het binnen- als buitenwerk worden alle kozijnen,
+                      ramen, deuren, direct berekend.
                       <br />
                     </p>
                   </div>
@@ -255,7 +334,8 @@ const Index = () => {
                       Overzicht
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Urenregistratie, fotodocumentatie, klantbeheer en materiaalplanning in één overzichtelijke app.
+                      Urenregistratie, fotodocumentatie, klantbeheer en
+                      materiaalplanning in één overzichtelijke app.
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
@@ -276,7 +356,8 @@ const Index = () => {
                       Direct offreren
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Genereer overzichtelijke en professionele offertes ter plekke bij de klant.
+                      Genereer overzichtelijke en professionele offertes ter
+                      plekke bij de klant.
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
@@ -336,25 +417,31 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                question: "Het maken van een offerte een saai en tijdrovend proces is?",
+                question:
+                  "Het maken van een offerte een saai en tijdrovend proces is?",
                 description:
                   "Overdag het werk opnemen en s'avonds thuis alles uitwerken / calculeren en dan digitaal omzetten naar een offerte.",
                 isMiddle: false,
               },
               {
-                question: "Het inschatten van materialen en uren best wel moeilijk is?",
+                question:
+                  "Het inschatten van materialen en uren best wel moeilijk is?",
                 description:
                   "Je eerst maar eens begint met één liter verf en dat je er al snel achter komt dat je tekort hebt en je weer verf moet halen.",
                 isMiddle: true,
               },
               {
-                question: "Je eigenlijk niet precies weet hoeveel kosten je hebt gemaakt.",
+                question:
+                  "Je eigenlijk niet precies weet hoeveel kosten je hebt gemaakt.",
                 description:
                   "Ja, je schat het allemaal een beetje in. Plusminus zoveel verf en zoveel uren. Maar precies weten doe je het niet.",
                 isMiddle: false,
               },
             ].map((audience, index) => (
-              <div key={index} className={`text-center p-6 bg-calcuu-primary/5 ${audience.isMiddle ? 'flex flex-col' : ''}`}>
+              <div
+                key={index}
+                className={`text-center p-6 bg-calcuu-primary/5 ${audience.isMiddle ? "flex flex-col" : ""}`}
+              >
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
                   {audience.question}
                 </h3>
@@ -378,7 +465,9 @@ const Index = () => {
               </h2>
               <p className="text-lg text-calcuu-text-sub max-w-3xl mx-auto">
                 Maak het jezelf gemakkelijk en gebruik de&nbsp;
-                <span className="font-semibold text-calcuu-secondary">Calcuu app&nbsp;</span>
+                <span className="font-semibold text-calcuu-secondary">
+                  Calcuu app&nbsp;
+                </span>
                 <br />
                 om het offerte proces te versnellen en te vereenvoudigen..
               </p>
@@ -441,23 +530,27 @@ const Index = () => {
                   {
                     number: "1",
                     title: "Teken Je Project",
-                    description: "Maak een schets van het te schilderen object direct in de app. Voeg eenvoudig kamers, ramen en deuren toe via onze visuele interface."
+                    description:
+                      "Maak een schets van het te schilderen object direct in de app. Voeg eenvoudig kamers, ramen en deuren toe via onze visuele interface.",
                   },
                   {
                     number: "2",
                     title: "Automatische Berekening",
-                    description: "Calcuu berekent automatisch benodigde materialen (verf, primer, etc.) en geschatte uren op basis van je tekening en oppervlaktes."
+                    description:
+                      "Calcuu berekent automatisch benodigde materialen (verf, primer, etc.) en geschatte uren op basis van je tekening en oppervlaktes.",
                   },
                   {
                     number: "3",
                     title: "Controleer Gegevens",
-                    description: "Controleer de berekeningen en pas indien nodig aan. Voeg extra kosten toe zoals steigers, afplakwerk of voorbereiding."
+                    description:
+                      "Controleer de berekeningen en pas indien nodig aan. Voeg extra kosten toe zoals steigers, afplakwerk of voorbereiding.",
                   },
                   {
                     number: "4",
                     title: "Verstuur Offerte",
-                    description: "Genereer een professionele offerte en verstuur deze direct naar je klant via e-mail of print ter plekke uit."
-                  }
+                    description:
+                      "Genereer een professionele offerte en verstuur deze direct naar je klant via e-mail of print ter plekke uit.",
+                  },
                 ].map((step, index) => (
                   <div key={index} className="flex gap-6 group">
                     <div className="flex-shrink-0 w-12 h-12 bg-transparent border-2 border-calcuu-primary text-calcuu-secondary rounded-full flex items-center justify-center font-bold text-lg transition-all duration-300 hover:scale-110 hover:shadow-lg hover:z-10 relative cursor-pointer">
@@ -487,7 +580,9 @@ const Index = () => {
               Waarom Calcuu voor jou de beste keuze is!
             </h2>
             <p className="text-lg text-calcuu-text-sub text-center mb-16 max-w-3xl mx-auto">
-              Ontdek de voordelen die Calcuu biedt en zie waarom je geen last meer hebt van het gebruiken van meerdere app's en zoekrakende notities.
+              Ontdek de voordelen die Calcuu biedt en zie waarom je geen last
+              meer hebt van het gebruiken van meerdere app's en zoekrakende
+              notities.
             </p>
 
             {/* 6 Feature Boxes */}
@@ -500,64 +595,94 @@ const Index = () => {
                 {[
                   {
                     icon: (
-                      <svg className="w-8 h-8 text-calcuu-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20V6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4V4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z"/>
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20V6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4V4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z" />
                       </svg>
                     ),
                     title: "Visuele Interface",
-                    description: "Intuïtieve tekenfunctie waarmee je snel en eenvoudig je projecten kunt schetsen."
+                    description:
+                      "Intuïtieve tekenfunctie waarmee je snel en eenvoudig je projecten kunt schetsen.",
                   },
                   {
                     icon: (
-                      <svg className="w-8 h-8 text-calcuu-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM17 12H15L13.5 9.5L12 12H10L7 7H17V12Z"/>
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM17 12H15L13.5 9.5L12 12H10L7 7H17V12Z" />
                       </svg>
                     ),
                     title: "Automatische Berekening",
-                    description: "Slimme algoritmes berekenen automatisch materiaalverbruik en uren."
+                    description:
+                      "Slimme algoritmes berekenen automatisch materiaalverbruik en uren.",
                   },
                   {
                     icon: (
-                      <svg className="w-8 h-8 text-calcuu-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"/>
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z" />
                       </svg>
                     ),
                     title: "Nauwkeurige Offertes",
-                    description: "Controleer je berekeningen eenvoudig voordat je verstuurt."
+                    description:
+                      "Controleer je berekeningen eenvoudig voordat je verstuurt.",
                   },
                   {
                     icon: (
-                      <svg className="w-8 h-8 text-calcuu-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z"/>
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" />
                       </svg>
                     ),
                     title: "Professionele Output",
-                    description: "Categoriseer projecten voor efficiënte organisatie."
+                    description:
+                      "Categoriseer projecten voor efficiënte organisatie.",
                   },
                   {
                     icon: (
-                      <svg className="w-8 h-8 text-calcuu-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M15.5 14H20.5L22 15.5V20.5L20.5 22H15.5L14 20.5V15.5L15.5 14ZM18.5 17.5C18.5 16.67 17.83 16 17 16S15.5 16.67 15.5 17.5 16.17 19 17 19 18.5 18.33 18.5 17.5ZM13 19H5V17H13V19ZM13 15H5V13H13V15ZM13 11H5V9H13V11ZM13 7H5V5H13V7Z"/>
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M15.5 14H20.5L22 15.5V20.5L20.5 22H15.5L14 20.5V15.5L15.5 14ZM18.5 17.5C18.5 16.67 17.83 16 17 16S15.5 16.67 15.5 17.5 16.17 19 17 19 18.5 18.33 18.5 17.5ZM13 19H5V17H13V19ZM13 15H5V13H13V15ZM13 11H5V9H13V11ZM13 7H5V5H13V7Z" />
                       </svg>
                     ),
                     title: "Kostenbeheer",
-                    description: "Automatisch screenen op onrealistische kosten."
+                    description:
+                      "Automatisch screenen op onrealistische kosten.",
                   },
                   {
                     icon: (
-                      <svg className="w-8 h-8 text-calcuu-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2ZM4 14L6 21L10.5 18.5L15 21L17 14H4Z"/>
+                      <svg
+                        className="w-8 h-8 text-calcuu-primary"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2ZM4 14L6 21L10.5 18.5L15 21L17 14H4Z" />
                       </svg>
                     ),
                     title: "Naadloze Integratie",
-                    description: "Eenvoudig integreren met bestaande systemen."
-                  }
+                    description: "Eenvoudig integreren met bestaande systemen.",
+                  },
                 ].map((feature, index) => (
-                  <div key={index} className="bg-white rounded-2xl p-6 transition-all duration-300 relative h-60 w-80 shadow-lg">
+                  <div
+                    key={index}
+                    className="bg-white rounded-2xl p-6 transition-all duration-300 relative h-60 w-80 shadow-lg"
+                  >
                     <div className="flex flex-col items-center text-center h-full">
-                      <div className="mb-4 mt-2">
-                        {feature.icon}
-                      </div>
+                      <div className="mb-4 mt-2">{feature.icon}</div>
                       <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
                         {feature.title}
                       </h3>
@@ -568,7 +693,6 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -631,7 +755,10 @@ const Index = () => {
       </section>
 
       {/* App Download Section */}
-      <section id="download" className="py-16 lg:py-24 bg-gradient-to-br from-calcuu-background to-calcuu-white">
+      <section
+        id="download"
+        className="py-16 lg:py-24 bg-gradient-to-br from-calcuu-background to-calcuu-white"
+      >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary mb-8">
@@ -678,7 +805,12 @@ const Index = () => {
                   alt="Calcuu Logo"
                   className="w-8 h-8"
                 />
-                <span className="text-xl font-bold" style={{ fontFamily: 'Toxigenesis, sans-serif' }}>CALCUU</span>
+                <span
+                  className="text-xl font-bold"
+                  style={{ fontFamily: "Toxigenesis, sans-serif" }}
+                >
+                  CALCUU
+                </span>
               </div>
               <p className="text-gray-300 text-sm">
                 Slimme calculatie-app voor vakschilders
