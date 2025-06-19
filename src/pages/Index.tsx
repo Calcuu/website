@@ -140,6 +140,142 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Three Block Section */}
+      <section className="py-16 lg:py-20 bg-calcuu-background">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Block 1 */}
+            <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
+              <div className="flex justify-between items-start mb-6">
+                <div className="w-12 h-12 bg-calcuu-primary/10 rounded-xl flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-calcuu-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"
+                    />
+                  </svg>
+                </div>
+                <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3 leading-tight">
+                Automatische berekeningen
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Laat de app het werk doen. Voer je project in en krijg direct
+                nauwkeurige calculaties voor materiaal en arbeid.
+              </p>
+            </div>
+
+            {/* Block 2 */}
+            <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
+              <div className="flex justify-between items-start mb-6">
+                <div className="w-12 h-12 bg-calcuu-accent/10 rounded-xl flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-calcuu-accent"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </div>
+                <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3 leading-tight">
+                Professionele offertes
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Genereer direct ter plekke professionele offertes die indruk
+                maken op je klanten en je bedrijf serieus laten overkomen.
+              </p>
+            </div>
+
+            {/* Block 3 */}
+            <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
+              <div className="flex justify-between items-start mb-6">
+                <div className="w-12 h-12 bg-calcuu-success/10 rounded-xl flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-calcuu-success"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
+                  <svg
+                    className="w-3 h-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3 leading-tight">
+                Bespaar tijd
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Van uren naar minuten. Besteed je avonden aan wat echt
+                belangrijk is in plaats van achter de computer zitten.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section id="features" className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
