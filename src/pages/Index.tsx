@@ -11,13 +11,13 @@ const Index = () => {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 lg:w-10 lg:h-10 bg-calcuu-primary rounded-lg flex items-center justify-center">
-                <div className="w-5 h-5 lg:w-6 lg:h-6 bg-calcuu-white rounded opacity-90 flex items-center justify-center">
-                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-calcuu-primary rounded-sm"></div>
-                </div>
-              </div>
-              <span className="text-xl lg:text-2xl font-bold text-calcuu-secondary">
-                Calcuu
+              <img
+                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
+                alt="Calcuu Logo"
+                className="w-8 h-8 lg:w-10 lg:h-10"
+              />
+              <span className="text-xl lg:text-2xl font-bold text-calcuu-secondary font-inter">
+                CALCUU
               </span>
             </div>
 
@@ -524,10 +524,12 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-calcuu-primary rounded-lg flex items-center justify-center">
-                  <div className="w-5 h-5 bg-calcuu-white rounded opacity-90"></div>
-                </div>
-                <span className="text-xl font-bold">Calcuu</span>
+                <img
+                  src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
+                  alt="Calcuu Logo"
+                  className="w-8 h-8"
+                />
+                <span className="text-xl font-bold font-inter">CALCUU</span>
               </div>
               <p className="text-gray-300 text-sm">
                 Slimme calculatie-app voor vakschilders
