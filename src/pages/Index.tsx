@@ -364,7 +364,7 @@ const Index = () => {
                     <img
                       loading="lazy"
                       src="https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F5514f8cbf39b428b975beafed6af49bf"
-                      alt="Alles-in-é��n"
+                      alt="Alles-in-één"
                       className="aspect-[1.35] object-cover object-top w-full mt-5 min-h-5 min-w-5 overflow-hidden"
                     />
                   </div>
@@ -591,7 +591,7 @@ const Index = () => {
               <div className="absolute -inset-x-16 -inset-y-8 bg-gradient-to-r from-calcuu-primary/5 via-calcuu-primary/15 to-calcuu-primary/5 blur-2xl"></div>
               <div className="absolute -inset-x-20 -inset-y-4 bg-gradient-to-r from-calcuu-primary/3 via-transparent to-calcuu-primary/3 blur-xl"></div>
 
-              <div className="relative grid grid-cols-3 grid-rows-2 gap-3.5 max-w-6xl mx-auto px-16">
+              <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {[
                   {
                     icon: (
