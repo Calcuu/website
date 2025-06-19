@@ -288,7 +288,8 @@ const Index = () => {
             </h2>
             <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-3xl mx-auto">
               Geen gedoe meer met ingewikkelde spreadsheets of handmatige
-              berekeningen. Maak professionele offertes in minuten, niet uren.
+              berekeningen. Maak professionele offertes voor binnen- en
+              buitenwerk in minuten, geen uren.
             </p>
           </div>
 
