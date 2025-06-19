@@ -564,7 +564,7 @@ const Index = () => {
                       <h3 className="text-xl font-semibold text-calcuu-secondary mb-2 transition-all duration-300 group-hover:text-calcuu-primary">
                         {step.title}
                       </h3>
-                      <p className="text-calcuu-text-sub leading-relaxed transition-all duration-300 group-hover:text-calcuu-secondary">
+                      <p className="text-calcuu-text-sub leading-relaxed transition-all duration-300 group-hover:text-calcuu-secondary mb-10">
                         {step.description}
                       </p>
                     </div>
