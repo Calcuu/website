@@ -87,8 +87,8 @@ const Index = () => {
               {/* Headlines */}
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
-                  Maakt offertes,{" "}
-                  <span className="text-calcuu-primary">zonder rekenwerk</span>
+                  Stop met het maken van{" "}
+                  <span className="text-calcuu-primary">offertes</span>
                 </h1>
                 <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-2xl">
                   Slimme calculatie-app voor vakschilders. Van tekening naar
@@ -96,13 +96,20 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* CTA Button */}
-              <div className="pt-4">
+              {/* CTA Buttons */}
+              <div className="pt-4 flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
                   className="bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   Probeer Gratis
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105"
+                >
+                  Bekijk demo video
                 </Button>
               </div>
             </div>
