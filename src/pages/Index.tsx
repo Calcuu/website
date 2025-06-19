@@ -104,14 +104,14 @@ const Index = () => {
               <div className="pt-4 flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-calcuu-success hover:bg-calcuu-success/90 text-white font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-calcuu-success hover:bg-calcuu-success/90 text-white font-semibold text-lg px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-12"
                 >
                   Probeer Gratis
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
+                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 rounded-lg transition-all duration-300 hover:scale-105 h-12"
                 >
                   Bekijk demo video
                 </Button>
