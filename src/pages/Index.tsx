@@ -552,11 +552,7 @@ const Index = () => {
                       "Genereer een professionele offerte en verstuur deze direct naar je klant via e-mail of print ter plekke uit.",
                   },
                 ].map((step, index) => (
-                  <div key={index} className="flex gap-6 group relative">
-                    {/* Connecting line to next step */}
-                    {index < 3 && (
-                      <div className="absolute left-6 top-12 w-px h-8 bg-calcuu-primary"></div>
-                    )}
+                  <div key={index} className="flex gap-6 group">
                     <div className="flex-shrink-0 w-12 h-12 bg-transparent border-2 border-calcuu-primary text-calcuu-secondary rounded-full flex items-center justify-center font-bold text-lg transition-all duration-300 hover:scale-110 hover:shadow-lg hover:z-10 relative cursor-pointer">
                       {step.number}
                     </div>
