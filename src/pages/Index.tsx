@@ -586,7 +586,7 @@ const Index = () => {
             </p>
 
             {/* 6 Feature Boxes */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {[
                 {
                   icon: "📱",
@@ -627,21 +627,23 @@ const Index = () => {
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-calcuu-detail/20 backdrop-blur-sm relative"
+                  className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-calcuu-detail/20 backdrop-blur-sm relative"
                 >
                   {/* Glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-calcuu-primary/5 via-transparent to-calcuu-accent/5 rounded-2xl"></div>
 
-                  <div className="relative z-10">
-                    <div className="text-4xl mb-6 flex items-center justify-center w-16 h-16 bg-calcuu-primary/10 rounded-2xl mx-auto">
-                      <span className="text-2xl">{feature.icon}</span>
+                  <div className="relative z-10 flex items-start gap-4">
+                    <div className="text-2xl flex-shrink-0 mt-1">
+                      {feature.icon}
                     </div>
-                    <h3 className="text-xl font-semibold text-calcuu-secondary mb-4 text-center">
-                      {feature.title}
-                    </h3>
-                    <p className="text-calcuu-text-sub leading-relaxed text-center text-sm">
-                      {feature.description}
-                    </p>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-semibold text-calcuu-secondary mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-calcuu-text-sub leading-relaxed text-sm">
+                        {feature.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
