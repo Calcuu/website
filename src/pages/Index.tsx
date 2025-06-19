@@ -296,7 +296,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Left Side - 50% width - 1 block */}
             <div className="lg:col-span-1">
-              <div className="bg-calcuu-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail flex flex-col min-h-[199px] mr-0.5 -mb-1 px-8 pt-8 pb-14">
+              <div className="bg-calcuu-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail flex flex-col min-h-[207px] mr-0.5 -mb-1 px-8 pt-8 pb-16">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
                     <h3 className="text-xl font-semibold text-calcuu-secondary mt-5 mb-4">
@@ -306,6 +306,11 @@ const Index = () => {
                       Teken je project direct in de app en krijg automatisch
                       nauwkeurige berekeningen voor materiaal, arbeid en
                       totaalprijs.
+                      <br />
+                      <br />
+                      Zowel met het binnen- als buitenwerk worden alle kozijnen,
+                      ramen, deuren, direct berekend.
+                      <br />
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
@@ -326,11 +331,11 @@ const Index = () => {
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
                     <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                      Directe offreren
+                      Overzicht
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Genereer overzichtelijke en professionele offertes ter
-                      plekke bij de klant.
+                      Urenregistratie, fotodocumentatie, klantbeheer en
+                      materiaalplanning in één overzichtelijke app.
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
@@ -348,11 +353,11 @@ const Index = () => {
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
                     <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                      Alles-in-één
+                      Direct offreren
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Urenregistratie, fotodocumentatie, klantbeheer en
-                      materiaalplanning in één overzichtelijke app.
+                      Genereer overzichtelijke en professionele offertes ter
+                      plekke bij de klant.
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
