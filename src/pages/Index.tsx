@@ -104,14 +104,14 @@ const Index = () => {
               <div className="pt-4 flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   Probeer Gratis
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105"
+                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
                 >
                   Bekijk demo video
                 </Button>
@@ -349,7 +349,7 @@ const Index = () => {
             <div className="mt-8">
               <Button
                 variant="outline"
-                className="border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold px-8 py-3 rounded-xl"
+                className="border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold px-8 py-3 rounded-lg"
               >
                 Bekijk Demo
               </Button>
@@ -467,7 +467,7 @@ const Index = () => {
 
                 <Button
                   size="lg"
-                  className="w-full bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Start Vandaag
                 </Button>
