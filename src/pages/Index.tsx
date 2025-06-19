@@ -454,6 +454,124 @@ const Index = () => {
         </div>
       </section>
 
+      {/* 4-Step Process Section */}
+      <section className="py-16 lg:py-24 bg-calcuu-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-calcuu-secondary mb-6 tracking-tight">
+                Slimme Offerte Creatie in 4 Stappen
+              </h2>
+              <p className="text-lg text-calcuu-text-sub max-w-3xl mx-auto">
+                Blijf voorop met ons{" "}
+                <span className="font-semibold text-calcuu-secondary">
+                  goed-gedocumenteerde
+                </span>{" "}
+                platform. Kies voor het Calcuu Platform om je workflow te
+                automatiseren of integreer onze functionaliteiten apart.
+              </p>
+            </div>
+
+            {/* Main Content Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Visual Side - Left */}
+              <div className="relative">
+                <div className="relative">
+                  {/* Background Circle */}
+                  <div className="absolute -inset-8 bg-calcuu-primary/5 rounded-full"></div>
+
+                  {/* Desktop Mockup */}
+                  <div className="relative z-10 bg-calcuu-secondary rounded-lg p-6 shadow-xl mb-8">
+                    <div className="flex gap-2 mb-4">
+                      <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                    <div className="bg-calcuu-background rounded p-4 space-y-2">
+                      <div className="h-4 bg-calcuu-primary/20 rounded w-3/4"></div>
+                      <div className="h-4 bg-calcuu-detail rounded w-1/2"></div>
+                      <div className="h-4 bg-calcuu-detail rounded w-2/3"></div>
+                      <div className="grid grid-cols-3 gap-2 mt-4">
+                        <div className="h-12 bg-calcuu-success/20 rounded"></div>
+                        <div className="h-12 bg-calcuu-primary/20 rounded"></div>
+                        <div className="h-12 bg-calcuu-detail rounded"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Phone Mockup */}
+                  <div className="absolute -bottom-4 -right-4 w-48 h-96 bg-black rounded-[2rem] p-1 shadow-2xl z-20">
+                    <div className="w-full h-full bg-calcuu-background rounded-[1.5rem] overflow-hidden">
+                      <div className="h-8 bg-calcuu-white flex items-center justify-center">
+                        <div className="w-20 h-1 bg-black rounded-full opacity-30"></div>
+                      </div>
+                      <div className="p-4 space-y-3">
+                        <div className="h-6 bg-calcuu-primary rounded w-20"></div>
+                        <div className="h-20 bg-calcuu-detail rounded"></div>
+                        <div className="space-y-2">
+                          <div className="h-3 bg-calcuu-detail rounded w-3/4"></div>
+                          <div className="h-3 bg-calcuu-detail rounded w-1/2"></div>
+                        </div>
+                        <div className="h-10 bg-calcuu-success rounded"></div>
+                        <div className="grid grid-cols-2 gap-2">
+                          <div className="h-8 bg-calcuu-detail rounded"></div>
+                          <div className="h-8 bg-calcuu-primary/20 rounded"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Steps Side - Right */}
+              <div className="space-y-8">
+                {[
+                  {
+                    number: "1",
+                    title: "Teken Je Project",
+                    description:
+                      "Maak een schets van het te schilderen object direct in de app. Voeg eenvoudig kamers, ramen en deuren toe via onze intuïtieve interface.",
+                  },
+                  {
+                    number: "2",
+                    title: "Automatische Berekening",
+                    description:
+                      "Calcuu berekent automatisch benodigde materialen (verf, primer, etc.) en geschatte uren op basis van je tekening en oppervlaktes.",
+                  },
+                  {
+                    number: "3",
+                    title: "Controleer Gegevens",
+                    description:
+                      "Controleer de berekeningen en pas indien nodig aan. Voeg extra kosten toe zoals steigers, afplakwerk of voorbereiding.",
+                  },
+                  {
+                    number: "4",
+                    title: "Verstuur Offerte",
+                    description:
+                      "Genereer een professionele offerte en verstuur deze direct naar je klant via e-mail of print ter plekke uit.",
+                  },
+                ].map((step, index) => (
+                  <div key={index} className="flex gap-6">
+                    <div className="flex-shrink-0 w-12 h-12 bg-calcuu-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      {step.number}
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-calcuu-secondary mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-calcuu-text-sub leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-16 lg:py-24 bg-calcuu-background">
         <div className="container mx-auto px-4">
