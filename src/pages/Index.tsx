@@ -286,42 +286,52 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-calcuu-secondary mb-6 tracking-tight">
               Bereken en verstuur de offerte direct op locatie.
             </h2>
+            <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-3xl mx-auto">
+              Geen gedoe meer met ingewikkelde spreadsheets of handmatige
+              berekeningen. Maak professionele offertes in minuten, niet uren.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                title: "Visuele Calculatie",
-                description:
-                  "Teken je project, wij berekenen automatisch materiaal en uren",
-                icon: "📐",
-              },
-              {
-                title: "Direct Offreren",
-                description:
-                  "Professionele offertes ter plekke, zelfs tijdens het klantbezoek",
-                icon: "📄",
-              },
-              {
-                title: "Alles-in-één",
-                description:
-                  "Urenregistratie, fotodocumentatie, relatiebeheer en materiaalplanning",
-                icon: "🛠️",
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail"
-              >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Left Block - Spans 1 column */}
+            <div className="lg:col-span-1">
+              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full">
+                <div className="text-4xl mb-4">📐</div>
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                  {feature.title}
+                  Visuele Calculatie
                 </h3>
                 <p className="text-calcuu-text-sub leading-relaxed">
-                  {feature.description}
+                  Teken je project direct in de app en krijg automatisch
+                  nauwkeurige berekeningen voor materiaal, arbeid en
+                  totaalprijs.
                 </p>
               </div>
-            ))}
+            </div>
+
+            {/* Right Side - 2 blocks in column */}
+            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full">
+                <div className="text-4xl mb-4">📄</div>
+                <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
+                  Direct Offreren
+                </h3>
+                <p className="text-calcuu-text-sub leading-relaxed">
+                  Genereer professionele offertes ter plekke bij de klant. Print
+                  of mail direct vanuit de app.
+                </p>
+              </div>
+
+              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full">
+                <div className="text-4xl mb-4">🛠️</div>
+                <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
+                  Alles-in-één
+                </h3>
+                <p className="text-calcuu-text-sub leading-relaxed">
+                  Urenregistratie, fotodocumentatie, klantbeheer en
+                  materiaalplanning in één overzichtelijke app.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
