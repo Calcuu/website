@@ -418,23 +418,21 @@ const Index = () => {
             {[
               {
                 questionStarter: "Herken jij ook dat ...",
-                question: "Offerte maken een saai",
-                questionLine2: "en tijdrovend is?",
+                question: "Offerte maken een saai en tijdrovend proces is?",
                 description:
                   "Meer tijd voor schilderen, minder tijd achter de computer",
               },
               {
                 questionStarter: "Vindt jij ook dat ...",
                 question:
-                  "Materiaal gebruik van projecten moeilijk in te schatten is?",
-                questionLine2: "",
+                  "Het inschatten van materiaal en uren best wel moeilijk is?",
                 description:
                   "Consistente offertes en betere calculaties voor je team",
               },
               {
                 questionStarter: "Ervaar jij ook dat ...",
-                question: "Je niet altijd direct inzicht hebt in al je kosten?",
-                questionLine2: "",
+                question:
+                  "Je per project niet altijd direct inzicht hebt in al je kosten?",
                 description:
                   "Ook voor kleinere klussen altijd een professionele offerte",
               },
@@ -444,13 +442,9 @@ const Index = () => {
                   {audience.questionStarter}
                 </h3>
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                  {audience.question}
-                  {audience.questionLine2 && (
-                    <>
-                      <br />
-                      {audience.questionLine2}
-                    </>
-                  )}
+                  <span className="text-calcuu-primary">
+                    {audience.question}
+                  </span>
                 </h3>
                 <p className="text-calcuu-text-sub leading-relaxed">
                   {audience.description}
