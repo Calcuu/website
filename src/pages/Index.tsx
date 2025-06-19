@@ -293,8 +293,8 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Left Block - Spans 1 column */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Left Side - 50% width - 1 block */}
             <div className="lg:col-span-1">
               <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full mr-0.5 -mb-1">
                 <div className="text-4xl mb-4">📐</div>
@@ -309,8 +309,8 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right Side - 2 blocks in column */}
-            <div className="lg:col-span-2 flex flex-col gap-8 justify-start -ml-px">
+            {/* Right Side - 50% width - 2 blocks stacked */}
+            <div className="lg:col-span-1 flex flex-col gap-8 justify-start -ml-px">
               <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full ml-auto flex flex-col justify-start items-start">
                 <div className="text-4xl mb-4">📄</div>
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
