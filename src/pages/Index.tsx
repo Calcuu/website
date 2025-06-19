@@ -10,13 +10,16 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-end gap-3">
               <img
                 src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
                 alt="Calcuu Logo"
                 className="w-8 h-8 lg:w-10 lg:h-10"
               />
-              <span className="text-xl lg:text-2xl font-bold text-calcuu-secondary font-inter">
+              <span
+                className="text-xl lg:text-2xl font-bold text-calcuu-secondary"
+                style={{ fontFamily: "Toxigenesis, sans-serif" }}
+              >
                 CALCUU
               </span>
             </div>
@@ -523,13 +526,18 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
+              <div className="flex items-end gap-3">
                 <img
                   src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
                   alt="Calcuu Logo"
                   className="w-8 h-8"
                 />
-                <span className="text-xl font-bold font-inter">CALCUU</span>
+                <span
+                  className="text-xl font-bold"
+                  style={{ fontFamily: "Toxigenesis, sans-serif" }}
+                >
+                  CALCUU
+                </span>
               </div>
               <p className="text-gray-300 text-sm">
                 Slimme calculatie-app voor vakschilders

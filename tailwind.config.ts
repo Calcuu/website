@@ -21,6 +21,7 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         sans: ["Inter", "sans-serif"],
+        toxigenesis: ["Toxigenesis", "sans-serif"],
       },
       colors: {
         // Calcuu brand colors
