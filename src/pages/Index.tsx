@@ -584,23 +584,6 @@ const Index = () => {
               meer hebt van het gebruiken van meerdere app's en zoekrakende
               notities.
             </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                "Je bespaard heel veel tijd",
-                "Maakt geen rekenfouten meer",
-                "Professionele uitstraling",
-                "Werkt zowel online als offline",
-                "Direct ter plekke offreren",
-              ].map((benefit, index) => (
-                <div key={index} className="flex items-center gap-4 p-4">
-                  <CheckCircle className="w-6 h-6 text-calcuu-success flex-shrink-0" />
-                  <span className="text-lg text-calcuu-secondary">
-                    {benefit}
-                  </span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
