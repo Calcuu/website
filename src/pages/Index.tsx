@@ -580,9 +580,9 @@ const Index = () => {
               Waarom Calcuu voor jou de beste keuze is!
             </h2>
             <p className="text-lg text-calcuu-text-sub text-center mb-16 max-w-3xl mx-auto">
-              Ontdek de voordelen die Calcuu biedt en zie waarom duizenden
-              schilders al zijn overgestapt naar deze slimme manier van
-              offreren.
+              Ontdek de voordelen die Calcuu biedt en zie waarom je geen last
+              meer hebt van het gebruiken van meerdere app's en zoekrakende
+              notities.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
