@@ -88,7 +88,8 @@ const Index = () => {
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
                   Stop met het maken van{" "}
-                  <span className="text-calcuu-primary">offertes</span>
+                  <span className="text-calcuu-primary">offertes</span> in de
+                  avonduren
                 </h1>
                 <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-2xl">
                   Slimme calculatie-app voor vakschilders. Van tekening naar
