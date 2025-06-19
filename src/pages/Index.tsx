@@ -630,7 +630,7 @@ const Index = () => {
                   className="bg-white rounded-2xl p-6 transition-all duration-300 relative"
                   style={{
                     boxShadow:
-                      "0 0 20px rgba(91, 41, 222, 0.7), 0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+                      "0 0 40px rgba(91, 41, 222, 0.9), 0 4px 6px -1px rgba(0, 0, 0, 0.1)",
                   }}
                 >
                   <div className="flex items-start gap-4">
