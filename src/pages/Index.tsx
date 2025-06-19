@@ -90,7 +90,7 @@ const Index = () => {
               {/* Headlines */}
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
-                  Stop met het maken van{" "}
+                  Stop met het maken van&nbsp;
                   <span className="text-calcuu-primary">offertes</span> in de
                   avonduren
                 </h1>
@@ -296,42 +296,76 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Left Side - 50% width - 1 block */}
             <div className="lg:col-span-1">
-              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full mr-0.5 -mb-1">
-                <div className="text-4xl mb-4">📐</div>
-                <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                  Visuele Calculatie
-                </h3>
-                <p className="text-calcuu-text-sub leading-relaxed">
-                  Teken je project direct in de app en krijg automatisch
-                  nauwkeurige berekeningen voor materiaal, arbeid en
-                  totaalprijs.
-                </p>
+              <div className="bg-calcuu-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail flex flex-col min-h-[199px] mr-0.5 -mb-1 px-8 pt-8 pb-14">
+                <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                  <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
+                    <h3 className="text-xl font-semibold text-calcuu-secondary mt-5 mb-4">
+                      Visuele Calculatie
+                    </h3>
+                    <p className="text-calcuu-text-sub leading-relaxed">
+                      Teken je project direct in de app en krijg automatisch
+                      nauwkeurige berekeningen voor materiaal, arbeid en
+                      totaalprijs.
+                    </p>
+                  </div>
+                  <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F5b56eb342c2e4f31a15814e558107f2d"
+                      alt="Visuele Calculatie"
+                      className="aspect-[0.5] object-cover object-top w-full mt-5 min-h-5 min-w-5 overflow-hidden"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Right Side - 50% width - 2 blocks stacked */}
             <div className="lg:col-span-1 flex flex-col gap-8 justify-start -ml-px">
-              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full ml-auto flex flex-col justify-start items-start">
-                <div className="text-4xl mb-4">📄</div>
-                <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                  Direct Offreren
-                </h3>
-                <p className="text-calcuu-text-sub leading-relaxed">
-                  Genereer professionele offertes ter plekke bij de klant.
-                  <br />
-                  Print of mail direct vanuit de app.
-                </p>
+              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail justify-start ml-auto flex flex-col">
+                <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                  <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
+                    <div className="text-4xl mb-4">🛠️</div>
+                    <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
+                      Directe offreren
+                    </h3>
+                    <p className="text-calcuu-text-sub leading-relaxed">
+                      Genereer overzichtelijke en professionele offertes ter
+                      plekke bij de klant.
+                    </p>
+                  </div>
+                  <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2Fec3c5b217a284078a3636c326043c92f"
+                      alt="Directe offreren"
+                      className="aspect-[1.16] object-cover object-bottom w-full mt-5 min-h-5 min-w-5 overflow-hidden"
+                    />
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail h-full ml-auto flex flex-col justify-start items-start">
-                <div className="text-4xl mb-4">🛠️</div>
-                <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                  Alles-in-één
-                </h3>
-                <p className="text-calcuu-text-sub leading-relaxed">
-                  Urenregistratie, fotodocumentatie, klantbeheer en
-                  materiaalplanning in één overzichtelijke app.
-                </p>
+              <div className="bg-calcuu-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-calcuu-detail justify-start ml-auto flex flex-col">
+                <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                  <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
+                    <div className="text-4xl mb-4">🛠️</div>
+                    <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
+                      Alles-in-één
+                    </h3>
+                    <p className="text-calcuu-text-sub leading-relaxed">
+                      Urenregistratie, fotodocumentatie, klantbeheer en
+                      materiaalplanning in één overzichtelijke app.
+                    </p>
+                  </div>
+                  <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F5514f8cbf39b428b975beafed6af49bf"
+                      alt="Alles-in-één"
+                      className="aspect-[1.35] object-cover object-top w-full mt-5 min-h-5 min-w-5 overflow-hidden"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
