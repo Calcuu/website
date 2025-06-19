@@ -16,10 +16,7 @@ const Index = () => {
                 alt="Calcuu Logo"
                 className="w-8 h-8 lg:w-10 lg:h-10"
               />
-              <span
-                className="text-xl lg:text-2xl font-bold text-calcuu-secondary"
-                style={{ fontFamily: "Toxigenesis, sans-serif" }}
-              >
+              <span className="text-xl lg:text-2xl font-bold text-calcuu-secondary" style={{ fontFamily: 'Toxigenesis, sans-serif' }}>
                 CALCUU
               </span>
             </div>
@@ -56,25 +53,15 @@ const Index = () => {
             <div className="flex items-center gap-4">
               <Button
                 size="sm"
-                className="hidden sm:inline-flex bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                className="hidden sm:inline-flex bg-calcuu-success hover:bg-calcuu-success/90 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
               >
                 Probeer Gratis
               </Button>
 
               {/* Mobile Menu Button */}
               <button className="md:hidden p-2 text-calcuu-secondary hover:text-calcuu-primary transition-colors">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
             </div>
@@ -91,8 +78,8 @@ const Index = () => {
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
                   Stop met het maken van&nbsp;
-                  <span className="text-calcuu-primary">offertes</span> in de
-                  avonduren
+                  <span className="text-calcuu-primary">offertes</span>{" "}
+                  in de avonduren
                 </h1>
                 <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-2xl">
                   Calcuu is de slimme calculatie-app voor vakschilders. Van
@@ -104,17 +91,17 @@ const Index = () => {
               <div className="pt-4 flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-calcuu-success hover:bg-calcuu-success/90 text-white font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   Probeer Gratis
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
-                >
-                  Bekijk demo video
-                </Button>
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
+                    >
+                      Bekijk demo video
+                    </Button>
               </div>
             </div>
 
@@ -133,7 +120,7 @@ const Index = () => {
                         <div className="h-4 bg-calcuu-detail rounded w-3/4"></div>
                         <div className="h-4 bg-calcuu-detail rounded w-1/2"></div>
                       </div>
-                      <div className="h-12 bg-calcuu-accent rounded-lg"></div>
+                      <div className="h-12 bg-calcuu-success rounded-lg"></div>
                     </div>
                   </div>
                 </div>
@@ -147,37 +134,18 @@ const Index = () => {
       <section className="py-16 lg:py-20 bg-calcuu-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
             {/* Block 1 */}
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
                 <div className="w-12 h-12 bg-calcuu-primary/10 rounded-xl flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-calcuu-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"
-                    />
+                  <svg className="w-6 h-6 text-calcuu-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
                   </svg>
                 </div>
                 <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
-                  <svg
-                    className="w-3 h-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
               </div>
@@ -185,42 +153,24 @@ const Index = () => {
                 Automatische berekeningen
               </h3>
               <p className="text-calcuu-text-sub leading-relaxed">
-                Laat de app het werk doen. Voer je project in en krijg direct
-                nauwkeurige calculaties voor materiaal en arbeid.
+                Laat de app het werk doen. Voer je project in en krijg direct nauwkeurige calculaties voor materiaal en arbeid.
               </p>
             </div>
 
             {/* Block 2 */}
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
-                <div className="w-12 h-12 bg-calcuu-accent/10 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-calcuu-success/10 rounded-xl flex items-center justify-center">
                   <svg
-                    className="w-6 h-6 text-calcuu-accent"
+                    className="w-6 h-6 text-calcuu-success"
                     fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                    />
+                  <svg className="w-6 h-6 text-calcuu-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
                 <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
-                  <svg
-                    className="w-3 h-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
               </div>
@@ -228,8 +178,7 @@ const Index = () => {
                 Professionele offertes
               </h3>
               <p className="text-calcuu-text-sub leading-relaxed">
-                Genereer direct ter plekke professionele offertes die indruk
-                maken op je klanten en je bedrijf serieus laten overkomen.
+                Genereer direct ter plekke professionele offertes die indruk maken op je klanten en je bedrijf serieus laten overkomen.
               </p>
             </div>
 
@@ -237,33 +186,13 @@ const Index = () => {
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
                 <div className="w-12 h-12 bg-calcuu-success/10 rounded-xl flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-calcuu-success"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
+                  <svg className="w-6 h-6 text-calcuu-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
-                  <svg
-                    className="w-3 h-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
               </div>
@@ -271,10 +200,10 @@ const Index = () => {
                 Bespaar tijd
               </h3>
               <p className="text-calcuu-text-sub leading-relaxed">
-                Van uren naar minuten. Besteed je avonden aan wat echt
-                belangrijk is in plaats van achter de computer zitten.
+                Van uren naar minuten. Besteed je avonden aan wat echt belangrijk is in plaats van achter de computer zitten.
               </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -287,9 +216,7 @@ const Index = () => {
               Bereken en verstuur de offerte direct op locatie.
             </h2>
             <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-3xl mx-auto">
-              Geen gedoe meer met ingewikkelde spreadsheets of handmatige
-              berekeningen. Maak professionele offertes voor binnen- en
-              buitenwerk in minuten, geen uren.
+              Geen gedoe meer met ingewikkelde spreadsheets of handmatige berekeningen. Maak professionele offertes voor binnen- en buitenwerk in minuten, geen uren.
             </p>
           </div>
 
@@ -303,13 +230,10 @@ const Index = () => {
                       Visuele Calculatie
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Teken je project direct in de app en krijg automatisch
-                      nauwkeurige berekeningen voor materiaal, arbeid en
-                      totaalprijs.
+                      Teken je project direct in de app en krijg automatisch nauwkeurige berekeningen voor materiaal, arbeid en totaalprijs.
                       <br />
                       <br />
-                      Zowel met het binnen- als buitenwerk worden alle kozijnen,
-                      ramen, deuren, direct berekend.
+                      Zowel met het binnen- als buitenwerk worden alle kozijnen, ramen, deuren, direct berekend.
                       <br />
                     </p>
                   </div>
@@ -334,8 +258,7 @@ const Index = () => {
                       Overzicht
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Urenregistratie, fotodocumentatie, klantbeheer en
-                      materiaalplanning in één overzichtelijke app.
+                      Urenregistratie, fotodocumentatie, klantbeheer en materiaalplanning in één overzichtelijke app.
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
@@ -356,8 +279,7 @@ const Index = () => {
                       Direct offreren
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Genereer overzichtelijke en professionele offertes ter
-                      plekke bij de klant.
+                      Genereer overzichtelijke en professionele offertes ter plekke bij de klant.
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
@@ -425,8 +347,7 @@ const Index = () => {
               },
               {
                 questionStarter: "Vindt jij ook dat ...",
-                question:
-                  "Materiaal gebruik van projecten moeilijk in te schatten is?",
+                question: "Materiaal gebruik van projecten moeilijk in te schatten is?",
                 questionLine2: "",
                 description:
                   "Consistente offertes en betere calculaties voor je team",
@@ -507,7 +428,7 @@ const Index = () => {
                   <div className="text-calcuu-text-sub line-through text-xl">
                     €50
                   </div>
-                  <div className="text-5xl font-bold text-calcuu-accent">
+                  <div className="text-5xl font-bold text-calcuu-success">
                     €25
                   </div>
                   <div className="text-calcuu-text-sub">per maand</div>
@@ -532,7 +453,7 @@ const Index = () => {
 
                 <Button
                   size="lg"
-                  className="w-full bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-calcuu-success hover:bg-calcuu-success/90 text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Start Vandaag
                 </Button>
@@ -547,10 +468,7 @@ const Index = () => {
       </section>
 
       {/* App Download Section */}
-      <section
-        id="download"
-        className="py-16 lg:py-24 bg-gradient-to-br from-calcuu-background to-calcuu-white"
-      >
+      <section id="download" className="py-16 lg:py-24 bg-gradient-to-br from-calcuu-background to-calcuu-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary mb-8">
@@ -597,12 +515,7 @@ const Index = () => {
                   alt="Calcuu Logo"
                   className="w-8 h-8"
                 />
-                <span
-                  className="text-xl font-bold"
-                  style={{ fontFamily: "Toxigenesis, sans-serif" }}
-                >
-                  CALCUU
-                </span>
+                <span className="text-xl font-bold" style={{ fontFamily: 'Toxigenesis, sans-serif' }}>CALCUU</span>
               </div>
               <p className="text-gray-300 text-sm">
                 Slimme calculatie-app voor vakschilders
