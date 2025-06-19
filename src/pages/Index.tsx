@@ -440,7 +440,7 @@ const Index = () => {
             ].map((audience, index) => (
               <div
                 key={index}
-                className={`text-center p-6 bg-calcuu-primary/5 ${audience.isMiddle ? "flex flex-col" : ""}`}
+                className={`text-center p-6 bg-calcuu-primary/5 overflow-hidden ${audience.isMiddle ? "flex flex-col" : ""}`}
               >
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
                   {audience.question}
@@ -679,7 +679,7 @@ const Index = () => {
                 ].map((feature, index) => (
                   <div
                     key={index}
-                    className="bg-white rounded-2xl p-6 transition-all duration-300 relative h-60 w-80 shadow-lg"
+                    className={`bg-white rounded-2xl p-6 transition-all duration-300 relative h-60 shadow-lg ${index === 2 ? "w-80" : "w-68"}`}
                   >
                     <div className="flex flex-col items-center text-center h-full">
                       <div className="mb-4 mt-2">{feature.icon}</div>
@@ -731,24 +731,15 @@ const Index = () => {
 
             {/* Right Side - Rectangle */}
             <div className="relative">
-              <div className="w-full h-80 bg-gradient-to-br from-calcuu-primary/20 via-calcuu-primary/10 to-calcuu-accent/20 rounded-3xl shadow-xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-calcuu-primary/30 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                    <svg
-                      className="w-8 h-8 text-calcuu-primary"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-calcuu-secondary mb-2">
-                    Contact Opnemen
-                  </h3>
-                  <p className="text-calcuu-text-sub">
-                    Bel ons of stuur een bericht
-                  </p>
-                </div>
+              <div
+                className="w-full h-80 rounded-3xl flex items-center justify-center bg-cover bg-center bg-no-repeat"
+                style={{
+                  backgroundImage:
+                    "url(https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F81275b101f6a445db15f92ffda04c68f)",
+                  boxShadow: "1px 2px 8px 3px rgba(0, 0, 0, 1)",
+                }}
+              >
+                <div className="text-center"></div>
               </div>
 
               {/* Decorative elements */}
