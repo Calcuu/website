@@ -5,23 +5,85 @@ import { CheckCircle, Play, Download, Mail, Phone } from "lucide-react";
 const Index = () => {
   return (
     <div className="min-h-screen bg-calcuu-white font-inter">
+      {/* Navigation Menu */}
+      <nav className="sticky top-0 z-50 bg-calcuu-white/95 backdrop-blur-sm border-b border-calcuu-detail">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            {/* Logo */}
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 lg:w-10 lg:h-10 bg-calcuu-primary rounded-lg flex items-center justify-center">
+                <div className="w-5 h-5 lg:w-6 lg:h-6 bg-calcuu-white rounded opacity-90 flex items-center justify-center">
+                  <div className="w-3 h-3 lg:w-4 lg:h-4 bg-calcuu-primary rounded-sm"></div>
+                </div>
+              </div>
+              <span className="text-xl lg:text-2xl font-bold text-calcuu-secondary">
+                Calcuu
+              </span>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
+              <a
+                href="#features"
+                className="text-calcuu-secondary hover:text-calcuu-primary transition-colors font-medium"
+              >
+                Functies
+              </a>
+              <a
+                href="#demo"
+                className="text-calcuu-secondary hover:text-calcuu-primary transition-colors font-medium"
+              >
+                Demo
+              </a>
+              <a
+                href="#pricing"
+                className="text-calcuu-secondary hover:text-calcuu-primary transition-colors font-medium"
+              >
+                Prijzen
+              </a>
+              <a
+                href="#download"
+                className="text-calcuu-secondary hover:text-calcuu-primary transition-colors font-medium"
+              >
+                Download
+              </a>
+            </div>
+
+            {/* CTA Button */}
+            <div className="flex items-center gap-4">
+              <Button
+                size="sm"
+                className="hidden sm:inline-flex bg-calcuu-accent hover:bg-calcuu-accent/90 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+              >
+                Probeer Gratis
+              </Button>
+
+              {/* Mobile Menu Button */}
+              <button className="md:hidden p-2 text-calcuu-secondary hover:text-calcuu-primary transition-colors">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-calcuu-white to-calcuu-background">
-        <div className="container mx-auto px-4 py-16 lg:py-24">
+        <div className="container mx-auto px-4 py-12 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-3 space-y-8">
-              {/* Logo */}
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-calcuu-primary rounded-lg flex items-center justify-center">
-                  <div className="w-8 h-8 bg-calcuu-white rounded opacity-90 flex items-center justify-center">
-                    <div className="w-5 h-5 bg-calcuu-primary rounded-sm"></div>
-                  </div>
-                </div>
-                <span className="text-2xl font-bold text-calcuu-secondary">
-                  Calcuu
-                </span>
-              </div>
-
               {/* Headlines */}
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
@@ -71,7 +133,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 lg:py-24 bg-calcuu-white">
+      <section id="features" className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-calcuu-secondary mb-6 tracking-tight">
@@ -118,7 +180,7 @@ const Index = () => {
       </section>
 
       {/* Demo Video Section */}
-      <section className="py-16 lg:py-24 bg-calcuu-background">
+      <section id="demo" className="py-16 lg:py-24 bg-calcuu-background">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary mb-4">
             Zie Calcuu in actie
@@ -216,7 +278,7 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 lg:py-24 bg-calcuu-white">
+      <section id="pricing" className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-16">
             Eenvoudige prijsstelling
@@ -273,7 +335,10 @@ const Index = () => {
       </section>
 
       {/* App Download Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-calcuu-background to-calcuu-white">
+      <section
+        id="download"
+        className="py-16 lg:py-24 bg-gradient-to-br from-calcuu-background to-calcuu-white"
+      >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary mb-8">
