@@ -586,12 +586,12 @@ const Index = () => {
             </p>
 
             {/* 6 Feature Boxes */}
-            <div className="relative">
-              {/* Center to sides glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-calcuu-primary/10 to-transparent blur-xl"></div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-calcuu-primary/5 via-transparent to-calcuu-primary/5 blur-lg"></div>
+            <div className="relative mx-8">
+              {/* Center to sides glow effect - wider spread */}
+              <div className="absolute -inset-x-16 -inset-y-8 bg-gradient-to-r from-calcuu-primary/5 via-calcuu-primary/15 to-calcuu-primary/5 blur-2xl"></div>
+              <div className="absolute -inset-x-20 -inset-y-4 bg-gradient-to-r from-calcuu-primary/3 via-transparent to-calcuu-primary/3 blur-xl"></div>
 
-              <div className="relative grid grid-cols-3 grid-rows-2 gap-6 max-w-6xl mx-auto">
+              <div className="relative grid grid-cols-3 grid-rows-2 gap-12 max-w-full mx-auto px-4">
                 {[
                   {
                     icon: (
