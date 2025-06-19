@@ -283,7 +283,7 @@ const Index = () => {
       <section id="features" className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-calcuu-secondary mb-6 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-calcuu-primary mb-6 tracking-tight">
               Bereken en verstuur de offerte direct op locatie.
             </h2>
             <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-3xl mx-auto">
@@ -411,40 +411,39 @@ const Index = () => {
       <section className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-16">
-            Wij zijn benieuwd of dit ook voor jou geldt?
+            Wij zijn benieuwd of jij dit ook vindt?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                questionStarter: "Herken jij ook dat ...",
-                question: "Offerte maken een saai en tijdrovend proces is?",
+                question:
+                  "Het maken van een offerte een saai en tijdrovend proces is?",
                 description:
                   "Meer tijd voor schilderen, minder tijd achter de computer",
+                isMiddle: false,
               },
               {
-                questionStarter: "Vindt jij ook dat ...",
                 question:
                   "Het inschatten van materiaal en uren best wel moeilijk is?",
                 description:
                   "Consistente offertes en betere calculaties voor je team",
+                isMiddle: true,
               },
               {
-                questionStarter: "Ervaar jij ook dat ...",
                 question:
                   "Je per project niet altijd direct inzicht hebt in al je kosten?",
                 description:
                   "Ook voor kleinere klussen altijd een professionele offerte",
+                isMiddle: false,
               },
             ].map((audience, index) => (
-              <div key={index} className="text-center p-6">
+              <div
+                key={index}
+                className={`text-center p-6 bg-calcuu-primary/5 ${audience.isMiddle ? "flex flex-col" : ""}`}
+              >
                 <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                  {audience.questionStarter}
-                </h3>
-                <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                  <span className="text-calcuu-primary">
-                    {audience.question}
-                  </span>
+                  {audience.question}
                 </h3>
                 <p className="text-calcuu-text-sub leading-relaxed">
                   {audience.description}
