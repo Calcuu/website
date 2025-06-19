@@ -577,15 +577,15 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-16">
-              Waarom kiezen voor Calcuu?
+              Waarom Calcuu voor jou de beste keuze is!
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                "Bespaar uren per offerte",
-                "Geen rekenmistoeken meer",
+                "Je bespaard heel veel tijd",
+                "Maakt geen rekenfouten meer",
                 "Professionele uitstraling",
-                "Werkt offline",
+                "Werkt zowel online als offline",
                 "Direct ter plekke offreren",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-4 p-4">
