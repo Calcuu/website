@@ -855,7 +855,7 @@ const Index = () => {
 
           <div className="max-w-md mx-auto">
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-xl border border-calcuu-detail relative">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-calcuu-success text-white font-semibold px-4 py-1">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-calcuu-primary text-white font-semibold px-4 py-1">
                 50% KORTING
               </Badge>
 
