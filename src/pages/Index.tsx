@@ -104,7 +104,7 @@ const Index = () => {
               <div className="pt-4 flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-calcuu-success hover:bg-calcuu-success/90 text-white font-semibold text-lg px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-12"
+                  className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold text-lg px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-12"
                 >
                   Probeer Gratis
                 </Button>
