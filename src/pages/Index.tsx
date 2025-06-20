@@ -193,7 +193,7 @@ const Index = () => {
             {/* Block 2 */}
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
-                <div className="w-12 h-12 bg-calcuu-success/10 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-calcuu-primary/10 rounded-xl flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-calcuu-success"
                     fill="none"
