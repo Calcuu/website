@@ -889,7 +889,7 @@ const Index = () => {
 
                 <Button
                   size="lg"
-                  className="w-full bg-calcuu-success hover:bg-calcuu-success/90 text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Start Vandaag
                 </Button>
