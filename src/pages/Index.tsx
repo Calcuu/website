@@ -56,7 +56,7 @@ const Index = () => {
             <div className="flex items-center gap-4">
               <Button
                 size="sm"
-                className="hidden sm:inline-flex bg-calcuu-success hover:bg-calcuu-success/90 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                className="hidden sm:inline-flex bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
               >
                 Probeer Gratis
               </Button>
