@@ -1019,7 +1019,7 @@ const Index = () => {
             {/* Professional Plan */}
             <div
               className="rounded-2xl p-8 shadow-lg border-2 border-calcuu-primary relative h-[600px] flex flex-col"
-              style={{ backgroundColor: "#ede8f3" }}
+              style={{ backgroundColor: "#f8f6fc" }}
             >
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-calcuu-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Meest Populair
