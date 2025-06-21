@@ -863,6 +863,48 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Special Offer Banner */}
+      <div className="bg-gradient-to-r from-calcuu-primary via-calcuu-primary to-purple-700 text-white py-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+                <span className="text-sm font-bold uppercase tracking-wide">
+                  Beperkte Tijd
+                </span>
+                <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+              </div>
+              <div className="text-lg sm:text-xl font-bold">
+                🎉 <span className="text-yellow-300">50% KORTING</span> op alle
+                jaarlijkse abonnementen!
+              </div>
+              <div className="text-sm bg-white/20 px-3 py-1 rounded-full">
+                ⏰ Nog slechts beperkt beschikbaar
+              </div>
+            </div>
+            <div className="mt-2 text-sm opacity-90">
+              Start vandaag en bespaar honderden euro's per jaar ✨
+            </div>
+          </div>
+        </div>
+
+        {/* Animated background elements */}
+        <div
+          className="absolute top-0 left-0 w-20 h-20 bg-white/5 rounded-full -translate-x-10 -translate-y-10 animate-bounce"
+          style={{ animationDelay: "0s", animationDuration: "3s" }}
+        ></div>
+        <div
+          className="absolute top-0 right-0 w-16 h-16 bg-yellow-400/20 rounded-full translate-x-8 -translate-y-8 animate-bounce"
+          style={{ animationDelay: "1s", animationDuration: "4s" }}
+        ></div>
+        <div
+          className="absolute bottom-0 left-1/3 w-12 h-12 bg-white/10 rounded-full animate-bounce"
+          style={{ animationDelay: "2s", animationDuration: "5s" }}
+        ></div>
+      </div>
+
       {/* Pricing Section */}
       <section id="pricing" className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
