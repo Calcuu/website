@@ -871,30 +871,11 @@ const Index = () => {
             <div className="text-lg sm:text-xl font-bold">
               Nu tijdelijk{" "}
               <span
-                id="discount-text"
-                className="inline-block text-yellow-300"
-                ref={(el) => {
-                  if (el && !el.dataset.observed) {
-                    el.dataset.observed = "true";
-                    const observer = new IntersectionObserver(
-                      (entries) => {
-                        entries.forEach((entry) => {
-                          if (entry.isIntersecting) {
-                            setTimeout(() => {
-                              el.style.animation = "bounce 1s ease-in-out";
-                              el.style.animationIterationCount = "2";
-                            }, 3000);
-                            observer.unobserve(el);
-                          }
-                        });
-                      },
-                      {
-                        threshold: 0.5,
-                        rootMargin: "0px 0px -10% 0px",
-                      },
-                    );
-                    observer.observe(el);
-                  }
+                className="inline-block text-yellow-300 animate-bounce"
+                style={{
+                  animationDelay: "3s",
+                  animationIterationCount: "2",
+                  animationDuration: "1s",
                 }}
               >
                 50% korting
