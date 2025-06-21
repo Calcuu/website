@@ -719,11 +719,11 @@ const Index = () => {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
-                    Bewezen Nauwkeurigheid
+                    Hanteer je eigen prijzen
                   </h3>
                   <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
-                    Onze algoritmes zijn getest door duizenden schilders. Minder
-                    dan 5% afwijking in materiaalberekeningen.
+                    Stel je eigen uurtarieven en materiaalkosten in. Pas prijzen
+                    aan per project of klant voor maximale flexibiliteit.
                   </p>
                 </div>
               </div>
