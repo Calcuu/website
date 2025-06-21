@@ -785,11 +785,11 @@ const Index = () => {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
-                    Persoonlijke Support
+                    Inzicht en overzicht
                   </h3>
                   <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
-                    Direct contact met Nederlandse ontwikkelaars. Geen chatbots,
-                    maar echte hulp van vakgenoten.
+                    Bekijk al je projecten, winst per klus en materiaalverbruik
+                    in duidelijke overzichten. Zo groei je bewust.
                   </p>
                 </div>
               </div>
