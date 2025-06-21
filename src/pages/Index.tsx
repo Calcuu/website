@@ -1076,7 +1076,7 @@ const Index = () => {
             </div>
 
             {/* Enterprise Plan */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-calcuu-detail flex flex-col">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-calcuu-detail h-[600px] flex flex-col">
               <h3 className="text-2xl font-bold text-calcuu-secondary mb-2">
                 Enterprise
               </h3>
@@ -1089,6 +1089,14 @@ const Index = () => {
                 Voor grote schildersbedrijven met meerdere teams en complexe
                 behoeften
               </p>
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full border-2 border-calcuu-secondary text-calcuu-secondary hover:bg-calcuu-secondary hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+              >
+                Contact Ons
+              </Button>
 
               <div className="space-y-4 flex-grow">
                 <p className="font-semibold text-calcuu-secondary">
@@ -1111,14 +1119,6 @@ const Index = () => {
                   ))}
                 </div>
               </div>
-
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-2 border-calcuu-secondary text-calcuu-secondary hover:bg-calcuu-secondary hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mt-6"
-              >
-                Contact Ons
-              </Button>
             </div>
           </div>
         </div>
