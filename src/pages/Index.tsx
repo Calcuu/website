@@ -1036,7 +1036,7 @@ const Index = () => {
                 </div>
                 <div className="yearly-price">
                   <span className="text-4xl font-bold text-calcuu-secondary">
-                    €17.50
+                    €35
                   </span>
                   <span className="text-calcuu-text-sub ml-2">per maand</span>
                   <div className="text-sm text-red-500 font-semibold">
