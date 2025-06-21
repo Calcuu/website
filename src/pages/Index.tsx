@@ -868,48 +868,20 @@ const Index = () => {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Simple Pricing Plans for
+            <h2 className="text-4xl md:text-5xl font-bold text-calcuu-secondary mb-4">
+              Transparante Prijzen voor
               <br />
-              Complex Accounting Tasks
+              Professionele Schilders
             </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Whether you're just starting out or scaling globally,
+            <p className="text-lg text-calcuu-text-sub mb-8 max-w-2xl mx-auto">
+              Of je nu net begint of een gevestigd schildersbedrijf hebt,
               <br />
-              we've got you covered with transparent pricing plans.
+              Calcuu groeit mee met jouw ambities en behoeften.
             </p>
-
-            {/* Review Badges */}
-            <div className="flex justify-center items-center gap-6 mb-12">
-              <div className="flex items-center gap-2">
-                <div className="flex items-center gap-1">
-                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-600 text-xs font-bold">G2</span>
-                  </div>
-                  <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
-                    <span className="text-orange-600 text-xs font-bold">
-                      CS
-                    </span>
-                  </div>
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                    <span className="text-green-600 text-xs font-bold">T</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
-                  <span className="text-white text-xs">📐</span>
-                </div>
-                <div className="flex text-yellow-400">
-                  <span>⭐⭐⭐⭐⭐</span>
-                </div>
-                <span className="text-sm text-gray-600">4.7 Star Rating</span>
-              </div>
-            </div>
 
             {/* Billing Toggle */}
             <div className="flex items-center justify-center gap-4 mb-12">
-              <span className="text-gray-700">Monthly</span>
+              <span className="text-calcuu-secondary">Maandelijks</span>
               <div className="relative">
                 <input
                   type="checkbox"
@@ -921,25 +893,22 @@ const Index = () => {
                       document.querySelectorAll(".monthly-price");
                     const yearlyPrices =
                       document.querySelectorAll(".yearly-price");
-                    const monthlyLabels =
-                      document.querySelectorAll(".monthly-label");
-                    const yearlyLabels =
-                      document.querySelectorAll(".yearly-label");
+                    const toggle = document.querySelector(
+                      "#billing-toggle + label > div",
+                    );
 
                     if (isAnnual) {
                       monthlyPrices.forEach((p) => p.classList.add("hidden"));
                       yearlyPrices.forEach((p) => p.classList.remove("hidden"));
-                      monthlyLabels.forEach((l) => l.classList.add("hidden"));
-                      yearlyLabels.forEach((l) => l.classList.remove("hidden"));
+                      toggle.style.transform = "translateX(24px)";
+                      toggle.parentElement.style.backgroundColor = "#5B29DE";
                     } else {
                       monthlyPrices.forEach((p) =>
                         p.classList.remove("hidden"),
                       );
                       yearlyPrices.forEach((p) => p.classList.add("hidden"));
-                      monthlyLabels.forEach((l) =>
-                        l.classList.remove("hidden"),
-                      );
-                      yearlyLabels.forEach((l) => l.classList.add("hidden"));
+                      toggle.style.transform = "translateX(0px)";
+                      toggle.parentElement.style.backgroundColor = "#e5e7eb";
                     }
                   }}
                 />
@@ -950,9 +919,9 @@ const Index = () => {
                   <div className="bg-white w-4 h-4 rounded-full shadow-sm transform transition-transform duration-300"></div>
                 </label>
               </div>
-              <span className="text-gray-700">Annually</span>
-              <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                SAVE 20%
+              <span className="text-calcuu-secondary">Jaarlijks</span>
+              <span className="bg-calcuu-success text-white px-3 py-1 rounded-full text-xs font-semibold">
+                BESPAAR 20%
               </span>
             </div>
           </div>
