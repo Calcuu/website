@@ -966,19 +966,21 @@ const Index = () => {
                 Starter
               </h3>
               <div className="mb-6">
-                <div className="monthly-price">
+                <div className="monthly-price hidden">
                   <span className="text-4xl font-bold text-calcuu-secondary">
                     €15
                   </span>
                   <span className="text-calcuu-text-sub ml-2">per maand</span>
                 </div>
-                <div className="yearly-price hidden">
+                <div className="yearly-price">
                   <span className="text-4xl font-bold text-calcuu-secondary">
-                    €7.50
+                    €0
                   </span>
-                  <span className="text-calcuu-text-sub ml-2">per maand</span>
-                  <div className="text-sm text-red-500 font-semibold">
-                    50% KORTING!
+                  <span className="text-calcuu-text-sub ml-2">
+                    14 dagen gratis
+                  </span>
+                  <div className="text-sm text-green-500 font-semibold">
+                    Daarna €7.50/maand
                   </div>
                 </div>
               </div>
