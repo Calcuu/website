@@ -887,8 +887,10 @@ const Index = () => {
             const observer = new IntersectionObserver((entries) => {
               entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                  // Add bounce animation
-                  discountElement.style.animation = 'bounce 1s ease-in-out 2';
+                  // Wait 3 seconds before starting bounce animation
+                  setTimeout(() => {
+                    discountElement.style.animation = 'bounce 1s ease-in-out 2';
+                  }, 3000);
                   // Remove observer after first trigger
                   observer.unobserve(discountElement);
                 }
