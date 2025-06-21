@@ -1017,7 +1017,7 @@ const Index = () => {
             </div>
 
             {/* Professional Plan */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-calcuu-primary relative flex flex-col">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-calcuu-primary relative h-[600px] flex flex-col">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-calcuu-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Meest Populair
               </div>
@@ -1045,6 +1045,13 @@ const Index = () => {
                 Voor ervaren schilders die hun bedrijf willen laten groeien
               </p>
 
+              <Button
+                size="lg"
+                className="w-full bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+              >
+                Start Nu
+              </Button>
+
               <div className="space-y-4 flex-grow">
                 <p className="font-semibold text-calcuu-secondary">
                   Alles van "Starter", plus:
@@ -1066,13 +1073,6 @@ const Index = () => {
                   ))}
                 </div>
               </div>
-
-              <Button
-                size="lg"
-                className="w-full bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 mt-6"
-              >
-                Start Nu
-              </Button>
             </div>
 
             {/* Enterprise Plan */}
