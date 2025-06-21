@@ -807,7 +807,7 @@ const Index = () => {
                   }
                 }}
               >
-                Alles in een oplossing
+                Probeer de App Gratis
               </Button>
             </div>
           </div>
