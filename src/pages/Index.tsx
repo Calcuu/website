@@ -961,7 +961,7 @@ const Index = () => {
           {/* Pricing Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Starter Plan */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-calcuu-detail flex flex-col">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-calcuu-detail h-[600px] flex flex-col">
               <h3 className="text-2xl font-bold text-calcuu-secondary mb-2">
                 Starter
               </h3>
@@ -987,6 +987,14 @@ const Index = () => {
                 Perfect voor startende schilders die hun eerste stappen zetten
               </p>
 
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+              >
+                Probeer Gratis
+              </Button>
+
               <div className="space-y-4 flex-grow">
                 <p className="font-semibold text-calcuu-secondary">
                   Starter functies:
@@ -1006,14 +1014,6 @@ const Index = () => {
                   ))}
                 </div>
               </div>
-
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mt-6"
-              >
-                Probeer Gratis
-              </Button>
             </div>
 
             {/* Professional Plan */}
