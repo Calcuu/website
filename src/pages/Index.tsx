@@ -864,17 +864,12 @@ const Index = () => {
       </section>
 
       {/* Special Offer Banner */}
-      <div className="bg-gradient-to-r from-calcuu-primary via-calcuu-primary to-purple-700 text-white py-4 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-calcuu-primary via-calcuu-primary to-purple-700 text-white py-3 relative overflow-hidden mt-8">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
-            <div className="flex flex-col items-center justify-center gap-3">
-              <div className="text-xl sm:text-2xl font-bold">
-                🎉 Tijdelijk 50 procent korting op een jaarlijks abonnement
-              </div>
-            </div>
-            <div className="mt-3 text-lg opacity-90">
-              Meld je aan en bespaar veel tijd en geld.
+            <div className="text-lg sm:text-xl font-bold">
+              Tijdelijk 50 procent korting op een jaarlijks abonnement
             </div>
           </div>
         </div>
