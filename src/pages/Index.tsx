@@ -814,7 +814,10 @@ const Index = () => {
         </div>
       </section>
       {/* Contact/Demo Section */}
-      <section className="py-16 lg:py-24 bg-calcuu-primary/80">
+      <section
+        className="py-16 lg:py-24"
+        style={{ backgroundColor: "#dbd2e8" }}
+      >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Left Side - Text and Buttons */}
