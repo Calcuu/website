@@ -785,7 +785,7 @@ const Index = () => {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
-                    Inzicht en overzicht
+                    Inzicht en Overzicht
                   </h3>
                   <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
                     Bekijk al je projecten, winst per klus en materiaalverbruik
