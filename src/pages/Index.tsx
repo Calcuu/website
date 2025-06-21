@@ -824,7 +824,7 @@ const Index = () => {
                   Benieuwd hoe Calcuu jou kan helpen?
                 </span>{" "}
                 <span className="text-calcuu-primary font-bold">
-                  Neem vandaag contact met ons op.
+                  Heb je vragen? Stel ze hier!
                 </span>
               </h2>
 
