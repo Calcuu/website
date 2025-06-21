@@ -984,9 +984,6 @@ const Index = () => {
                   <span className="text-calcuu-text-sub ml-2">
                     14 dagen gratis
                   </span>
-                  <div className="text-sm text-green-500 font-semibold">
-                    Daarna €7.50/maand
-                  </div>
                 </div>
               </div>
               <p className="text-calcuu-text-sub mb-6">
