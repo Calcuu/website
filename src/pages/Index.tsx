@@ -871,8 +871,9 @@ const Index = () => {
             <div className="text-lg sm:text-xl font-bold">
               Nu tijdelijk{" "}
               <span
-                className="inline-block text-yellow-300 animate-bounce"
+                className="inline-block animate-bounce"
                 style={{
+                  color: "#ff9720",
                   animationDelay: "3s",
                   animationIterationCount: "2",
                   animationDuration: "1s",
