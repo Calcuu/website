@@ -719,7 +719,7 @@ const Index = () => {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
-                    Hanteer je eigen prijzen
+                    Hanteer je Eigen Prijzen
                   </h3>
                   <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
                     Stel je eigen uurtarieven en materiaalkosten in. Pas prijzen
