@@ -868,24 +868,13 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-              <div className="flex items-center gap-2">
-                <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
-                <span className="text-sm font-bold uppercase tracking-wide">
-                  Beperkte Tijd
-                </span>
-                <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
-              </div>
-              <div className="text-lg sm:text-xl font-bold">
-                🎉 <span className="text-yellow-300">50% KORTING</span> op alle
-                jaarlijkse abonnementen!
-              </div>
-              <div className="text-sm bg-white/20 px-3 py-1 rounded-full">
-                ⏰ Nog slechts beperkt beschikbaar
+            <div className="flex flex-col items-center justify-center gap-3">
+              <div className="text-xl sm:text-2xl font-bold">
+                🎉 Tijdelijk 50 procent korting op een jaarlijks abonnement
               </div>
             </div>
-            <div className="mt-2 text-sm opacity-90">
-              Start vandaag en bespaar honderden euro's per jaar ✨
+            <div className="mt-3 text-lg opacity-90">
+              Meld je aan en bespaar veel tijd en geld.
             </div>
           </div>
         </div>
