@@ -918,6 +918,7 @@ const Index = () => {
                   type="checkbox"
                   id="billing-toggle"
                   className="sr-only"
+                  defaultChecked
                   onChange={(e) => {
                     const isAnnual = e.target.checked;
                     const monthlyPrices =
@@ -945,9 +946,9 @@ const Index = () => {
                 />
                 <label
                   htmlFor="billing-toggle"
-                  className="flex items-center cursor-pointer bg-gray-200 w-12 h-6 rounded-full p-1 transition-all duration-300"
+                  className="flex items-center cursor-pointer bg-calcuu-primary w-12 h-6 rounded-full p-1 transition-all duration-300"
                 >
-                  <div className="bg-white w-4 h-4 rounded-full shadow-sm transform transition-transform duration-300"></div>
+                  <div className="bg-white w-4 h-4 rounded-full shadow-sm transform translate-x-6 transition-transform duration-300"></div>
                 </label>
               </div>
               <span className="text-calcuu-secondary">Jaarlijks</span>
