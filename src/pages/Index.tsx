@@ -869,20 +869,45 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
             <div className="text-lg sm:text-xl font-bold">
-              Tijdelijk{" "}
-              <span
-                className="animate-bounce"
-                style={{
-                  animationIterationCount: "2",
-                  animationDuration: "1s",
-                }}
-              >
+              Nu tijdelijk{" "}
+              <span id="discount-text" className="inline-block">
                 50% korting
               </span>{" "}
               op een jaarlijks abonnement
             </div>
           </div>
         </div>
+
+        <script>{`
+          // Scroll-triggered animation for discount text
+          const observeDiscountText = () => {
+            const discountElement = document.getElementById('discount-text');
+            if (!discountElement) return;
+
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  // Add bounce animation
+                  discountElement.style.animation = 'bounce 1s ease-in-out 2';
+                  // Remove observer after first trigger
+                  observer.unobserve(discountElement);
+                }
+              });
+            }, {
+              threshold: 0.5,
+              rootMargin: '0px 0px -10% 0px'
+            });
+
+            observer.observe(discountElement);
+          };
+
+          // Run when DOM is loaded
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', observeDiscountText);
+          } else {
+            observeDiscountText();
+          }
+        `}</script>
 
         {/* Animated background elements */}
         <div
