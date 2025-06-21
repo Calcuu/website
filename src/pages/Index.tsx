@@ -451,6 +451,15 @@ const Index = () => {
               </div>
             ))}
           </div>
+
+          {/* Subtitle */}
+          <div className="text-center mt-16">
+            <p className="text-xl md:text-2xl font-medium text-calcuu-secondary">
+              Dit kan anders,{" "}
+              <span className="text-calcuu-primary">sneller</span> en
+              makkelijker.
+            </p>
+          </div>
         </div>
       </section>
 
