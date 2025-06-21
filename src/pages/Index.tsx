@@ -752,7 +752,7 @@ const Index = () => {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
-                    alles op één plek
+                    Alles-op-één Plek
                   </h3>
                   <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
                     Geen gedoe meer met verschillende apps. Tekenen, calculeren,
