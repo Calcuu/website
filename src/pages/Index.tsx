@@ -869,7 +869,17 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
             <div className="text-lg sm:text-xl font-bold">
-              Tijdelijk 50 procent korting op een jaarlijks abonnement
+              Tijdelijk{" "}
+              <span
+                className="animate-bounce"
+                style={{
+                  animationIterationCount: "2",
+                  animationDuration: "1s",
+                }}
+              >
+                50% korting
+              </span>{" "}
+              op een jaarlijks abonnement
             </div>
           </div>
         </div>
