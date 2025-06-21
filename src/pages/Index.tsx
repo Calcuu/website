@@ -1115,9 +1115,6 @@ const Index = () => {
                     </div>
                   ))}
                 </div>
-                <button className="text-calcuu-primary text-sm font-medium hover:underline">
-                  Meer informatie
-                </button>
               </div>
             </div>
           </div>
