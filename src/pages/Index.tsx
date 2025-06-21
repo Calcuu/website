@@ -839,12 +839,6 @@ const Index = () => {
                 >
                   Boek een Demo
                 </Button>
-                <Button
-                  size="lg"
-                  className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold text-lg px-8 rounded-lg transition-all duration-300 h-12"
-                >
-                  Probeer de app Gratis
-                </Button>
               </div>
             </div>
 
