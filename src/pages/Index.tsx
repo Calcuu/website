@@ -890,7 +890,10 @@ const Index = () => {
       </div>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-16 lg:py-24 bg-gray-50">
+      <section
+        id="pricing"
+        className="pt-12 pb-16 lg:pt-19 lg:pb-24 bg-gray-50"
+      >
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-16">
