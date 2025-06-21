@@ -752,11 +752,11 @@ const Index = () => {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
-                    Nederlandse Standaarden
+                    alles op één plek
                   </h3>
                   <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
-                    Speciaal ontwikkeld voor Nederlandse schilders. Inclusief
-                    BTW-berekeningen en lokale regelgeving.
+                    Geen gedoe meer met verschillende apps. Tekenen, calculeren,
+                    offreren en klantenbeheer in één overzichtelijke app.
                   </p>
                 </div>
               </div>
