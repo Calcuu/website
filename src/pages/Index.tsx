@@ -794,6 +794,22 @@ const Index = () => {
                 </div>
               </div>
             </div>
+
+            {/* CTA Button */}
+            <div className="text-center mt-16">
+              <Button
+                size="lg"
+                className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold text-lg px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-12"
+                onClick={() => {
+                  const downloadSection = document.getElementById("download");
+                  if (downloadSection) {
+                    downloadSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                Alles in een oplossing
+              </Button>
+            </div>
           </div>
         </div>
       </section>
