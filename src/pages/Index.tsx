@@ -864,56 +864,241 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-16 lg:py-24 bg-calcuu-white">
+      <section id="pricing" className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-16">
-            Eenvoudige prijsstelling
-          </h2>
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Simple Pricing Plans for
+              <br />
+              Complex Accounting Tasks
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+              Whether you're just starting out or scaling globally,
+              <br />
+              we've got you covered with transparent pricing plans.
+            </p>
 
-          <div className="max-w-md mx-auto">
-            <div className="bg-calcuu-white rounded-2xl p-8 shadow-xl border border-calcuu-detail relative">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-calcuu-primary text-white font-semibold px-4 py-1">
-                50% KORTING
-              </Badge>
-
-              <div className="text-center space-y-6">
-                <div className="space-y-2">
-                  <div className="text-calcuu-text-sub line-through text-xl">
-                    €50
+            {/* Review Badges */}
+            <div className="flex justify-center items-center gap-6 mb-12">
+              <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-blue-600 text-xs font-bold">G2</span>
                   </div>
-                  <div className="text-5xl font-bold text-calcuu-success">
-                    €25
+                  <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                    <span className="text-orange-600 text-xs font-bold">
+                      CS
+                    </span>
                   </div>
-                  <div className="text-calcuu-text-sub">per maand</div>
+                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                    <span className="text-green-600 text-xs font-bold">T</span>
+                  </div>
                 </div>
-
-                <div className="text-sm text-calcuu-text-sub">
-                  Eerste maand gratis proberen
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
+                  <span className="text-white text-xs">📐</span>
                 </div>
+                <div className="flex text-yellow-400">
+                  <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <span className="text-sm text-gray-600">4.7 Star Rating</span>
+              </div>
+            </div>
 
-                <div className="space-y-3 text-left">
+            {/* Billing Toggle */}
+            <div className="flex items-center justify-center gap-4 mb-12">
+              <span className="text-gray-700">Monthly</span>
+              <div className="relative">
+                <input
+                  type="checkbox"
+                  id="billing-toggle"
+                  className="sr-only"
+                  onChange={(e) => {
+                    const isAnnual = e.target.checked;
+                    const monthlyPrices =
+                      document.querySelectorAll(".monthly-price");
+                    const yearlyPrices =
+                      document.querySelectorAll(".yearly-price");
+                    const monthlyLabels =
+                      document.querySelectorAll(".monthly-label");
+                    const yearlyLabels =
+                      document.querySelectorAll(".yearly-label");
+
+                    if (isAnnual) {
+                      monthlyPrices.forEach((p) => p.classList.add("hidden"));
+                      yearlyPrices.forEach((p) => p.classList.remove("hidden"));
+                      monthlyLabels.forEach((l) => l.classList.add("hidden"));
+                      yearlyLabels.forEach((l) => l.classList.remove("hidden"));
+                    } else {
+                      monthlyPrices.forEach((p) =>
+                        p.classList.remove("hidden"),
+                      );
+                      yearlyPrices.forEach((p) => p.classList.add("hidden"));
+                      monthlyLabels.forEach((l) =>
+                        l.classList.remove("hidden"),
+                      );
+                      yearlyLabels.forEach((l) => l.classList.add("hidden"));
+                    }
+                  }}
+                />
+                <label
+                  htmlFor="billing-toggle"
+                  className="flex items-center cursor-pointer bg-gray-200 w-12 h-6 rounded-full p-1 transition-all duration-300"
+                >
+                  <div className="bg-white w-4 h-4 rounded-full shadow-sm transform transition-transform duration-300"></div>
+                </label>
+              </div>
+              <span className="text-gray-700">Annually</span>
+              <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                SAVE 20%
+              </span>
+            </div>
+          </div>
+
+          {/* Pricing Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Effective Plan */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Effective
+              </h3>
+              <div className="mb-6">
+                <div className="monthly-price">
+                  <span className="text-4xl font-bold text-gray-900">€5</span>
+                  <span className="text-gray-600 ml-2">per user/mo</span>
+                </div>
+                <div className="yearly-price hidden">
+                  <span className="text-4xl font-bold text-gray-900">€4</span>
+                  <span className="text-gray-600 ml-2">per user/mo</span>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-6">
+                All you need for an efficient expense management
+              </p>
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+              >
+                Book a Demo
+              </Button>
+
+              <div className="space-y-4">
+                <p className="font-semibold text-gray-900">
+                  Effective features:
+                </p>
+                <div className="space-y-3 text-sm">
                   {[
-                    "Onbeperkte projecten",
-                    "Alle functies inbegrepen",
-                    "Email ondersteuning",
+                    "Expense management",
+                    "Custom workflow approvals",
+                    "Error and fraud detection",
+                    "Accounting & ERP integrations",
+                    "Company credit cards",
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-calcuu-success" />
-                      <span className="text-calcuu-secondary">{feature}</span>
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <span className="text-gray-700">{feature}</span>
                     </div>
                   ))}
                 </div>
+                <button className="text-green-500 text-sm font-medium hover:underline">
+                  Learn more
+                </button>
+              </div>
+            </div>
 
-                <Button
-                  size="lg"
-                  className="w-full bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Start Vandaag
-                </Button>
+            {/* Premium Plan */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-green-500 relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                Most Popular
+              </div>
+              <h3 className="text-2xl font-bold text-green-600 mb-2">
+                Premium
+              </h3>
+              <div className="mb-6">
+                <div className="monthly-price">
+                  <span className="text-4xl font-bold text-gray-900">€6</span>
+                  <span className="text-gray-600 ml-2">per user/mo</span>
+                </div>
+                <div className="yearly-price hidden">
+                  <span className="text-4xl font-bold text-gray-900">
+                    €4.80
+                  </span>
+                  <span className="text-gray-600 ml-2">per user/mo</span>
+                </div>
+              </div>
+              <p className="text-gray-600 mb-6">
+                For advanced compliance with local reporting requirements
+              </p>
+              <Button
+                size="lg"
+                className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+              >
+                Book a Demo
+              </Button>
 
-                <p className="text-sm text-calcuu-text-sub">
-                  Beperkte tijd aanbieding
+              <div className="space-y-4">
+                <p className="font-semibold text-gray-900">
+                  Everything in "Effective", plus:
                 </p>
+                <div className="space-y-3 text-sm">
+                  {[
+                    "Per diems module",
+                    "CO2 registration module",
+                    "GoBD and AEAT compliance",
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <span className="text-gray-700">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+                <button className="text-green-500 text-sm font-medium hover:underline">
+                  Learn more
+                </button>
+              </div>
+            </div>
+
+            {/* Custom Plan */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Custom</h3>
+              <div className="mb-6">
+                <span className="text-lg text-gray-600">
+                  Contact sales for pricing
+                </span>
+              </div>
+              <p className="text-gray-600 mb-6">
+                A fully customized expense management solution
+              </p>
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full border-2 border-gray-300 text-gray-700 hover:bg-gray-100 font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+              >
+                Contact Us
+              </Button>
+
+              <div className="space-y-4">
+                <p className="font-semibold text-gray-900">
+                  Everything in "Premium", plus:
+                </p>
+                <div className="space-y-3 text-sm">
+                  {[
+                    "SSO for user & workflow control",
+                    "Access to SpendControl's API",
+                    "Company logo in the app",
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                      <span className="text-gray-700">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+                <button className="text-green-500 text-sm font-medium hover:underline">
+                  Learn more
+                </button>
               </div>
             </div>
           </div>
