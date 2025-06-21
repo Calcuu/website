@@ -870,46 +870,39 @@ const Index = () => {
           <div className="text-center">
             <div className="text-lg sm:text-xl font-bold">
               Nu tijdelijk{" "}
-              <span id="discount-text" className="inline-block">
+              <span
+                id="discount-text"
+                className="inline-block text-yellow-300"
+                ref={(el) => {
+                  if (el && !el.dataset.observed) {
+                    el.dataset.observed = "true";
+                    const observer = new IntersectionObserver(
+                      (entries) => {
+                        entries.forEach((entry) => {
+                          if (entry.isIntersecting) {
+                            setTimeout(() => {
+                              el.style.animation = "bounce 1s ease-in-out";
+                              el.style.animationIterationCount = "2";
+                            }, 3000);
+                            observer.unobserve(el);
+                          }
+                        });
+                      },
+                      {
+                        threshold: 0.5,
+                        rootMargin: "0px 0px -10% 0px",
+                      },
+                    );
+                    observer.observe(el);
+                  }
+                }}
+              >
                 50% korting
               </span>{" "}
               op een jaarlijks abonnement
             </div>
           </div>
         </div>
-
-        <script>{`
-          // Scroll-triggered animation for discount text
-          const observeDiscountText = () => {
-            const discountElement = document.getElementById('discount-text');
-            if (!discountElement) return;
-
-            const observer = new IntersectionObserver((entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  // Wait 3 seconds before starting bounce animation
-                  setTimeout(() => {
-                    discountElement.style.animation = 'bounce 1s ease-in-out 2';
-                  }, 3000);
-                  // Remove observer after first trigger
-                  observer.unobserve(discountElement);
-                }
-              });
-            }, {
-              threshold: 0.5,
-              rootMargin: '0px 0px -10% 0px'
-            });
-
-            observer.observe(discountElement);
-          };
-
-          // Run when DOM is loaded
-          if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', observeDiscountText);
-          } else {
-            observeDiscountText();
-          }
-        `}</script>
 
         {/* Animated background elements */}
         <div
