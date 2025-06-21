@@ -928,145 +928,162 @@ const Index = () => {
 
           {/* Pricing Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Effective Plan */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                Effective
+            {/* Starter Plan */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-calcuu-detail">
+              <h3 className="text-2xl font-bold text-calcuu-secondary mb-2">
+                Starter
               </h3>
               <div className="mb-6">
                 <div className="monthly-price">
-                  <span className="text-4xl font-bold text-gray-900">€5</span>
-                  <span className="text-gray-600 ml-2">per user/mo</span>
+                  <span className="text-4xl font-bold text-calcuu-secondary">
+                    €15
+                  </span>
+                  <span className="text-calcuu-text-sub ml-2">per maand</span>
                 </div>
                 <div className="yearly-price hidden">
-                  <span className="text-4xl font-bold text-gray-900">€4</span>
-                  <span className="text-gray-600 ml-2">per user/mo</span>
+                  <span className="text-4xl font-bold text-calcuu-secondary">
+                    €12
+                  </span>
+                  <span className="text-calcuu-text-sub ml-2">per maand</span>
                 </div>
               </div>
-              <p className="text-gray-600 mb-6">
-                All you need for an efficient expense management
+              <p className="text-calcuu-text-sub mb-6">
+                Perfect voor startende schilders die hun eerste stappen zetten
               </p>
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+                className="w-full border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
               >
-                Book a Demo
+                Probeer Gratis
               </Button>
 
               <div className="space-y-4">
-                <p className="font-semibold text-gray-900">
-                  Effective features:
+                <p className="font-semibold text-calcuu-secondary">
+                  Starter functies:
                 </p>
                 <div className="space-y-3 text-sm">
                   {[
-                    "Expense management",
-                    "Custom workflow approvals",
-                    "Error and fraud detection",
-                    "Accounting & ERP integrations",
-                    "Company credit cards",
+                    "Tot 10 projecten per maand",
+                    "Basis calculatie tools",
+                    "Eenvoudige offertes maken",
+                    "Email ondersteuning",
+                    "Basis materiaal database",
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                      <span className="text-gray-700">{feature}</span>
+                      <CheckCircle className="w-4 h-4 text-calcuu-primary" />
+                      <span className="text-calcuu-text-sub">{feature}</span>
                     </div>
                   ))}
                 </div>
-                <button className="text-green-500 text-sm font-medium hover:underline">
-                  Learn more
+                <button className="text-calcuu-primary text-sm font-medium hover:underline">
+                  Meer informatie
                 </button>
               </div>
             </div>
 
-            {/* Premium Plan */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-green-500 relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Most Popular
+            {/* Professional Plan */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-calcuu-primary relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-calcuu-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
+                Meest Populair
               </div>
-              <h3 className="text-2xl font-bold text-green-600 mb-2">
-                Premium
+              <h3 className="text-2xl font-bold text-calcuu-primary mb-2">
+                Professional
               </h3>
               <div className="mb-6">
                 <div className="monthly-price">
-                  <span className="text-4xl font-bold text-gray-900">€6</span>
-                  <span className="text-gray-600 ml-2">per user/mo</span>
+                  <span className="text-4xl font-bold text-calcuu-secondary">
+                    €35
+                  </span>
+                  <span className="text-calcuu-text-sub ml-2">per maand</span>
                 </div>
                 <div className="yearly-price hidden">
-                  <span className="text-4xl font-bold text-gray-900">
-                    €4.80
+                  <span className="text-4xl font-bold text-calcuu-secondary">
+                    €28
                   </span>
-                  <span className="text-gray-600 ml-2">per user/mo</span>
+                  <span className="text-calcuu-text-sub ml-2">per maand</span>
                 </div>
               </div>
-              <p className="text-gray-600 mb-6">
-                For advanced compliance with local reporting requirements
+              <p className="text-calcuu-text-sub mb-6">
+                Voor ervaren schilders die hun bedrijf willen laten groeien
               </p>
               <Button
                 size="lg"
-                className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+                className="w-full bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
               >
-                Book a Demo
+                Start Nu
               </Button>
 
               <div className="space-y-4">
-                <p className="font-semibold text-gray-900">
-                  Everything in "Effective", plus:
+                <p className="font-semibold text-calcuu-secondary">
+                  Alles van "Starter", plus:
                 </p>
                 <div className="space-y-3 text-sm">
                   {[
-                    "Per diems module",
-                    "CO2 registration module",
-                    "GoBD and AEAT compliance",
+                    "Onbeperkte projecten",
+                    "Geavanceerde calculaties",
+                    "Professionele offertes met logo",
+                    "Klantenbeheer systeem",
+                    "Voorraad management",
+                    "Financiële rapportages",
+                    "Telefoon ondersteuning",
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                      <span className="text-gray-700">{feature}</span>
+                      <CheckCircle className="w-4 h-4 text-calcuu-primary" />
+                      <span className="text-calcuu-text-sub">{feature}</span>
                     </div>
                   ))}
                 </div>
-                <button className="text-green-500 text-sm font-medium hover:underline">
-                  Learn more
+                <button className="text-calcuu-primary text-sm font-medium hover:underline">
+                  Meer informatie
                 </button>
               </div>
             </div>
 
-            {/* Custom Plan */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Custom</h3>
+            {/* Enterprise Plan */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-calcuu-detail">
+              <h3 className="text-2xl font-bold text-calcuu-secondary mb-2">
+                Enterprise
+              </h3>
               <div className="mb-6">
-                <span className="text-lg text-gray-600">
-                  Contact sales for pricing
+                <span className="text-lg text-calcuu-text-sub">
+                  Neem contact op
                 </span>
               </div>
-              <p className="text-gray-600 mb-6">
-                A fully customized expense management solution
+              <p className="text-calcuu-text-sub mb-6">
+                Voor grote schildersbedrijven met meerdere teams en complexe
+                behoeften
               </p>
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full border-2 border-gray-300 text-gray-700 hover:bg-gray-100 font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+                className="w-full border-2 border-calcuu-secondary text-calcuu-secondary hover:bg-calcuu-secondary hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
               >
-                Contact Us
+                Contact Ons
               </Button>
 
               <div className="space-y-4">
-                <p className="font-semibold text-gray-900">
-                  Everything in "Premium", plus:
+                <p className="font-semibold text-calcuu-secondary">
+                  Alles van "Professional", plus:
                 </p>
                 <div className="space-y-3 text-sm">
                   {[
-                    "SSO for user & workflow control",
-                    "Access to SpendControl's API",
-                    "Company logo in the app",
+                    "Multi-user toegang",
+                    "Team management tools",
+                    "Custom integraties",
+                    "Dedicated account manager",
+                    "Priority ondersteuning",
+                    "Custom rapportages",
+                    "API toegang",
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                      <span className="text-gray-700">{feature}</span>
+                      <CheckCircle className="w-4 h-4 text-calcuu-primary" />
+                      <span className="text-calcuu-text-sub">{feature}</span>
                     </div>
                   ))}
                 </div>
-                <button className="text-green-500 text-sm font-medium hover:underline">
-                  Learn more
+                <button className="text-calcuu-primary text-sm font-medium hover:underline">
+                  Meer informatie
                 </button>
               </div>
             </div>
