@@ -1038,7 +1038,7 @@ const Index = () => {
                     €35
                   </span>
                   <span className="text-calcuu-text-sub ml-2">per maand</span>
-                  <div className="text-sm text-red-500 font-semibold">
+                  <div className="text-sm text-green-500 font-semibold">
                     50% KORTING!
                   </div>
                 </div>
