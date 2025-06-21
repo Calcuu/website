@@ -1028,13 +1028,13 @@ const Index = () => {
                 Professional
               </h3>
               <div className="mb-6">
-                <div className="monthly-price">
+                <div className="monthly-price hidden">
                   <span className="text-4xl font-bold text-calcuu-secondary">
                     €35
                   </span>
                   <span className="text-calcuu-text-sub ml-2">per maand</span>
                 </div>
-                <div className="yearly-price hidden">
+                <div className="yearly-price">
                   <span className="text-4xl font-bold text-calcuu-secondary">
                     €17.50
                   </span>
