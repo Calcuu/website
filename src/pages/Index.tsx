@@ -135,11 +135,12 @@ const Index = () => {
 
             {/* App Mockup */}
             <div className="lg:col-span-2 flex justify-center">
-              <div className="h-[600px] w-[300px] overflow-hidden rounded-3xl shadow-2xl">
+              <div className="h-[600px] w-[280px] overflow-hidden shadow-2xl">
                 <img
                   src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/iphone-met-offerte-c4c326?format=webp&width=800"
                   alt="Calcuu app offerte voorbeeld op iPhone"
-                  className="h-full w-full object-cover object-center scale-125"
+                  className="h-[700px] w-[350px] object-cover object-center -m-8"
+                  style={{ transform: "scale(1.4)" }}
                 />
               </div>
             </div>
