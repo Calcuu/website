@@ -1168,10 +1168,22 @@ const Index = () => {
 
           <div className="flex justify-center">
             <img
-              src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/download-calcuu-1-2400-x-1600-px-d027e7?format=webp&width=800"
-              alt="Professionele schilders gebruiken Calcuu app"
+              src={(() => {
+                const mockups = [
+                  "https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/1.-download-mockup-a252b2?format=webp&width=800",
+                  "https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/2.-download-mockup-9ff884?format=webp&width=800",
+                  "https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/3.-download-mockup-d06f78?format=webp&width=800",
+                  "https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/4.-download-mockup-f4d202?format=webp&width=800",
+                  "https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/5.-download-mockup-7d5392?format=webp&width=800",
+                  "https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/6.-download-mockup-cf2992?format=webp&width=800",
+                  "https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/7.-download-mockup-37546e?format=webp&width=800",
+                  "https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/8.-download-mockup-39e04a?format=webp&width=800",
+                ];
+                return mockups[Math.floor(Math.random() * mockups.length)];
+              })()}
+              alt="Professionele schilder gebruikt Calcuu app"
               className="max-w-full h-auto rounded-2xl shadow-2xl"
-              style={{ maxHeight: "500px" }}
+              style={{ maxHeight: "400px", width: "auto" }}
             />
           </div>
         </div>
