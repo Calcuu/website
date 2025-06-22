@@ -111,9 +111,12 @@ const Index = () => {
                 <Button
                   size="lg"
                   className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold text-lg px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-12"
-                  onClick={() =>
-                    window.open("https://calcuu.nl/download", "_blank")
-                  }
+                  onClick={() => {
+                    const downloadSection = document.getElementById("download");
+                    if (downloadSection) {
+                      downloadSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
                 >
                   Probeer Gratis
                 </Button>
