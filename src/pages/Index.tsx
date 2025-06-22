@@ -95,6 +95,9 @@ const Index = () => {
             <div className="lg:col-span-3 space-y-8">
               {/* Headlines */}
               <div className="space-y-6">
+                <p className="text-lg md:text-xl font-bold text-calcuu-primary mb-4">
+                  Vakschilders, opgelet!
+                </p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
                   Stop met het maken van&nbsp;
                   <span className="text-calcuu-primary">offertes</span> in de
