@@ -767,7 +767,8 @@ const Index = () => {
       {/* Pricing Section */}
       <section
         id="pricing"
-        className="pt-12 pb-16 lg:pt-19 lg:pb-24 bg-gray-50"
+        className="bg-gray-50"
+        style={{ padding: "20px 0 96px" }}
       >
         <div className="container mx-auto px-4">
           {/* Header */}
