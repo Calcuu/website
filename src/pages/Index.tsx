@@ -1169,7 +1169,7 @@ const Index = () => {
               <span className="text-5xl bg-gray-50">Download Calcuu</span>
             </h2>
 
-            <p className="text-xl font-semibold text-calcuu-secondary mb-8">
+            <p className="text-xl font-semibold text-calcuu-secondary mb-16">
               <h4 className="text-gray-400 font-semibold">
                 <span
                   style={{
