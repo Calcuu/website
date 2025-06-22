@@ -202,9 +202,9 @@ const Index = () => {
             {/* Block 3 */}
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
-                <div className="w-12 h-12 bg-calcuu-primary/10 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center">
                   <svg
-                    className="w-6 h-6 text-calcuu-success"
+                    className="w-full h-auto text-calcuu-success self-stretch"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -214,21 +214,6 @@ const Index = () => {
                       strokeLinejoin="round"
                       strokeWidth={2}
                       d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
-                  <svg
-                    className="w-3 h-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
                     />
                   </svg>
                 </div>
