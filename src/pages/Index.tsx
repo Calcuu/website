@@ -136,7 +136,7 @@ const Index = () => {
             {/* App Mockup */}
             <div className="lg:col-span-2 flex justify-center">
               <img
-                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/iphone-met-offerte-c4c326?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/calcuu-offerte-a085b6?format=webp&width=800"
                 alt="Calcuu app offerte voorbeeld op iPhone"
                 className="h-[600px] w-auto object-contain shadow-2xl"
               />
