@@ -434,10 +434,7 @@ const Index = () => {
       </section>
 
       {/* Elegant Divider */}
-      <div
-        className="bg-white"
-        style={{ margin: "-3px 0 -1px", padding: "64px 0" }}
-      >
+      <div className="py-8 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center">
             <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-calcuu-primary/50 to-transparent"></div>
