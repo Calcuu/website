@@ -1005,7 +1005,7 @@ const Index = () => {
                 variant="outline"
                 className="w-full border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
                 onClick={() =>
-                  window.open("https://apps.apple.com/app/calcuu", "_blank")
+                  window.open("https://calcuu.nl/download", "_blank")
                 }
               >
                 Probeer Gratis
