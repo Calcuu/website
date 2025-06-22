@@ -134,12 +134,20 @@ const Index = () => {
             </div>
 
             {/* App Mockup */}
-            <div className="lg:col-span-2 flex justify-center">
-              <img
-                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/calcuu-offerte-a085b6?format=webp&width=800"
-                alt="Calcuu app offerte voorbeeld op iPhone"
-                className="h-[600px] w-auto object-contain shadow-2xl"
-              />
+            <div className="lg:col-span-2 flex justify-center items-center">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/calcuu-offerte-a085b6?format=webp&width=800"
+                  alt="Calcuu app offerte voorbeeld op iPhone"
+                  className="h-[600px] w-auto object-contain shadow-2xl"
+                  style={{
+                    background: "transparent",
+                    padding: "0",
+                    margin: "0",
+                    display: "block",
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
