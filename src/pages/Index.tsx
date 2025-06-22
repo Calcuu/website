@@ -561,10 +561,7 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section
-        className="bg-calcuu-background"
-        style={{ padding: "40px 0 96px" }}
-      >
+      <section className="py-16 lg:py-24 bg-calcuu-background">
         <div className="container mx-auto px-4">
           <div className="max-w-[73rem] mx-auto flex flex-col justify-center items-center">
             <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-6">
