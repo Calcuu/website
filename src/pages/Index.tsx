@@ -736,19 +736,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Special Offer Text */}
-      <div className="py-8 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <div className="text-lg sm:text-xl font-bold text-calcuu-secondary">
-              Nu tijdelijk&nbsp;
-              <span className="text-calcuu-primary">50% korting</span> op een
-              jaarlijks abonnement!
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Pricing Section */}
       <section id="pricing" className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
