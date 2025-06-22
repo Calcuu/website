@@ -740,7 +740,7 @@ const Index = () => {
       </section>
 
       {/* Special Offer Text */}
-      <div className="py-6 bg-gray-50" style={{ marginTop: "-2px" }}>
+      <div className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="text-lg sm:text-xl font-bold text-calcuu-secondary">
