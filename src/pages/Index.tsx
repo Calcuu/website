@@ -106,11 +106,8 @@ const Index = () => {
                   avonduren
                 </h1>
                 <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-2xl">
-                  <p data-pm-slice="1 1 []">
-                    Calcuu is de slimme calculatie-app voor vakschilders. <br />
-                    Geen papierwerk. Geen rekenwerk. Alleen nog maar
-                    schilderwerk
-                  </p>
+                  Calcuu is de slimme calculatie-app voor vakschilders. <br />
+                  Geen papierwerk. Geen rekenwerk. Alleen nog maar schilderwerk
                 </p>
               </div>
 
