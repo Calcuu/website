@@ -137,8 +137,8 @@ const Index = () => {
             <div className="lg:col-span-2 flex justify-center">
               <div className="relative">
                 <img
-                  src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/scherm-afbeelding-2025-06-22-om-12.40.37-6096ec?format=webp&width=800"
-                  alt="Calcuu app voorbeeldscherm"
+                  src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/iphone-met-offerte-c4c326?format=webp&width=800"
+                  alt="Calcuu app offerte voorbeeld op iPhone"
                   className="h-[600px] w-auto object-contain shadow-2xl"
                 />
               </div>
