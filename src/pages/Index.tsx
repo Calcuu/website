@@ -875,42 +875,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Special Offer Banner */}
-      <div className="bg-gradient-to-r from-calcuu-primary via-calcuu-primary to-purple-700 text-white py-3 relative overflow-hidden mt-8">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <div className="container mx-auto px-4 relative z-10">
+      {/* Special Offer Text */}
+      <div className="py-6 mt-8">
+        <div className="container mx-auto px-4">
           <div className="text-center">
-            <div className="text-lg sm:text-xl font-bold">
+            <div className="text-lg sm:text-xl font-bold text-calcuu-secondary">
               Nu tijdelijk{" "}
-              <span
-                className="inline-block animate-bounce"
-                style={{
-                  color: "#ff9720",
-                  animationDelay: "3s",
-                  animationIterationCount: "2",
-                  animationDuration: "1s",
-                }}
-              >
-                50% korting
-              </span>{" "}
-              op een jaarlijks abonnement
+              <span className="text-calcuu-primary">50% korting</span> op een
+              jaarlijks abonnement
             </div>
           </div>
         </div>
-
-        {/* Animated background elements */}
-        <div
-          className="absolute top-0 left-0 w-20 h-20 bg-white/5 rounded-full -translate-x-10 -translate-y-10 animate-bounce"
-          style={{ animationDelay: "0s", animationDuration: "3s" }}
-        ></div>
-        <div
-          className="absolute top-0 right-0 w-16 h-16 bg-yellow-400/20 rounded-full translate-x-8 -translate-y-8 animate-bounce"
-          style={{ animationDelay: "1s", animationDuration: "4s" }}
-        ></div>
-        <div
-          className="absolute bottom-0 left-1/3 w-12 h-12 bg-white/10 rounded-full animate-bounce"
-          style={{ animationDelay: "2s", animationDuration: "5s" }}
-        ></div>
       </div>
 
       {/* Pricing Section */}
