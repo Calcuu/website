@@ -1169,67 +1169,9 @@ const Index = () => {
               Download Calcuu
             </h2>
 
-            <div className="relative mb-8">
-              <p className="text-xl font-semibold text-calcuu-secondary mb-6">
-                Maak een keuze
-              </p>
-
-              {/* Left curved arrow */}
-              <svg
-                className="absolute left-1/2 top-12 transform -translate-x-32 w-24 h-16 text-calcuu-primary"
-                viewBox="0 0 100 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 10 Q50 30 30 50"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  fill="none"
-                  markerEnd="url(#arrowhead-left)"
-                />
-                <defs>
-                  <marker
-                    id="arrowhead-left"
-                    markerWidth="10"
-                    markerHeight="7"
-                    refX="10"
-                    refY="3.5"
-                    orient="auto"
-                  >
-                    <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
-                  </marker>
-                </defs>
-              </svg>
-
-              {/* Right curved arrow */}
-              <svg
-                className="absolute right-1/2 top-12 transform translate-x-32 w-24 h-16 text-calcuu-primary"
-                viewBox="0 0 100 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M80 10 Q50 30 70 50"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  fill="none"
-                  markerEnd="url(#arrowhead-right)"
-                />
-                <defs>
-                  <marker
-                    id="arrowhead-right"
-                    markerWidth="10"
-                    markerHeight="7"
-                    refX="10"
-                    refY="3.5"
-                    orient="auto"
-                  >
-                    <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
-                  </marker>
-                </defs>
-              </svg>
-            </div>
+            <p className="text-xl font-semibold text-calcuu-secondary mb-8">
+              Maak een keuze
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div
