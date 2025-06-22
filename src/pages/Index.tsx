@@ -971,7 +971,7 @@ const Index = () => {
                 </div>
                 <div className="yearly-price">
                   <span className="text-4xl font-bold text-calcuu-secondary">
-                    €0
+                    ��0
                   </span>
                   <span className="text-calcuu-text-sub ml-2">
                     14 dagen gratis
@@ -1138,22 +1138,12 @@ const Index = () => {
       <section id="download" className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 font-semibold">
-            <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary mb-4 flex flex-col justify-center items-center">
               <span className="text-5xl bg-gray-50">Download Calcuu</span>
             </h2>
 
             <p className="text-xl font-semibold text-calcuu-secondary mb-16">
-              <h4 className="text-gray-400 font-semibold">
-                <span
-                  style={{
-                    color: "rgb(126, 126, 126)",
-                    fontWeight: 400,
-                    textAlign: "start",
-                  }}
-                >
-                  Maak een keuze
-                </span>
-              </h4>
+              <h4 className="text-gray-400 font-semibold"></h4>
             </p>
 
             <div className="relative flex flex-col sm:flex-row gap-4 justify-center items-center">
