@@ -440,7 +440,7 @@ const Index = () => {
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center">
-            <div className="w-full h-1 bg-gradient-to-r from-transparent via-calcuu-primary to-transparent"></div>
+            <div className="w-full h-1 bg-gradient-to-r from-transparent via-calcuu-primary/50 to-transparent"></div>
           </div>
         </div>
       </div>
