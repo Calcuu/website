@@ -378,10 +378,7 @@ const Index = () => {
       </section>
 
       {/* Target Audience Section */}
-      <section
-        className="bg-calcuu-white bg-no-repeat bg-center bg-cover"
-        style={{ padding: "96px 0 40px" }}
-      >
+      <section className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary text-center mb-16">
             Wij zijn benieuwd of jij dit ook herkent?
