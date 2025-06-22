@@ -436,6 +436,21 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Elegant Divider */}
+      <div className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent to-gray-200"></div>
+            <div className="mx-8 flex items-center justify-center">
+              <div className="w-3 h-3 bg-calcuu-primary rounded-full mx-2"></div>
+              <div className="w-12 h-px bg-calcuu-primary"></div>
+              <div className="w-3 h-3 bg-calcuu-primary rounded-full mx-2"></div>
+            </div>
+            <div className="flex-1 h-px bg-gradient-to-l from-transparent to-gray-200"></div>
+          </div>
+        </div>
+      </div>
+
       {/* 4-Step Process Section */}
       <section className="py-16 lg:py-24 bg-calcuu-white">
         <div className="container mx-auto px-4">
