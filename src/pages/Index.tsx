@@ -1164,13 +1164,15 @@ const Index = () => {
       {/* App Download Section */}
       <section id="download" className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 font-semibold">
             <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary mb-4">
-              Download Calcuu
+              <span className="text-5xl bg-gray-50">Download Calcuu</span>
             </h2>
 
-            <p className="text-xl font-semibold text-calcuu-secondary mb-8">
-              Maak een keuze
+            <p className="text-xl text-calcuu-secondary mb-8">
+              <h4>
+                <span className="text-gray-400">Maak een keuze</span>
+              </h4>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
