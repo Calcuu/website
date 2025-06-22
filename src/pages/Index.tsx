@@ -564,6 +564,120 @@ const Index = () => {
               meer hebt van het gebruiken van meerdere app's en zoekrakende
               notities.
             </p>
+
+            {/* Feature Boxes - Only Second Row */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 max-w-5xl mx-auto">
+              {/* Feature Box 4 */}
+              <div
+                className="relative bg-white border border-calcuu-primary/20 rounded-lg p-6 h-60 flex flex-col items-center text-center transition-all duration-300 hover:border-calcuu-primary/40 hover:shadow-lg group overflow-hidden"
+                style={{
+                  boxShadow:
+                    "0 0 0 1px rgba(91, 41, 222, 0.1), 0 0 20px rgba(91, 41, 222, 0.1), 0 0 40px rgba(91, 41, 222, 0.05)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-calcuu-primary/5 via-transparent to-calcuu-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center h-full">
+                  <div className="w-12 h-12 mb-4 flex items-center justify-center">
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
+                    Hanteer je Eigen Prijzen
+                  </h3>
+                  <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
+                    Stel je eigen uurtarieven en materiaalkosten in. Pas prijzen
+                    aan per project of klant voor maximale flexibiliteit.
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature Box 5 */}
+              <div
+                className="relative bg-white border border-calcuu-primary/20 rounded-lg p-6 h-60 flex flex-col items-center text-center transition-all duration-300 hover:border-calcuu-primary/40 hover:shadow-lg group overflow-hidden"
+                style={{
+                  boxShadow:
+                    "0 0 0 1px rgba(91, 41, 222, 0.1), 0 0 20px rgba(91, 41, 222, 0.1), 0 0 40px rgba(91, 41, 222, 0.05)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-calcuu-primary/5 via-transparent to-calcuu-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center h-full">
+                  <div className="w-12 h-12 mb-4 flex items-center justify-center">
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
+                    Alles-op-één Plek
+                  </h3>
+                  <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
+                    Geen gedoe meer met verschillende apps. Tekenen, calculeren,
+                    offreren en klantenbeheer in één overzichtelijke app.
+                  </p>
+                </div>
+              </div>
+
+              {/* Feature Box 6 */}
+              <div
+                className="relative bg-white border border-calcuu-primary/20 rounded-lg p-6 h-60 flex flex-col items-center text-center transition-all duration-300 hover:border-calcuu-primary/40 hover:shadow-lg group overflow-hidden"
+                style={{
+                  boxShadow:
+                    "0 0 0 1px rgba(91, 41, 222, 0.1), 0 0 20px rgba(91, 41, 222, 0.1), 0 0 40px rgba(91, 41, 222, 0.05)",
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-calcuu-primary/5 via-transparent to-calcuu-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center h-full">
+                  <div className="w-12 h-12 mb-4 flex items-center justify-center">
+                    <svg
+                      className="w-8 h-8 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
+                    Inzicht en Overzicht
+                  </h3>
+                  <p className="text-sm text-calcuu-text-sub leading-relaxed flex-1 flex items-center">
+                    Bekijk al je projecten, winst per klus en materiaalverbruik
+                    in duidelijke overzichten. Zo groei je bewust.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center mt-16">
+              <Button
+                size="lg"
+                className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold text-lg px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-12"
+                onClick={() => {
+                  const downloadSection = document.getElementById("download");
+                  if (downloadSection) {
+                    downloadSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                Probeer de App Gratis
+              </Button>
+            </div>
           </div>
         </div>
       </section>
