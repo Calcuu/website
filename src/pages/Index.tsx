@@ -136,22 +136,11 @@ const Index = () => {
             {/* App Mockup */}
             <div className="lg:col-span-2 flex justify-center">
               <div className="relative">
-                <div className="w-72 h-[600px] bg-black rounded-[3rem] p-2 shadow-2xl">
-                  <div className="w-full h-full bg-calcuu-background rounded-[2.5rem] overflow-hidden">
-                    <div className="h-8 bg-calcuu-white flex items-center justify-center">
-                      <div className="w-20 h-1 bg-black rounded-full opacity-30"></div>
-                    </div>
-                    <div className="p-6 space-y-4">
-                      <div className="h-6 bg-calcuu-primary rounded w-24"></div>
-                      <div className="h-32 bg-calcuu-detail rounded-lg"></div>
-                      <div className="space-y-2">
-                        <div className="h-4 bg-calcuu-detail rounded w-3/4"></div>
-                        <div className="h-4 bg-calcuu-detail rounded w-1/2"></div>
-                      </div>
-                      <div className="h-12 bg-calcuu-success rounded-lg"></div>
-                    </div>
-                  </div>
-                </div>
+                <img
+                  src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/scherm-afbeelding-2025-06-22-om-12.40.37-6096ec?format=webp&width=800"
+                  alt="Calcuu app voorbeeldscherm"
+                  className="h-[600px] w-auto object-contain shadow-2xl"
+                />
               </div>
             </div>
           </div>
