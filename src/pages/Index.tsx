@@ -1155,14 +1155,27 @@ const Index = () => {
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer">
+              <div
+                className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer"
+                onClick={() =>
+                  window.open("https://apps.apple.com/app/calcuu", "_blank")
+                }
+              >
                 <Download className="w-6 h-6" />
                 <div className="text-left">
                   <div className="text-xs">Download on the</div>
                   <div className="text-lg font-semibold">App Store</div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer">
+              <div
+                className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer"
+                onClick={() =>
+                  window.open(
+                    "https://play.google.com/store/apps/details?id=com.calcuu.app",
+                    "_blank",
+                  )
+                }
+              >
                 <Download className="w-6 h-6" />
                 <div className="text-left">
                   <div className="text-xs">Get it on</div>
