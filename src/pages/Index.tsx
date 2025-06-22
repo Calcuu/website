@@ -139,10 +139,6 @@ const Index = () => {
                 src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/iphone-met-offerte-c4c326?format=webp&width=800"
                 alt="Calcuu app offerte voorbeeld op iPhone"
                 className="h-[600px] w-auto object-contain shadow-2xl"
-                style={{
-                  background: "transparent",
-                  mixBlendMode: "multiply",
-                }}
               />
             </div>
           </div>
