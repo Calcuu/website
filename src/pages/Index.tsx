@@ -160,36 +160,7 @@ const Index = () => {
             {/* Block 1 */}
             <div className="bg-calcuu-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
               <div className="flex justify-between items-start mb-6">
-                <div className="w-12 h-12 bg-calcuu-primary/10 rounded-xl flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-calcuu-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"
-                    />
-                  </svg>
-                </div>
-                <div className="w-6 h-6 rounded-full bg-calcuu-detail flex items-center justify-center group-hover:bg-calcuu-primary group-hover:text-white transition-colors">
-                  <svg
-                    className="w-3 h-3"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center"></div>
               </div>
               <h3 className="text-xl font-semibold text-calcuu-secondary mb-3 leading-tight">
                 Automatische berekeningen
@@ -971,7 +942,7 @@ const Index = () => {
                 </div>
                 <div className="yearly-price">
                   <span className="text-4xl font-bold text-calcuu-secondary">
-                    ��0
+                    €0
                   </span>
                   <span className="text-calcuu-text-sub ml-2">
                     14 dagen gratis
