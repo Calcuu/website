@@ -1169,9 +1169,17 @@ const Index = () => {
               <span className="text-5xl bg-gray-50">Download Calcuu</span>
             </h2>
 
-            <p className="text-xl text-calcuu-secondary mb-8">
-              <h4>
-                <span className="text-gray-400">Maak een keuze</span>
+            <p className="text-xl font-semibold text-calcuu-secondary mb-8">
+              <h4 className="text-gray-400 font-semibold">
+                <span
+                  style={{
+                    color: "rgb(126, 126, 126)",
+                    fontWeight: 400,
+                    textAlign: "start",
+                  }}
+                >
+                  Maak een keuze
+                </span>
               </h4>
             </p>
 
