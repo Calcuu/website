@@ -1166,13 +1166,13 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="flex justify-center gap-8">
-            <div className="w-48 h-96 bg-black rounded-[2rem] p-1 shadow-xl">
-              <div className="w-full h-full bg-calcuu-background rounded-[1.5rem]"></div>
-            </div>
-            <div className="w-48 h-96 bg-black rounded-[2rem] p-1 shadow-xl hidden sm:block">
-              <div className="w-full h-full bg-calcuu-background rounded-[1.5rem]"></div>
-            </div>
+          <div className="flex justify-center">
+            <img
+              src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/download-calcuu-1-2400-x-1600-px-d027e7?format=webp&width=800"
+              alt="Professionele schilders gebruiken Calcuu app"
+              className="max-w-full h-auto rounded-2xl shadow-2xl"
+              style={{ maxHeight: "500px" }}
+            />
           </div>
         </div>
       </section>
