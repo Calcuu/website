@@ -1067,6 +1067,9 @@ const Index = () => {
               <Button
                 size="lg"
                 className="w-full bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold py-3 rounded-lg transition-all duration-300 mb-6"
+                onClick={() =>
+                  window.open("https://apps.apple.com/app/calcuu", "_blank")
+                }
               >
                 Start Nu
               </Button>
