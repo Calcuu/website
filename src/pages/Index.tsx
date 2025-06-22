@@ -90,10 +90,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-calcuu-white to-calcuu-background">
-        <div
-          className="container mx-auto px-4 py-20"
-          style={{ margin: "0 auto -1px", padding: "80px 16px 0" }}
-        >
+        <div className="container mx-auto px-4 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-3">
               <div className="space-y-6">
