@@ -1191,6 +1191,13 @@ const Index = () => {
                 className="absolute -top-20 left-1/2 transform -translate-x-32 w-16 h-16 sm:w-20 sm:h-20"
               />
 
+              {/* Arrow pointing to Google Play Store (mirrored) */}
+              <img
+                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/pijl-8c2851?format=webp&width=800"
+                alt="Arrow pointing to Google Play Store"
+                className="absolute -top-20 right-1/2 transform translate-x-32 scale-x-[-1] w-16 h-16 sm:w-20 sm:h-20"
+              />
+
               <div
                 className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer"
                 onClick={() =>
