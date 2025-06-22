@@ -774,9 +774,9 @@ const Index = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-calcuu-secondary mb-4">
-              Transparante Prijzen voor
+              Transparant. Simpel.
               <br />
-              Professionele Schilders
+              Upgrade Wanneer jij wilt.
             </h2>
             <p className="text-lg text-calcuu-text-sub mb-8 max-w-2xl mx-auto">
               Of je nu net begint of een gevestigd schildersbedrijf hebt,
