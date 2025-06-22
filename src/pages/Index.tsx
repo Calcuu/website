@@ -58,7 +58,7 @@ const Index = () => {
                 size="sm"
                 className="hidden sm:inline-flex bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 h-12"
                 onClick={() =>
-                  window.open("https://apps.apple.com/app/calcuu", "_blank")
+                  window.open("https://calcuu.nl/download", "_blank")
                 }
               >
                 Probeer Gratis
