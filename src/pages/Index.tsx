@@ -452,7 +452,7 @@ const Index = () => {
       </div>
 
       {/* 4-Step Process Section */}
-      <section className="py-16 lg:py-24 bg-calcuu-white">
+      <section className="bg-calcuu-white" style={{ padding: "40px 0 20px" }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
