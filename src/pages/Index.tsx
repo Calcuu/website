@@ -760,9 +760,11 @@ const Index = () => {
               Upgrade Wanneer jij wilt.
             </h2>
             <p className="text-lg text-calcuu-text-sub mb-8 max-w-2xl mx-auto">
-              Of je nu net begint of een gevestigd schildersbedrijf hebt,
+              Nu tijdelijk{" "}
+              <span className="text-calcuu-primary font-bold">50% korting</span>{" "}
+              op een jaarlijks abonnement
               <br />
-              Calcuu groeit mee met jouw ambities en behoeften.
+              Begin <strong>gratis</strong>, en maak dan je keuze.
             </p>
 
             {/* Billing Toggle */}
