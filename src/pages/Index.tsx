@@ -1138,10 +1138,7 @@ const Index = () => {
       </section>
 
       {/* App Download Section */}
-      <section
-        id="download"
-        className="py-16 lg:py-24 bg-gradient-to-br from-calcuu-background to-calcuu-white"
-      >
+      <section id="download" className="py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-calcuu-secondary mb-8">
@@ -1182,8 +1179,8 @@ const Index = () => {
                 return mockups[Math.floor(Math.random() * mockups.length)];
               })()}
               alt="Professionele schilder gebruikt Calcuu app"
-              className="max-w-full h-auto rounded-2xl shadow-2xl"
-              style={{ maxHeight: "400px", width: "auto" }}
+              className="max-w-full h-auto"
+              style={{ maxHeight: "600px", width: "auto" }}
             />
           </div>
         </div>
