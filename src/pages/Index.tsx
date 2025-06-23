@@ -828,7 +828,8 @@ const Index = () => {
                 </div>
               </div>
               <p className="text-calcuu-text-sub mb-6">
-                Perfect voor startende schilders die hun eerste stappen zetten
+                Perfect voor schilders die stappen willen zetten naar meer
+                professionaliteit
               </p>
 
               <Button
@@ -851,9 +852,9 @@ const Index = () => {
                 </p>
                 <div className="space-y-3 text-sm">
                   {[
-                    "Tot 10 projecten per maand",
-                    "Basis calculatie tools",
-                    "Eenvoudige offertes maken",
+                    "Onbeperkte projecten",
+                    "Calculatie voor binnen- en buitenwerk",
+                    "Professionele offertes met logo",
                     "Email ondersteuning",
                     "Basis materiaal database",
                   ].map((feature, index) => (
