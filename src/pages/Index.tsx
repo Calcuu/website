@@ -919,12 +919,12 @@ const Index = () => {
                 <div className="space-y-3 text-sm">
                   {[
                     "Onbeperkte projecten",
-                    "Geavanceerde calculaties",
+                    "Calculatie voor binnen- en buitenwerk",
                     "Professionele offertes met logo",
-                    "Klantenbeheer systeem",
-                    "Voorraad management",
-                    "Financiële rapportages",
-                    "Telefoon ondersteuning",
+                    "Email ondersteuning",
+                    "Basis materiaal database",
+                    "Meerwerk: uren en notities",
+                    "Projectfoto's",
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <CheckCircle className="w-4 h-4 text-calcuu-primary" />
