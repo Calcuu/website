@@ -957,28 +957,6 @@ const Index = () => {
               >
                 Contact Ons
               </Button>
-
-              <div className="space-y-4 flex-grow">
-                <p className="font-semibold text-calcuu-secondary">
-                  Alles van "Professional", plus:
-                </p>
-                <div className="space-y-3 text-sm">
-                  {[
-                    "Multi-user toegang",
-                    "Team management tools",
-                    "Custom integraties",
-                    "Dedicated account manager",
-                    "Priority ondersteuning",
-                    "Custom rapportages",
-                    "API toegang",
-                  ].map((feature, index) => (
-                    <div key={index} className="flex items-center gap-3">
-                      <CheckCircle className="w-4 h-4 text-calcuu-primary" />
-                      <span className="text-calcuu-text-sub">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>
