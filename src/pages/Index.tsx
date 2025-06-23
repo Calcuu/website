@@ -828,8 +828,8 @@ const Index = () => {
                 </div>
               </div>
               <p className="text-calcuu-text-sub mb-6">
-                Perfect voor schilders die stappen willen zetten naar meer
-                professionaliteit
+                Ideaal voor schilders die snel, eenvoudige en professionele
+                offertes willen maken.
               </p>
 
               <Button
