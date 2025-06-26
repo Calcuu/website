@@ -857,6 +857,7 @@ const Index = () => {
                     "Professionele offertes met logo",
                     "Email ondersteuning",
                     "Basis materiaal database",
+                    "14 dagen toegang",
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <CheckCircle className="w-4 h-4 text-calcuu-primary" />
