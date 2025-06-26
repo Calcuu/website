@@ -301,11 +301,12 @@ const Index = () => {
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   <div className="flex flex-col w-1/2 max-md:ml-0 max-md:w-full">
                     <h3 className="text-xl font-semibold text-calcuu-secondary mb-4">
-                      Overzicht
+                      <p data-pm-slice="1 1 []">Urenregistratie</p>
                     </h3>
                     <p className="text-calcuu-text-sub leading-relaxed">
-                      Urenregistratie, fotodocumentatie, klantbeheer en
-                      materiaalplanning in één overzichtelijke app.
+                      Houd alles overzichtelijk zoals je uren per project, foto
+                      documentatie, klantbeheer, materiaalbeheer en dat allemaal
+                      in één app.
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
