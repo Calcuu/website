@@ -353,7 +353,7 @@ const Index = () => {
             Zie Calcuu in actie
           </h2>
           <p className="text-lg text-calcuu-text-sub mb-12 max-w-2xl mx-auto">
-            Bekijk hoe snel je van schets naar offerte gaat
+            Bekijk hoe snel je van schets naar offerte gaat.
           </p>
 
           <div className="max-w-4xl mx-auto">
