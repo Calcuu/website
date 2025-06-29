@@ -100,7 +100,7 @@ const Index = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
                   Stop met het maken van&nbsp;
                   <span className="text-calcuu-primary">offertes</span> in de
-                  avonduren!!
+                  avonduren
                 </h1>
                 <p className="text-lg md:text-xl text-calcuu-text-sub leading-relaxed max-w-2xl">
                   Calcuu is de slimme calculatie-app voor vakschilders. <br />
