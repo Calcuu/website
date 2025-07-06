@@ -123,10 +123,20 @@ const Calculator = () => {
                   className="text-5xl font-bold text-white"
                   style={{ margin: "20px 0" }}
                 >
-                  €{nettoSaving}
+                  <AnimatedNumber
+                    value={nettoSaving}
+                    prefix="€"
+                    duration={800}
+                  />
                 </div>
                 <div className="text-sm text-gray-300">
-                  en je bespaart {timeWinHours} uur per maand
+                  en je bespaart{" "}
+                  <AnimatedNumber
+                    value={timeWinHours}
+                    decimals={1}
+                    duration={600}
+                  />{" "}
+                  uur per maand
                 </div>
               </div>
 
