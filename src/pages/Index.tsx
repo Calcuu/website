@@ -752,9 +752,14 @@ const Index = () => {
                   <div className="text-sm text-gray-300 mb-2">
                     Return on investment per maand met Calcuu
                   </div>
-                  <div className="text-5xl font-bold text-white mb-2">€381</div>
+                  <div
+                    className="text-5xl font-bold text-white"
+                    style={{ margin: "20px 0" }}
+                  >
+                    €381
+                  </div>
                   <div className="text-sm text-gray-300">
-                    en je maakt 6 uur vrij om anders te besteden
+                    en je creert ook nog eens 6 uur vrije tijd
                   </div>
                 </div>
 
