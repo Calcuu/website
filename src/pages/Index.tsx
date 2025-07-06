@@ -702,8 +702,10 @@ const Index = () => {
               {/* Left Side - Calculator Input */}
               <div className="space-y-6">
                 <div className="text-sm text-gray-600 mb-4">
-                  How many hours do you lose per week on distractions, context-
-                  switching, and manual calculating work?
+                  <p>
+                    Hoeveel uur ben jij kwijt per maand aan het maken van een
+                    calculatie, offerte, na-calculatie en urenregistratie?&nbsp;
+                  </p>
                 </div>
 
                 <div>
