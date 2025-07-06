@@ -710,7 +710,10 @@ const Index = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    <b>Aantal offertes per maand</b>
+                    <b>
+                      Aantal offertes per maand:{" "}
+                      <span id="offertesValue">5</span>
+                    </b>
                   </label>
                   <div className="relative">
                     <input
