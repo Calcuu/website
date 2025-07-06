@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import AnimatedNumber from "@/components/AnimatedNumber";
 
 const Calculator = () => {
   const [offertes, setOffertes] = useState(5);
