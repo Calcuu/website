@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import AnimatedNumber from "@/components/AnimatedNumber";
 
 const Calculator = () => {
-  const [offertes, setOffertes] = useState(5);
+  const [offertes, setOffertes] = useState(2);
   const [hourlyRate, setHourlyRate] = useState(50);
 
   // Calculate values based on your formulas
