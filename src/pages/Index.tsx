@@ -771,7 +771,7 @@ const Index = () => {
                   style={{ backgroundColor: "#5B29DE" }}
                   className="w-full text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity"
                 >
-                  Start your free trial
+                  Start nu 14 dagen gratis
                 </Button>
 
                 <div className="mt-4 space-y-2">
