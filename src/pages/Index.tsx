@@ -697,7 +697,7 @@ const Index = () => {
             </h2>
             <p className="text-lg text-calcuu-text-sub mb-8 max-w-2xl mx-auto">
               Nu tijdelijk{" "}
-              <span className="text-calcuu-primary font-bold">50% korting</span>{" "}
+              <span className="text-calcuu-primary font-bold">36% korting</span>{" "}
               op een jaarlijks abonnement
               <br />
               Begin <strong>gratis</strong>, en maak dan je keuze.
