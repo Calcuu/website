@@ -745,7 +745,7 @@ const Index = () => {
                 </label>
               </div>
               <span className="text-calcuu-secondary">Jaarlijks</span>
-              <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold animate-pulse">
+              <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold animate-pulse yearly-badge">
                 BESPAAR 36%
               </span>
             </div>
