@@ -178,7 +178,7 @@ const Calculator = () => {
                   <span className="text-gray-300">
                     Minus abonnement Calcuu per maand
                   </span>
-                  <span className="text-white">€35</span>
+                  <span className="text-white">€45</span>
                 </div>
                 <hr className="border-gray-600 my-2" />
                 <div className="flex justify-between text-xs font-semibold">
