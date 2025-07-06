@@ -690,48 +690,106 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Contact/Demo Section */}
+      {/* Time Value Calculator Section */}
       <section className="py-16 lg:py-24 bg-calcuu-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            {/* Left Side - Text and Buttons */}
-            <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl text-calcuu-secondary leading-tight">
-                <span className="font-normal">
-                  Benieuwd hoe Calcuu jou kan helpen?
-                </span>{" "}
-                <span className="text-calcuu-primary font-bold">
-                  Heb je vragen? Stel ze hier!
-                </span>
-              </h2>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-calcuu-secondary mb-12">
+              How much is your time worth to you?
+            </h2>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 rounded-lg transition-all duration-300 h-12"
-                >
-                  Boek een Demo
-                </Button>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              {/* Left Side - Calculator Input */}
+              <div className="space-y-6">
+                <div className="text-sm text-gray-600 mb-4">
+                  How many hours do you lose per week on distractions, context-
+                  switching, and manual calculating work?
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    2 hours
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="range"
+                      min="1"
+                      max="20"
+                      defaultValue="2"
+                      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                    />
+                    <div className="flex justify-between text-xs text-gray-500 mt-1">
+                      <span>1</span>
+                      <span>20</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    How much is one hour of your time worth to you?
+                  </label>
+                  <div className="flex items-center">
+                    <span className="text-lg font-medium mr-2">$</span>
+                    <input
+                      type="number"
+                      defaultValue="50"
+                      className="border border-gray-300 rounded px-3 py-2 w-20 text-center"
+                    />
+                    <span className="text-gray-500 ml-2">/ hr</span>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            {/* Right Side - Rectangle */}
-            <div className="relative">
+              {/* Right Side - Calculation Result */}
               <div
-                className="w-full h-80 rounded-3xl flex items-center justify-center bg-cover bg-center bg-no-repeat"
-                style={{
-                  backgroundImage:
-                    "url(https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F81275b101f6a445db15f92ffda04c68f)",
-                  boxShadow: "1px 2px 8px 3px rgba(0, 0, 0, 1)",
-                }}
+                style={{ backgroundColor: "#242447" }}
+                className="rounded-lg p-6 text-white"
               >
-                <div className="text-center"></div>
-              </div>
+                <div className="text-center mb-4">
+                  <div className="text-sm text-gray-300 mb-2">
+                    Return on investment per month with Motion
+                  </div>
+                  <div className="text-5xl font-bold text-white mb-2">$381</div>
+                  <div className="text-sm text-gray-300">
+                    and 6 hours of your life back
+                  </div>
+                </div>
 
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-calcuu-primary/20 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-calcuu-accent/20 rounded-full blur-xl"></div>
+                <Button
+                  style={{ backgroundColor: "#5B29DE" }}
+                  className="w-full text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  Start your free trial
+                </Button>
+
+                <div className="mt-4 space-y-2">
+                  <div className="text-xs text-gray-300">
+                    How did we get this number?
+                  </div>
+                  <div className="flex justify-between text-xs">
+                    <span className="text-gray-300">Hours lost per month</span>
+                    <span className="text-white">8 hours</span>
+                  </div>
+                  <div className="flex justify-between text-xs">
+                    <span className="text-gray-300">
+                      Value of Motion for saving 8 hours of your time
+                    </span>
+                    <span className="text-white">$400/mo</span>
+                  </div>
+                  <div className="flex justify-between text-xs">
+                    <span className="text-gray-300">
+                      Cost of Motion Pro subscription per month
+                    </span>
+                    <span className="text-white">$19/mo</span>
+                  </div>
+                  <hr className="border-gray-600 my-2" />
+                  <div className="flex justify-between text-xs font-semibold">
+                    <span className="text-gray-300">Total ROI per month</span>
+                    <span className="text-white">$381/mo</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
