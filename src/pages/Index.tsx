@@ -736,7 +736,7 @@ const Index = () => {
                     <input
                       type="number"
                       defaultValue="50"
-                      className="border border-gray-300 rounded px-3 py-2 w-20 text-center"
+                      className="border border-gray-300 rounded px-3 py-2 w-32 text-center"
                     />
                     <span className="text-gray-500 ml-2">/ uur</span>
                   </div>
