@@ -837,11 +837,11 @@ const Index = () => {
                 </div>
                 <div className="yearly-price">
                   <span className="text-4xl font-bold text-calcuu-secondary">
-                    €35
+                    €45
                   </span>
                   <span className="text-calcuu-text-sub ml-2">per maand</span>
                   <div className="text-sm text-green-500 font-semibold">
-                    50% KORTING!
+                    36% KORTING!
                   </div>
                 </div>
               </div>
