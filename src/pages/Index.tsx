@@ -721,12 +721,14 @@ const Index = () => {
                     const toggle = document.querySelector(
                       "#billing-toggle + label > div",
                     );
+                    const yearlyBadge = document.querySelector(".yearly-badge");
 
                     if (isAnnual) {
                       monthlyPrices.forEach((p) => p.classList.add("hidden"));
                       yearlyPrices.forEach((p) => p.classList.remove("hidden"));
                       toggle.style.transform = "translateX(24px)";
                       toggle.parentElement.style.backgroundColor = "#5B29DE";
+                      yearlyBadge.classList.remove("hidden");
                     } else {
                       monthlyPrices.forEach((p) =>
                         p.classList.remove("hidden"),
@@ -734,6 +736,7 @@ const Index = () => {
                       yearlyPrices.forEach((p) => p.classList.add("hidden"));
                       toggle.style.transform = "translateX(0px)";
                       toggle.parentElement.style.backgroundColor = "#e5e7eb";
+                      yearlyBadge.classList.add("hidden");
                     }
                   }}
                 />
