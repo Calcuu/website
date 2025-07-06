@@ -735,19 +735,19 @@ const Index = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Wat is je uurloon?
                   </label>
-                  <div className="flex items-center border-2 border-blue-400 rounded px-3 py-2 bg-white max-w-xs">
-                    <span className="text-gray-700 mr-2">€</span>
+                  <div className="flex items-center border-2 border-blue-400 rounded px-3 py-3 bg-white w-full max-w-xs">
+                    <span className="text-gray-700 mr-3">$</span>
                     <input
                       type="number"
                       defaultValue="50"
-                      className="flex-1 text-left border-none outline-none bg-transparent"
+                      className="flex-1 text-gray-900 border-none outline-none bg-transparent"
                     />
-                    <span className="text-gray-500 mr-2">/ uur</span>
-                    <div className="flex flex-col items-center">
-                      <button className="text-xs text-gray-400 leading-none">
+                    <span className="text-gray-500 mr-3">/hr</span>
+                    <div className="flex flex-col items-center justify-center">
+                      <button className="text-xs text-gray-500 leading-none mb-px">
                         ▲
                       </button>
-                      <button className="text-xs text-gray-400 leading-none">
+                      <button className="text-xs text-gray-500 leading-none">
                         ▼
                       </button>
                     </div>
