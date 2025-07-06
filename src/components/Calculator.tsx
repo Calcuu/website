@@ -153,13 +153,26 @@ const Calculator = () => {
                 </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-gray-300">Tijdwinst per maand</span>
-                  <span className="text-white">{timeWinHours} uur</span>
+                  <span className="text-white">
+                    <AnimatedNumber
+                      value={timeWinHours}
+                      decimals={1}
+                      suffix=" uur"
+                      duration={600}
+                    />
+                  </span>
                 </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-gray-300">
                     Besparing (tijdwinst × uurloon)
                   </span>
-                  <span className="text-white">€{moneySaving}</span>
+                  <span className="text-white">
+                    <AnimatedNumber
+                      value={moneySaving}
+                      prefix="€"
+                      duration={600}
+                    />
+                  </span>
                 </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-gray-300">
