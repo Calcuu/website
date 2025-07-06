@@ -12,7 +12,7 @@ const Calculator = () => {
     // • Totale tijdwinst per maand (in minuten): x × 90 × 0.60
     // • Tijdwinst in uren (afronden op 1 decimaal): (x × 90 × 0.60) ÷ 60
     // • Geldbesparing op tijd (in €): Tijdwinst in uren × €50
-    // • Netto besparing: Geldbesparing – €35
+    // • Netto besparing: Geldbesparing – €45
 
     const totalTimeWinMinutes = offertes * 90 * 0.6;
     const timeWinHours = Math.round((totalTimeWinMinutes / 60) * 10) / 10;
