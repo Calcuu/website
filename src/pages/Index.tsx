@@ -746,15 +746,15 @@ const Index = () => {
                         MozAppearance: "textfield",
                       }}
                     />
-                    <div className="flex flex-col ml-2">
-                      <button className="text-xs text-gray-500 hover:text-gray-700 leading-none">
+                    <span className="text-gray-500 mr-2">/ uur</span>
+                    <div className="flex flex-col">
+                      <button className="text-xs text-gray-500 hover:text-gray-700 leading-none h-3 flex items-center justify-center">
                         ▲
                       </button>
-                      <button className="text-xs text-gray-500 hover:text-gray-700 leading-none">
+                      <button className="text-xs text-gray-500 hover:text-gray-700 leading-none h-3 flex items-center justify-center">
                         ▼
                       </button>
                     </div>
-                    <span className="text-gray-500 ml-2">/ uur</span>
                   </div>
                 </div>
               </div>
