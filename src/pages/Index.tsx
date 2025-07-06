@@ -729,7 +729,7 @@ const Index = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    How much is one hour of your time worth to you?
+                    Wat is je uurloon?
                   </label>
                   <div className="flex items-center">
                     <span className="text-lg font-medium mr-2">$</span>
