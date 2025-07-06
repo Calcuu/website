@@ -143,13 +143,13 @@ const Calculator = () => {
                 </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-gray-300">
-                    Geldbesparing (tijd × uurloon)
+                    Besparing (tijdwinst × uurloon)
                   </span>
                   <span className="text-white">€{moneySaving}</span>
                 </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-gray-300">
-                    Calcuu abonnement per maand
+                    Minus abonnement Calcuu per maand
                   </span>
                   <span className="text-white">€35</span>
                 </div>
