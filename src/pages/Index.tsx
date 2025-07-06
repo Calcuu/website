@@ -718,7 +718,11 @@ const Index = () => {
                       min="1"
                       max="20"
                       defaultValue="2"
-                      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                      className="w-full h-2 rounded-lg appearance-none cursor-pointer slider"
+                      style={{
+                        background: "#242447",
+                        outline: "none",
+                      }}
                     />
                     <div className="flex justify-between text-xs text-gray-500 mt-1">
                       <span>1</span>
