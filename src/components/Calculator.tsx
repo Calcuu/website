@@ -77,7 +77,7 @@ const Calculator = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Wat is je uurloon? (optioneel)
                 </label>
-                <div className="flex items-center border-2 border-blue-400 rounded px-3 py-3 bg-white w-full max-w-xs">
+                <div className="flex items-center border-2 border-gray-300 rounded px-3 py-3 bg-white w-full max-w-xs">
                   <span className="text-gray-700 mr-3">€</span>
                   <input
                     type="number"
