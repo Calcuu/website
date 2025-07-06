@@ -735,29 +735,41 @@ const Index = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Wat is je uurloon?
                   </label>
-                  <div className="relative">
-                    <input
-                      type="number"
-                      defaultValue="50"
-                      className="w-full border border-blue-400 rounded px-3 py-2 pr-16 text-left"
-                      style={{
-                        paddingLeft: "30px",
-                        paddingRight: "60px",
-                      }}
-                    />
-                    <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-lg font-medium">
-                      €
-                    </span>
-                    <span className="absolute right-10 top-1/2 transform -translate-y-1/2 text-gray-500">
-                      / uur
-                    </span>
-                    <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex flex-col">
-                      <button className="text-xs text-gray-500 hover:text-gray-700 leading-none h-3 flex items-center justify-center">
-                        ▲
-                      </button>
-                      <button className="text-xs text-gray-500 hover:text-gray-700 leading-none h-3 flex items-center justify-center">
-                        ▼
-                      </button>
+                  <div className="relative w-full max-w-sm">
+                    <div className="flex items-center border-2 border-blue-400 rounded-md px-3 py-2 bg-white">
+                      <span className="text-base font-medium text-gray-700 mr-2">
+                        €
+                      </span>
+                      <input
+                        type="number"
+                        defaultValue="50"
+                        className="flex-1 text-base text-gray-900 border-none outline-none bg-transparent"
+                      />
+                      <span className="text-base text-gray-500 mx-2">
+                        / uur
+                      </span>
+                      <div className="flex flex-col ml-1">
+                        <button className="text-gray-500 hover:text-gray-700 w-4 h-3 flex items-center justify-center">
+                          <svg
+                            width="8"
+                            height="5"
+                            viewBox="0 0 8 5"
+                            fill="currentColor"
+                          >
+                            <path d="M4 0L8 5H0L4 0Z" />
+                          </svg>
+                        </button>
+                        <button className="text-gray-500 hover:text-gray-700 w-4 h-3 flex items-center justify-center">
+                          <svg
+                            width="8"
+                            height="5"
+                            viewBox="0 0 8 5"
+                            fill="currentColor"
+                          >
+                            <path d="M4 5L0 0H8L4 5Z" />
+                          </svg>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
