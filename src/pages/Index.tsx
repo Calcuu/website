@@ -720,7 +720,8 @@ const Index = () => {
                       type="range"
                       min="1"
                       max="20"
-                      defaultValue="2"
+                      defaultValue="5"
+                      id="offertesSlider"
                       className="w-full h-2 rounded-lg appearance-none cursor-pointer slider"
                       style={{
                         background: "#242447",
