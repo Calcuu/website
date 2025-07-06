@@ -367,14 +367,6 @@ const Index = () => {
                 <Play className="w-8 h-8" />
               </Button>
             </div>
-            <div className="mt-8">
-              <Button
-                variant="outline"
-                className="border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold px-8 py-3 rounded-lg"
-              >
-                Bekijk Demo
-              </Button>
-            </div>
           </div>
         </div>
       </section>
