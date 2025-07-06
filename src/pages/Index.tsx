@@ -91,8 +91,8 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-calcuu-white to-calcuu-background">
-        <div className="container mx-auto px-4 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+        <div className="container mx-auto px-4 py-5 mb-5">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center mt-7 pt-3">
             <div className="lg:col-span-3">
               <div className="space-y-6">
                 <p className="text-lg md:text-xl font-bold text-calcuu-primary mb-4">
