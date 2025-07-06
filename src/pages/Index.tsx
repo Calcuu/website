@@ -750,11 +750,11 @@ const Index = () => {
               >
                 <div className="text-center mb-4">
                   <div className="text-sm text-gray-300 mb-2">
-                    Return on investment per month with Motion
+                    Return on investment per maand met Calcuu
                   </div>
-                  <div className="text-5xl font-bold text-white mb-2">$381</div>
+                  <div className="text-5xl font-bold text-white mb-2">€381</div>
                   <div className="text-sm text-gray-300">
-                    and 6 hours of your life back
+                    en je maakt 6 uur vrij om anders te besteden
                   </div>
                 </div>
 
@@ -873,7 +873,7 @@ const Index = () => {
               <div className="mb-6">
                 <div className="monthly-price hidden">
                   <span className="text-4xl font-bold text-calcuu-secondary">
-                    €0
+                    ��0
                   </span>
                   <span className="text-calcuu-text-sub ml-2">
                     14 dagen gratis
