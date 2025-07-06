@@ -703,8 +703,8 @@ const Index = () => {
               <div className="space-y-6 bg-white p-6 rounded-lg shadow-lg">
                 <div className="text-sm text-gray-600 mb-4">
                   <p>
-                    Hoeveel uur ben jij kwijt per maand aan het maken van een
-                    calculatie, offerte, na-calculatie en urenregistratie?&nbsp;
+                    Hoeveel offertes maak je per maand? Schuif de slider en zie
+                    direct je tijdwinst en kostenbesparing!
                   </p>
                 </div>
 
