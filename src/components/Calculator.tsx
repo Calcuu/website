@@ -17,7 +17,7 @@ const Calculator = () => {
     const totalTimeWinMinutes = offertes * 90 * 0.6;
     const timeWinHours = Math.round((totalTimeWinMinutes / 60) * 10) / 10;
     const moneySaving = timeWinHours * hourlyRate;
-    const nettoSaving = moneySaving - 35;
+    const nettoSaving = moneySaving - 45;
 
     return {
       timeWinHours,
