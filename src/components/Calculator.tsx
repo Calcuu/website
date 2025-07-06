@@ -52,7 +52,10 @@ const Calculator = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  <b>Aantal offertes per maand: {offertes}</b>
+                  <b>
+                    Aantal offertes per maand:{" "}
+                    <AnimatedNumber value={offertes} />
+                  </b>
                 </label>
                 <div className="relative">
                   <input
