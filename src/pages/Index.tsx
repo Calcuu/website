@@ -767,28 +767,34 @@ const Index = () => {
 
                 <div className="mt-4 space-y-2">
                   <div className="text-xs text-gray-300">
-                    How did we get this number?
+                    Hoe komen we aan dit bedrag en uren?
                   </div>
                   <div className="flex justify-between text-xs">
-                    <span className="text-gray-300">Hours lost per month</span>
+                    <span className="text-gray-300">
+                      Traditionele manier per maand kwijt&nbsp;
+                    </span>
                     <span className="text-white">8 hours</span>
                   </div>
                   <div className="flex justify-between text-xs">
                     <span className="text-gray-300">
-                      Value of Motion for saving 8 hours of your time
+                      <p className="p1">
+                        <b>Calcuu bespaard 8 uur van je tijd x je uurloon</b>
+                      </p>
                     </span>
-                    <span className="text-white">$400/mo</span>
+                    <span className="text-white">€400/mo</span>
                   </div>
                   <div className="flex justify-between text-xs">
                     <span className="text-gray-300">
-                      Cost of Motion Pro subscription per month
+                      Calcuu abonnement per maand
                     </span>
-                    <span className="text-white">$19/mo</span>
+                    <span className="text-white">€35/mo</span>
                   </div>
                   <hr className="border-gray-600 my-2" />
                   <div className="flex justify-between text-xs font-semibold">
-                    <span className="text-gray-300">Total ROI per month</span>
-                    <span className="text-white">$381/mo</span>
+                    <span className="text-gray-300">
+                      Total scheelt het je per maand
+                    </span>
+                    <span className="text-white">€381/mo</span>
                   </div>
                 </div>
               </div>
@@ -873,7 +879,7 @@ const Index = () => {
               <div className="mb-6">
                 <div className="monthly-price hidden">
                   <span className="text-4xl font-bold text-calcuu-secondary">
-                    ��0
+                    €0
                   </span>
                   <span className="text-calcuu-text-sub ml-2">
                     14 dagen gratis
