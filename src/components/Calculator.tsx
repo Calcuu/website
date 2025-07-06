@@ -183,7 +183,13 @@ const Calculator = () => {
                 <hr className="border-gray-600 my-2" />
                 <div className="flex justify-between text-xs font-semibold">
                   <span className="text-gray-300">Netto besparing</span>
-                  <span className="text-white">€{nettoSaving}</span>
+                  <span className="text-white">
+                    <AnimatedNumber
+                      value={nettoSaving}
+                      prefix="€"
+                      duration={800}
+                    />
+                  </span>
                 </div>
               </div>
             </div>
