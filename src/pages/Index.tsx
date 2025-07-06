@@ -735,13 +735,25 @@ const Index = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Wat is je uurloon?
                   </label>
-                  <div className="flex items-center border border-blue-400 rounded px-3 py-2 w-full max-w-xs">
+                  <div className="relative flex items-center border border-blue-400 rounded px-3 py-2 w-full max-w-xs">
                     <span className="text-lg font-medium mr-2">€</span>
                     <input
                       type="number"
                       defaultValue="50"
                       className="flex-1 text-center border-none outline-none"
+                      style={{
+                        WebkitAppearance: "textfield",
+                        MozAppearance: "textfield",
+                      }}
                     />
+                    <div className="flex flex-col ml-2">
+                      <button className="text-xs text-gray-500 hover:text-gray-700 leading-none">
+                        ▲
+                      </button>
+                      <button className="text-xs text-gray-500 hover:text-gray-700 leading-none">
+                        ▼
+                      </button>
+                    </div>
                     <span className="text-gray-500 ml-2">/ uur</span>
                   </div>
                 </div>
