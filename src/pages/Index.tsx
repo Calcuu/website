@@ -698,7 +698,7 @@ const Index = () => {
               Hoeveel tijd scheelt het jou?
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
               {/* Left Side - Calculator Input */}
               <div className="space-y-6 bg-white p-6 rounded-lg shadow-lg">
                 <div className="text-sm text-gray-600 mb-4">
