@@ -99,7 +99,7 @@ const Index = () => {
                   Vakschilders, opgelet!
                 </p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-[1.1] tracking-tight">
-                  Stop met het maken van&nbsp;
+                  Stop! met het maken van&nbsp;
                   <span className="text-calcuu-primary">offertes</span> in de
                   avonduren
                 </h1>
