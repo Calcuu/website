@@ -1,0 +1,85 @@
+BUG REPORT: Push Code Functionality Not Working
+
+Summary:
+The "Push Code" button in Builder.io is completely non-functional. Despite multiple attempts and configuration changes, no commits are being pushed to the connected GitHub repository.
+
+Environment:
+- Platform: Builder.io web interface
+- Project: React/Vite application  
+- Repository: GitHub (tried multiple repositories)
+- Browser: [Your browser and version]
+- Git integration: Connected via GitHub OAuth
+
+Issue Description:
+The Push Code functionality fails to push any commits to the connected GitHub repository. All local changes are visible in the Builder.io interface and DOM, but clicking "Push Code" produces no results - no commits appear in GitHub, no error messages are displayed.
+
+Steps to Reproduce:
+1. Make any code changes in Builder.io editor
+2. Click "Push Code" button
+3. Wait 5-10 minutes
+4. Check connected GitHub repository
+5. Verify no new commits appear
+
+Expected Behavior:
+- Commits should be pushed to the configured GitHub repository
+- Changes should be visible in GitHub within 2-5 minutes
+- Repository should show new commits with appropriate commit messages
+
+Actual Behavior:
+- No commits are pushed to GitHub
+- Repository remains unchanged regardless of local changes
+- No error messages or feedback provided
+- Git status shows "Your branch is ahead of 'origin/main' by 57+ commits" indicating local commits exist but aren't pushed
+
+Technical Details Attempted:
+1. Repository Configuration:
+   - Tried multiple GitHub repositories
+   - Verified repository permissions and access
+   - Tested both public and private repositories
+
+2. Git Configuration Fixes:
+   - Updated remote URLs
+   - Modified branch configurations  
+   - Fixed upstream branch settings
+   - Simplified git config to minimal setup
+   - Removed problematic branch mappings
+
+3. Branch Troubleshooting:
+   - Attempted push to main branch
+   - Tried custom branch ai_main_a8d0c2d8ddca
+   - Unset upstream configurations
+   - Tested different branch merge settings
+
+4. Access Token Verification:
+   - Verified GitHub access token is present in git config
+   - Confirmed repository permissions
+
+Git Configuration Attempted:
+[remote "origin"]
+    url = https://github.com/Calcuu/website-new.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+
+Error Symptoms:
+- git status shows: "Your branch is ahead of 'origin/main' by 57 commits"
+- No network activity observed during Push Code attempts
+- No error messages in browser console or interface
+- Repository deployment services (Vercel) show no new deployments
+
+Business Impact:
+- Critical workflow disruption: Unable to deploy changes to production
+- Development blocked: Cannot sync local changes with version control
+- Team collaboration impossible: Changes remain isolated in Builder.io
+- Deployment pipeline broken: Connected services (Vercel) not receiving updates
+
+Workaround Attempted:
+Manual file copying from Builder.io to GitHub (not sustainable for development workflow)
+
+Expected Resolution:
+Push Code functionality should work reliably to maintain normal development workflow and enable continuous deployment.
+
+Additional Notes:
+This appears to be a fundamental issue with Builder.io's git integration rather than a configuration problem, as multiple different git configurations have been attempted without success.
+
+Priority: HIGH - Blocks core development workflow
+
+Please investigate the Push Code functionality and provide a fix or detailed troubleshooting steps.
