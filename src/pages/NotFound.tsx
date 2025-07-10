@@ -96,50 +96,6 @@ const NotFound = () => {
               Ga Terug
             </Button>
           </div>
-
-          {/* Helpful Links */}
-          <div className="mt-16 pt-8 border-t border-calcuu-detail">
-            <h3 className="text-lg font-semibold text-calcuu-secondary mb-4">
-              Misschien zoek je dit:
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <button
-                onClick={() => navigate("/")}
-                className="p-4 bg-white rounded-lg border border-calcuu-detail hover:border-calcuu-primary transition-colors group"
-              >
-                <div className="text-calcuu-primary group-hover:text-calcuu-primary font-semibold">
-                  Functies
-                </div>
-                <div className="text-sm text-calcuu-text-sub mt-1">
-                  Ontdek wat Calcuu kan
-                </div>
-              </button>
-
-              <button
-                onClick={() => navigate("/")}
-                className="p-4 bg-white rounded-lg border border-calcuu-detail hover:border-calcuu-primary transition-colors group"
-              >
-                <div className="text-calcuu-primary group-hover:text-calcuu-primary font-semibold">
-                  Prijzen
-                </div>
-                <div className="text-sm text-calcuu-text-sub mt-1">
-                  Bekijk onze tarieven
-                </div>
-              </button>
-
-              <button
-                onClick={() => navigate("/")}
-                className="p-4 bg-white rounded-lg border border-calcuu-detail hover:border-calcuu-primary transition-colors group"
-              >
-                <div className="text-calcuu-primary group-hover:text-calcuu-primary font-semibold">
-                  Download
-                </div>
-                <div className="text-sm text-calcuu-text-sub mt-1">
-                  Download de app
-                </div>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
