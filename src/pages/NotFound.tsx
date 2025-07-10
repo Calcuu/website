@@ -104,7 +104,7 @@ const NotFound = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <button
-                onClick={() => navigate("/#features")}
+                onClick={() => navigate("/")}
                 className="p-4 bg-white rounded-lg border border-calcuu-detail hover:border-calcuu-primary transition-colors group"
               >
                 <div className="text-calcuu-primary group-hover:text-calcuu-primary font-semibold">
@@ -116,7 +116,7 @@ const NotFound = () => {
               </button>
 
               <button
-                onClick={() => navigate("/#pricing")}
+                onClick={() => navigate("/")}
                 className="p-4 bg-white rounded-lg border border-calcuu-detail hover:border-calcuu-primary transition-colors group"
               >
                 <div className="text-calcuu-primary group-hover:text-calcuu-primary font-semibold">
@@ -128,7 +128,7 @@ const NotFound = () => {
               </button>
 
               <button
-                onClick={() => navigate("/#download")}
+                onClick={() => navigate("/")}
                 className="p-4 bg-white rounded-lg border border-calcuu-detail hover:border-calcuu-primary transition-colors group"
               >
                 <div className="text-calcuu-primary group-hover:text-calcuu-primary font-semibold">
