@@ -21,7 +21,10 @@ const NotFound = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <div className="flex items-end gap-3">
+            <button
+              onClick={() => navigate("/")}
+              className="flex items-end gap-3 hover:opacity-80 transition-opacity"
+            >
               <img
                 src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
                 alt="Calcuu Logo"
@@ -33,7 +36,7 @@ const NotFound = () => {
               >
                 CALCUU
               </span>
-            </div>
+            </button>
 
             {/* Back to Home Button */}
             <Button
