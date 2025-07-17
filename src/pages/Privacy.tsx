@@ -46,37 +46,93 @@ const Privacy = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
-            {/* Company Logo and Info */}
-            <div className="flex justify-center items-center gap-4 mb-6">
-              <img
-                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
-                alt="Calcuu Logo"
-                className="w-16 h-16"
-              />
-              <div className="text-left">
-                <div
-                  className="text-3xl font-bold text-calcuu-secondary"
+          <div className="text-center mb-16">
+            {/* Professional Header Card */}
+            <div className="bg-gradient-to-br from-calcuu-white to-calcuu-background border border-calcuu-detail rounded-2xl p-8 lg:p-12 shadow-lg max-w-4xl mx-auto">
+              {/* Logo Section */}
+              <div className="flex justify-center mb-6">
+                <div className="bg-white rounded-full p-4 shadow-md">
+                  <img
+                    src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
+                    alt="Calcuu Logo"
+                    className="w-16 h-16"
+                  />
+                </div>
+              </div>
+
+              {/* Company Name */}
+              <div className="mb-6">
+                <h1
+                  className="text-4xl lg:text-5xl font-bold text-calcuu-secondary mb-2"
                   style={{ fontFamily: "Toxigenesis, sans-serif" }}
                 >
                   CALCUU
-                </div>
-                <div className="text-sm text-calcuu-text-sub">
-                  Calcuu B.V. - KvK: 93209649
+                </h1>
+                <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm border border-calcuu-detail">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-sm font-medium text-calcuu-secondary">
+                    Calcuu B.V.
+                  </span>
+                  <span className="text-calcuu-text-sub">•</span>
+                  <span className="text-sm text-calcuu-text-sub">
+                    KvK: 93209649
+                  </span>
                 </div>
               </div>
-            </div>
 
-            <h1 className="text-4xl lg:text-5xl font-bold text-calcuu-secondary mb-4">
-              Privacyverklaring
-            </h1>
-            <p className="text-lg text-calcuu-text-sub mb-4">
-              Calcuu respecteert jouw privacy en beschermt jouw persoonsgegevens
-            </p>
-            <div className="text-sm text-calcuu-text-sub bg-calcuu-background rounded-lg p-4 inline-block">
-              <strong>Laatst bijgewerkt:</strong>{" "}
-              {new Date().toLocaleDateString("nl-NL")} |
-              <strong className="ml-2">Versie:</strong> 1.0
+              {/* Title */}
+              <div className="mb-6">
+                <h2 className="text-3xl lg:text-4xl font-bold text-calcuu-secondary mb-3">
+                  Privacyverklaring
+                </h2>
+                <p className="text-lg text-calcuu-text-sub max-w-2xl mx-auto leading-relaxed">
+                  Wij respecteren jouw privacy en beschermen jouw
+                  persoonsgegevens volgens de hoogste standaarden
+                </p>
+              </div>
+
+              {/* Version Info */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div className="bg-white rounded-lg px-4 py-3 shadow-sm border border-calcuu-detail">
+                  <div className="flex items-center gap-2">
+                    <svg
+                      className="w-4 h-4 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-sm font-medium text-calcuu-secondary">
+                      Laatst bijgewerkt:
+                    </span>
+                    <span className="text-sm text-calcuu-text-sub">
+                      {new Date().toLocaleDateString("nl-NL")}
+                    </span>
+                  </div>
+                </div>
+                <div className="bg-calcuu-primary/10 rounded-lg px-4 py-3 border border-calcuu-primary/20">
+                  <div className="flex items-center gap-2">
+                    <svg
+                      className="w-4 h-4 text-calcuu-primary"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="text-sm font-medium text-calcuu-primary">
+                      Versie: 1.0
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
