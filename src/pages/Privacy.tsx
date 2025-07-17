@@ -74,7 +74,8 @@ const Privacy = () => {
               Calcuu respecteert jouw privacy en beschermt jouw persoonsgegevens
             </p>
             <div className="text-sm text-calcuu-text-sub bg-calcuu-background rounded-lg p-4 inline-block">
-              <strong>Laatst bijgewerkt:</strong> {new Date().toLocaleDateString('nl-NL')} |
+              <strong>Laatst bijgewerkt:</strong>{" "}
+              {new Date().toLocaleDateString("nl-NL")} |
               <strong className="ml-2">Versie:</strong> 1.0
             </div>
           </div>
@@ -172,21 +173,28 @@ const Privacy = () => {
                   Account verwijdering (Google Play vereiste)
                 </h3>
                 <p className="text-calcuu-text-sub leading-relaxed mb-4">
-                  Je kunt je account op elk moment volledig verwijderen. Hierbij worden alle jouw
-                  persoonsgegevens permanent gewist van onze servers.
+                  Je kunt je account op elk moment volledig verwijderen. Hierbij
+                  worden alle jouw persoonsgegevens permanent gewist van onze
+                  servers.
                 </p>
                 <div className="space-y-2">
                   <p className="text-calcuu-text-sub">
-                    <strong>Optie 1:</strong> Via de app - Ga naar Instellingen > Account > Account verwijderen
+                    <strong>Optie 1:</strong> Via de app - Ga naar Instellingen
+                    &gt; Account &gt; Account verwijderen
                   </p>
                   <p className="text-calcuu-text-sub">
                     <strong>Optie 2:</strong> Stuur een e-mail naar
-                    <a href="mailto:support@calcuu.com" className="text-calcuu-primary hover:underline ml-1">
+                    <a
+                      href="mailto:support@calcuu.com"
+                      className="text-calcuu-primary hover:underline ml-1"
+                    >
                       support@calcuu.com
-                    </a> met het onderwerp "Account verwijdering"
+                    </a>{" "}
+                    met het onderwerp "Account verwijdering"
                   </p>
                   <p className="text-sm text-calcuu-text-sub mt-4 italic">
-                    Account verwijdering wordt binnen 30 dagen verwerkt en is onomkeerbaar.
+                    Account verwijdering wordt binnen 30 dagen verwerkt en is
+                    onomkeerbaar.
                   </p>
                 </div>
               </div>
@@ -222,8 +230,9 @@ const Privacy = () => {
                 6. Data Safety (Google Play Store informatie)
               </h2>
               <p className="text-calcuu-text-sub leading-relaxed mb-6">
-                Voor transparantie volgens Google Play Store beleid, hieronder een overzicht van
-                welke data we verzamelen en hoe we deze gebruiken:
+                Voor transparantie volgens Google Play Store beleid, hieronder
+                een overzicht van welke data we verzamelen en hoe we deze
+                gebruiken:
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -257,8 +266,9 @@ const Privacy = () => {
 
               <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                 <p className="text-blue-800 text-sm">
-                  <strong>Data versleuteling:</strong> Alle data wordt versleuteld opgeslagen en
-                  verzonden via HTTPS. We delen geen persoonlijke data met derden voor marketing doeleinden.
+                  <strong>Data versleuteling:</strong> Alle data wordt
+                  versleuteld opgeslagen en verzonden via HTTPS. We delen geen
+                  persoonlijke data met derden voor marketing doeleinden.
                 </p>
               </div>
             </section>
