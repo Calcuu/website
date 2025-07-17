@@ -47,12 +47,36 @@ const Privacy = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
+            {/* Company Logo and Info */}
+            <div className="flex justify-center items-center gap-4 mb-6">
+              <img
+                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
+                alt="Calcuu Logo"
+                className="w-16 h-16"
+              />
+              <div className="text-left">
+                <div
+                  className="text-3xl font-bold text-calcuu-secondary"
+                  style={{ fontFamily: "Toxigenesis, sans-serif" }}
+                >
+                  CALCUU
+                </div>
+                <div className="text-sm text-calcuu-text-sub">
+                  Calcuu B.V. - KvK: [nummer]
+                </div>
+              </div>
+            </div>
+
             <h1 className="text-4xl lg:text-5xl font-bold text-calcuu-secondary mb-4">
               Privacyverklaring
             </h1>
-            <p className="text-lg text-calcuu-text-sub">
+            <p className="text-lg text-calcuu-text-sub mb-4">
               Calcuu respecteert jouw privacy en beschermt jouw persoonsgegevens
             </p>
+            <div className="text-sm text-calcuu-text-sub bg-calcuu-background rounded-lg p-4 inline-block">
+              <strong>Laatst bijgewerkt:</strong> {new Date().toLocaleDateString('nl-NL')} |
+              <strong className="ml-2">Versie:</strong> 1.0
+            </div>
           </div>
 
           {/* Privacy Policy Content */}
@@ -136,14 +160,36 @@ const Privacy = () => {
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
                 4. Registratie en gebruikersaccount
               </h2>
-              <p className="text-calcuu-text-sub leading-relaxed">
+              <p className="text-calcuu-text-sub leading-relaxed mb-6">
                 Om de app te gebruiken, maak je een persoonlijk account aan met
                 je e-mailadres en wachtwoord. Je kunt hier klant- en
                 projectgegevens opslaan, zoals schilderprojecten, materialen en
                 offertes. Na registratie ontvang je een bevestiging per e-mail.
-                Je kunt je account op elk moment beëindigen via
-                support@calcuu.com.
               </p>
+
+              <div className="bg-calcuu-primary/5 border border-calcuu-primary/20 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
+                  Account verwijdering (Google Play vereiste)
+                </h3>
+                <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                  Je kunt je account op elk moment volledig verwijderen. Hierbij worden alle jouw
+                  persoonsgegevens permanent gewist van onze servers.
+                </p>
+                <div className="space-y-2">
+                  <p className="text-calcuu-text-sub">
+                    <strong>Optie 1:</strong> Via de app - Ga naar Instellingen > Account > Account verwijderen
+                  </p>
+                  <p className="text-calcuu-text-sub">
+                    <strong>Optie 2:</strong> Stuur een e-mail naar
+                    <a href="mailto:support@calcuu.com" className="text-calcuu-primary hover:underline ml-1">
+                      support@calcuu.com
+                    </a> met het onderwerp "Account verwijdering"
+                  </p>
+                  <p className="text-sm text-calcuu-text-sub mt-4 italic">
+                    Account verwijdering wordt binnen 30 dagen verwerkt en is onomkeerbaar.
+                  </p>
+                </div>
+              </div>
             </section>
 
             {/* Section 5 */}
@@ -170,14 +216,61 @@ const Privacy = () => {
               </p>
             </section>
 
-            {/* Section 6 */}
+            {/* New Section - Data Safety for Google Play */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
-                6. Externe dienstverleners
+                6. Data Safety (Google Play Store informatie)
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed mb-6">
+                Voor transparantie volgens Google Play Store beleid, hieronder een overzicht van
+                welke data we verzamelen en hoe we deze gebruiken:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-calcuu-background rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
+                    ✅ Data die we WEL verzamelen
+                  </h3>
+                  <ul className="space-y-2 text-calcuu-text-sub">
+                    <li>• E-mailadres (voor account)</li>
+                    <li>• Projectgegevens (door jou ingevoerd)</li>
+                    <li>• Apparaat informatie (voor ondersteuning)</li>
+                    <li>• App-gebruik statistieken (anoniem)</li>
+                    <li>• Bluetooth gegevens (Leica koppeling)</li>
+                  </ul>
+                </div>
+
+                <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-red-700 mb-3">
+                    ❌ Data die we NIET verzamelen
+                  </h3>
+                  <ul className="space-y-2 text-red-600">
+                    <li>• Locatiegegevens</li>
+                    <li>• Contactenlijst</li>
+                    <li>• Camera/foto's</li>
+                    <li>• Microfoon/audio</li>
+                    <li>• SMS/telefoongegevens</li>
+                    <li>• Financiële informatie</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <p className="text-blue-800 text-sm">
+                  <strong>Data versleuteling:</strong> Alle data wordt versleuteld opgeslagen en
+                  verzonden via HTTPS. We delen geen persoonlijke data met derden voor marketing doeleinden.
+                </p>
+              </div>
+            </section>
+
+            {/* Section 7 - External Service Providers (renumbered) */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                7. Externe dienstverleners
               </h2>
 
               <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
-                6.1 Digital Ocean
+                7.1 Digital Ocean
               </h3>
               <p className="text-calcuu-text-sub leading-relaxed mb-4">
                 Wij gebruiken DigitalOcean (DigitalOcean LLC, 101 Avenue of the
@@ -200,7 +293,7 @@ const Privacy = () => {
               </p>
 
               <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
-                6.2 Google Analytics
+                7.2 Google Analytics
               </h3>
               <p className="text-calcuu-text-sub leading-relaxed mb-4">
                 Wij gebruiken Google Analytics om anoniem inzicht te verkrijgen
@@ -214,10 +307,10 @@ const Privacy = () => {
               </p>
             </section>
 
-            {/* Section 7 */}
+            {/* Section 8 */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
-                7. Gegevensbeveiliging
+                8. Gegevensbeveiliging
               </h2>
               <p className="text-calcuu-text-sub leading-relaxed">
                 Gegevensoverdracht via de app is versleuteld. Calcuu raadt aan
@@ -227,10 +320,10 @@ const Privacy = () => {
               </p>
             </section>
 
-            {/* Section 8 */}
+            {/* Section 9 */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
-                8. Bewaartermijnen
+                9. Bewaartermijnen
               </h2>
               <p className="text-calcuu-text-sub leading-relaxed">
                 Persoonsgegevens worden niet langer bewaard dan strikt
@@ -239,10 +332,10 @@ const Privacy = () => {
               </p>
             </section>
 
-            {/* Section 9 */}
+            {/* Section 10 */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
-                9. Jouw rechten
+                10. Jouw rechten
               </h2>
               <p className="text-calcuu-text-sub leading-relaxed mb-4">
                 Je hebt recht op:
@@ -261,10 +354,10 @@ const Privacy = () => {
               </p>
             </section>
 
-            {/* Section 10 */}
+            {/* Section 11 */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
-                10. E-mailcommunicatie
+                11. E-mailcommunicatie
               </h2>
               <p className="text-calcuu-text-sub leading-relaxed">
                 Wij kunnen je informeren over updates en belangrijke
@@ -273,10 +366,10 @@ const Privacy = () => {
               </p>
             </section>
 
-            {/* Section 11 */}
+            {/* Section 12 */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
-                11. Wijzigingen
+                12. Wijzigingen
               </h2>
               <p className="text-calcuu-text-sub leading-relaxed">
                 Wij behouden ons het recht voor om deze privacyverklaring aan te
@@ -285,10 +378,10 @@ const Privacy = () => {
               </p>
             </section>
 
-            {/* Section 12 - Contact */}
+            {/* Section 13 - Contact */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
-                12. Contact
+                13. Contact
               </h2>
               <div className="bg-calcuu-background rounded-lg p-6">
                 <p className="text-calcuu-secondary font-semibold mb-2">
