@@ -179,13 +179,16 @@ const Calculator = () => {
                   <p className="mb-3">
                     Normaal kost het werk opnemen, het berekenen en het
                     uitwerken van een offerte je al snel 90 minuten. Met de
-                    Calcuu app doe je dit in een fractie van de tijd.
+                    Calcuu app doe je dit in een fractie van de tijd. (60%
+                    sneller)
                   </p>
                   <p>
-                    De tijd die je bespaart x jouw uurloon = jouw winst. Het
-                    bedrag dat je hierboven ziet staan, is ook nog inclusief een
-                    Calcuu-abonnement – je gaat er dus niets op achteruit,
-                    alleen maar op vooruit.
+                    De tijd die je bespaart x jouw uurloon = jouw winst.{" "}
+                    <span style={{ color: "rgb(255, 255, 255)" }}>
+                      Het bedrag dat je hierboven ziet staan, is inclusief een
+                      Calcuu-abonnement{" "}
+                    </span>
+                    – je gaat er dus niets op achteruit, alleen maar op vooruit.
                   </p>
                 </div>
 
