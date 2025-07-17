@@ -173,13 +173,6 @@ const Calculator = () => {
                 </div>
               </div>
 
-              <Button
-                style={{ backgroundColor: "#5B29DE" }}
-                className="w-full text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity"
-              >
-                Start nu 14 dagen gratis
-              </Button>
-
               <div className="mt-4 space-y-2">
                 <div className="text-xs text-gray-300">
                   Hoe komen we aan dit bedrag?
@@ -197,6 +190,14 @@ const Calculator = () => {
                     alleen maar op vooruit.
                   </p>
                 </div>
+
+                <Button
+                  style={{ backgroundColor: "#5B29DE" }}
+                  className="w-full text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity mt-4"
+                >
+                  Start nu 14 dagen gratis
+                </Button>
+
                 <hr className="border-gray-600 my-2" />
               </div>
             </div>
