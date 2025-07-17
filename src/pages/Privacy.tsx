@@ -62,7 +62,7 @@ const Privacy = () => {
                   CALCUU
                 </div>
                 <div className="text-sm text-calcuu-text-sub">
-                  Calcuu B.V. - KvK: [nummer]
+                  Calcuu B.V. - KvK: 93209649
                 </div>
               </div>
             </div>
