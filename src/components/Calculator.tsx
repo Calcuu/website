@@ -10,7 +10,7 @@ const Calculator = () => {
   const calculateValues = () => {
     // Formulas from specification:
     // • Totale tijdwinst per maand (in minuten): x × 90 × 0.60
-    // • Tijdwinst in uren (afronden op 1 decimaal): (x × 90 × 0.60) ÷ 60
+    // �� Tijdwinst in uren (afronden op 1 decimaal): (x × 90 × 0.60) ÷ 60
     // • Geldbesparing op tijd (in €): Tijdwinst in uren × €50
     // • Netto besparing: Geldbesparing – €45
 
@@ -135,18 +135,20 @@ const Calculator = () => {
               className="rounded-lg p-6 text-white"
             >
               <div className="text-center mb-4">
-                <div className="text-sm text-gray-300 mb-2">
-                  Netto besparing per maand met Calcuu
-                </div>
-                <div
-                  className="text-4xl font-bold text-white"
-                  style={{ margin: "15px 0" }}
-                >
+                <div className="text-lg font-bold text-white mb-4">
+                  Per maand bespaar je{" "}
                   <AnimatedNumber
                     value={nettoSaving}
-                    prefix="€"
+                    prefix="��"
                     duration={800}
-                  />
+                  />{" "}
+                  en{" "}
+                  <AnimatedNumber
+                    value={timeWinHours * 60}
+                    decimals={0}
+                    duration={600}
+                  />{" "}
+                  minuten
                 </div>
 
                 {/* Prominent Yearly Savings */}
