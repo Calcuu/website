@@ -139,8 +139,8 @@ const Calculator = () => {
                   Netto besparing per maand met Calcuu
                 </div>
                 <div
-                  className="text-5xl font-bold text-white"
-                  style={{ margin: "20px 0" }}
+                  className="text-4xl font-bold text-white"
+                  style={{ margin: "15px 0" }}
                 >
                   <AnimatedNumber
                     value={nettoSaving}
@@ -148,7 +148,7 @@ const Calculator = () => {
                     duration={800}
                   />
                 </div>
-                <div className="text-sm text-gray-300">
+                <div className="text-sm text-gray-300 mb-4">
                   en je bespaart{" "}
                   <AnimatedNumber
                     value={timeWinHours}
@@ -156,6 +156,20 @@ const Calculator = () => {
                     duration={600}
                   />{" "}
                   uur per maand
+                </div>
+
+                {/* Prominent Yearly Savings */}
+                <div className="bg-white/10 rounded-lg p-4 border border-white/20">
+                  <div className="text-sm text-gray-200 mb-2">
+                    💰 Netto besparing per jaar
+                  </div>
+                  <div className="text-5xl font-bold text-white">
+                    <AnimatedNumber
+                      value={nettoSaving * 12}
+                      prefix="€"
+                      duration={1000}
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -205,16 +219,6 @@ const Calculator = () => {
                   <span className="text-white">
                     <AnimatedNumber
                       value={nettoSaving}
-                      prefix="€"
-                      duration={800}
-                    />
-                  </span>
-                </div>
-                <div className="flex justify-between text-xs font-bold">
-                  <span className="text-white">Netto besparing per jaar</span>
-                  <span className="text-white">
-                    <AnimatedNumber
-                      value={nettoSaving * 12}
                       prefix="€"
                       duration={800}
                     />
