@@ -185,51 +185,19 @@ const Calculator = () => {
                   Hoe komen we aan dit bedrag?
                 </div>
                 <div className="text-xs text-gray-400 mb-3 leading-relaxed">
-                  📝 Zonder Calcuu doe je 90 minuten over een offerte. Met
-                  Calcuu slechts 36 minuten! Dat scheelt 54 minuten per offerte.
-                  Die tijd × je uurloon = hoeveel je bespaart. Min de €45 per
-                  maand voor Calcuu = jouw winst! 🎯
-                </div>
-                <div className="flex justify-between text-xs">
-                  <span className="text-gray-300">Tijdwinst per maand</span>
-                  <span className="text-white">
-                    <AnimatedNumber
-                      value={timeWinHours}
-                      decimals={1}
-                      suffix=" uur"
-                      duration={600}
-                    />
-                  </span>
-                </div>
-                <div className="flex justify-between text-xs">
-                  <span className="text-gray-300">
-                    Besparing (tijdwinst × uurloon)
-                  </span>
-                  <span className="text-white">
-                    <AnimatedNumber
-                      value={moneySaving}
-                      prefix="€"
-                      duration={600}
-                    />
-                  </span>
-                </div>
-                <div className="flex justify-between text-xs">
-                  <span className="text-gray-300">
-                    Minus abonnement Calcuu per maand
-                  </span>
-                  <span className="text-white">€45</span>
+                  <p className="mb-3">
+                    Normaal kost het werk opnemen, het berekenen en het
+                    uitwerken van een offerte je al snel 90 minuten. Met de
+                    Calcuu app doe je dit in een fractie van de tijd.
+                  </p>
+                  <p>
+                    De tijd die je bespaart x jouw uurloon = jouw winst. Het
+                    bedrag dat je hierboven ziet staan, is ook nog inclusief een
+                    Calcuu-abonnement – je gaat er dus niets op achteruit,
+                    alleen maar op vooruit.
+                  </p>
                 </div>
                 <hr className="border-gray-600 my-2" />
-                <div className="flex justify-between text-xs font-semibold">
-                  <span className="text-white">Netto besparing per maand</span>
-                  <span className="text-white">
-                    <AnimatedNumber
-                      value={nettoSaving}
-                      prefix="€"
-                      duration={800}
-                    />
-                  </span>
-                </div>
               </div>
             </div>
           </div>
