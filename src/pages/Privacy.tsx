@@ -225,7 +225,7 @@ const Privacy = () => {
 
               <div className="bg-calcuu-primary/5 border border-calcuu-primary/20 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-calcuu-secondary mb-3">
-                  Account verwijdering (Google Play vereiste)
+                  Account verwijdering&nbsp;
                 </h3>
                 <p className="text-calcuu-text-sub leading-relaxed mb-4">
                   Je kunt je account op elk moment volledig verwijderen. Hierbij
@@ -282,7 +282,7 @@ const Privacy = () => {
             {/* New Section - Data Safety for Google Play */}
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
-                6. Data Safety (Google Play Store informatie)
+                6. Data Safety&nbsp;
               </h2>
               <p className="text-calcuu-text-sub leading-relaxed mb-6">
                 Voor transparantie volgens Google Play Store beleid, hieronder
