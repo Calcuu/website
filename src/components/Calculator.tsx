@@ -87,20 +87,21 @@ const Calculator = () => {
                     type="number"
                     min="1"
                     max="500"
-                    value={hourlyRate}
+                    step="1"
+                    value={hourlyRate || ""}
                     onChange={(e) => {
                       const value = e.target.value;
                       if (value === "") {
                         setHourlyRate(0);
                       } else {
-                        const numValue = parseFloat(value);
-                        if (!isNaN(numValue) && numValue >= 0) {
+                        const numValue = parseInt(value);
+                        if (!isNaN(numValue)) {
                           setHourlyRate(numValue);
                         }
                       }
                     }}
                     onBlur={(e) => {
-                      const value = parseFloat(e.target.value);
+                      const value = parseInt(e.target.value);
                       if (isNaN(value) || value <= 0) {
                         setHourlyRate(50);
                       }
