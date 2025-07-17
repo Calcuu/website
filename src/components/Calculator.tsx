@@ -64,8 +64,9 @@ const Calculator = () => {
                     max="20"
                     value={offertes}
                     onChange={(e) => setOffertes(parseInt(e.target.value))}
-                    className="w-full h-2 rounded-lg appearance-none cursor-pointer slider"
+                    className="w-full rounded-lg appearance-none cursor-pointer slider"
                     style={{
+                      height: "6px",
                       background: "#242447",
                       outline: "none",
                     }}
