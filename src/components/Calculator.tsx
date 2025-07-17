@@ -85,11 +85,28 @@ const Calculator = () => {
                   <span className="text-gray-700 mr-3">€</span>
                   <input
                     type="number"
+                    min="1"
+                    max="500"
                     value={hourlyRate}
-                    onChange={(e) =>
-                      setHourlyRate(parseFloat(e.target.value) || 50)
-                    }
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      if (value === "") {
+                        setHourlyRate(0);
+                      } else {
+                        const numValue = parseFloat(value);
+                        if (!isNaN(numValue) && numValue >= 0) {
+                          setHourlyRate(numValue);
+                        }
+                      }
+                    }}
+                    onBlur={(e) => {
+                      const value = parseFloat(e.target.value);
+                      if (isNaN(value) || value <= 0) {
+                        setHourlyRate(50);
+                      }
+                    }}
                     className="flex-1 text-gray-900 border-none outline-none bg-transparent"
+                    placeholder="50"
                   />
                   <span className="text-gray-500 mr-3">/uur</span>
                   <div className="flex flex-col items-center justify-center">
