@@ -1,0 +1,354 @@
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Home, ArrowLeft, Mail } from "lucide-react";
+
+const Privacy = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div className="min-h-screen bg-calcuu-white font-inter">
+      {/* Navigation Menu */}
+      <nav className="sticky top-0 z-50 bg-calcuu-white/95 backdrop-blur-sm border-b border-calcuu-detail">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            {/* Logo */}
+            <button
+              onClick={() => navigate("/")}
+              className="flex items-end gap-3 hover:opacity-80 transition-opacity"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
+                alt="Calcuu Logo"
+                className="w-8 h-8 lg:w-10 lg:h-10"
+              />
+              <span
+                className="text-xl lg:text-2xl font-bold text-calcuu-secondary"
+                style={{ fontFamily: "Toxigenesis, sans-serif" }}
+              >
+                CALCUU
+              </span>
+            </button>
+
+            {/* Back to Home Button */}
+            <Button
+              onClick={() => navigate("/")}
+              variant="outline"
+              className="border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white"
+            >
+              <Home className="w-4 h-4 mr-2" />
+              Terug naar Home
+            </Button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Privacy Policy Content */}
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl lg:text-5xl font-bold text-calcuu-secondary mb-4">
+              Privacyverklaring
+            </h1>
+            <p className="text-lg text-calcuu-text-sub">
+              Calcuu respecteert jouw privacy en beschermt jouw persoonsgegevens
+            </p>
+          </div>
+
+          {/* Privacy Policy Content */}
+          <div className="prose prose-lg max-w-none">
+            {/* Section 1 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                1. Verantwoordelijke voor gegevensverwerking
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                De verantwoordelijke voor de verwerking van persoonsgegevens
+                binnen de Calcuu app is:
+              </p>
+              <div className="bg-calcuu-background rounded-lg p-6">
+                <p className="text-calcuu-secondary font-semibold">
+                  Calcuu B.V.
+                </p>
+                <p className="text-calcuu-text-sub">John de Visserhof 4</p>
+                <p className="text-calcuu-text-sub">1621 PS Hoorn, Nederland</p>
+                <p className="text-calcuu-text-sub">
+                  E-mail: support@calcuu.com
+                </p>
+              </div>
+            </section>
+
+            {/* Section 2 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                2. Wat zijn persoonsgegevens?
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Persoonsgegevens zijn alle gegevens die informatie geven over
+                een identificeerbare natuurlijke persoon, zoals je naam,
+                e-mailadres, IP-adres of locatiegegevens.
+              </p>
+            </section>
+
+            {/* Section 3 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                3. Welke gegevens verwerken we en waarom?
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed mb-6">
+                Tenzij anders aangegeven, is de wettelijke grondslag voor de
+                gegevensverwerking artikel 6, lid 1, onder b, van de Algemene
+                Verordening Gegevensbescherming (AVG): uitvoering van een
+                overeenkomst.
+              </p>
+
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
+                3.1 Technische communicatiegegevens
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                Bij gebruik van de app verzamelen we onder meer:
+              </p>
+              <ul className="list-disc pl-6 text-calcuu-text-sub space-y-1 mb-6">
+                <li>Apparaatnaam</li>
+                <li>Besturingssysteem en app-versie</li>
+                <li>Mobiele provider</li>
+                <li>Unieke apparaat-ID</li>
+                <li>Tijdstip van app-storingen</li>
+                <li>IP-adres</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
+                3.2 Bluetooth-verbinding met Leica afstandslaser
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                Voor het koppelen van een Leica afstandslaser via Bluetooth
+                verzamelen wij:
+              </p>
+              <ul className="list-disc pl-6 text-calcuu-text-sub space-y-1">
+                <li>Bluetooth-ID van het apparaat</li>
+                <li>Meetgegevens</li>
+                <li>Verbindingsdata</li>
+              </ul>
+            </section>
+
+            {/* Section 4 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                4. Registratie en gebruikersaccount
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Om de app te gebruiken, maak je een persoonlijk account aan met
+                je e-mailadres en wachtwoord. Je kunt hier klant- en
+                projectgegevens opslaan, zoals schilderprojecten, materialen en
+                offertes. Na registratie ontvang je een bevestiging per e-mail.
+                Je kunt je account op elk moment beëindigen via
+                support@calcuu.com.
+              </p>
+            </section>
+
+            {/* Section 5 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                5. App-machtigingen
+              </h2>
+
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
+                5.1 Bluetooth
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                Toestemming is nodig voor Bluetooth-koppeling met de
+                afstandslaser. Recht van intrekking: je kunt deze toestemming op
+                elk moment intrekken via je apparaatinstellingen.
+              </p>
+
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
+                5.2 Netwerkcommunicatie
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Voor het functioneren van de app is internettoegang vereist om
+                gegevens te verzenden en synchroniseren met onze servers.
+              </p>
+            </section>
+
+            {/* Section 6 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                6. Externe dienstverleners
+              </h2>
+
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
+                6.1 Digital Ocean
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                Wij gebruiken DigitalOcean (DigitalOcean LLC, 101 Avenue of the
+                Americas, 10th Floor, New York, NY 10013, USA) voor hosting en
+                opslag van onze app-data. DigitalOcean verwerkt gegevens namens
+                ons en volgens onze instructies. Zij zijn gebonden aan strikte
+                beveiligingsstandaarden en privacyovereenkomsten.
+              </p>
+              <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                Voor meer informatie over hoe DigitalOcean met gegevens omgaat,
+                zie hun Privacy Policy:
+                <a
+                  href="https://www.digitalocean.com/legal/privacy-policy/"
+                  className="text-calcuu-primary hover:underline ml-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.digitalocean.com/legal/privacy-policy/
+                </a>
+              </p>
+
+              <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
+                6.2 Google Analytics
+              </h3>
+              <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                Wij gebruiken Google Analytics om anoniem inzicht te verkrijgen
+                in het gebruik van de app, met als doel deze te verbeteren.
+                IP-adressen worden geanonimiseerd en er worden geen
+                persoonsgegevens gedeeld met Google.
+              </p>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Met alle externe dienstverleners is een verwerkersovereenkomst
+                afgesloten conform de AVG.
+              </p>
+            </section>
+
+            {/* Section 7 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                7. Gegevensbeveiliging
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Gegevensoverdracht via de app is versleuteld. Calcuu raadt aan
+                om je apparaat extra te beveiligen met een wachtwoord of
+                gezichtsherkenning. Bij het verwijderen van de app worden lokaal
+                opgeslagen gegevens automatisch gewist.
+              </p>
+            </section>
+
+            {/* Section 8 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                8. Bewaartermijnen
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Persoonsgegevens worden niet langer bewaard dan strikt
+                noodzakelijk. Technische communicatiegegevens worden maximaal 3
+                jaar bewaard of geanonimiseerd.
+              </p>
+            </section>
+
+            {/* Section 9 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                9. Jouw rechten
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed mb-4">
+                Je hebt recht op:
+              </p>
+              <ul className="list-disc pl-6 text-calcuu-text-sub space-y-1 mb-4">
+                <li>Inzage in je gegevens</li>
+                <li>Rectificatie of verwijdering</li>
+                <li>Beperking van verwerking</li>
+                <li>Overdraagbaarheid van gegevens</li>
+                <li>Bezwaar tegen verwerking</li>
+              </ul>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Voor uitoefening van deze rechten kun je mailen naar
+                support@calcuu.com. Je hebt daarnaast het recht om een klacht in
+                te dienen bij de Autoriteit Persoonsgegevens.
+              </p>
+            </section>
+
+            {/* Section 10 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                10. E-mailcommunicatie
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Wij kunnen je informeren over updates en belangrijke
+                app-meldingen. Je kunt je hiervoor op elk moment afmelden via de
+                link in de e-mail of een verzoek sturen naar support@calcuu.com.
+              </p>
+            </section>
+
+            {/* Section 11 */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                11. Wijzigingen
+              </h2>
+              <p className="text-calcuu-text-sub leading-relaxed">
+                Wij behouden ons het recht voor om deze privacyverklaring aan te
+                passen. Bij ingrijpende wijzigingen word je hierover
+                geïnformeerd via de app of e-mail.
+              </p>
+            </section>
+
+            {/* Section 12 - Contact */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-calcuu-secondary mb-4">
+                12. Contact
+              </h2>
+              <div className="bg-calcuu-background rounded-lg p-6">
+                <p className="text-calcuu-secondary font-semibold mb-2">
+                  Calcuu B.V.
+                </p>
+                <p className="text-calcuu-text-sub">John de Visserhof 4</p>
+                <p className="text-calcuu-text-sub">1621 PS Hoorn, Nederland</p>
+                <div className="flex items-center gap-2 mt-3">
+                  <Mail className="w-4 h-4 text-calcuu-primary" />
+                  <a
+                    href="mailto:support@calcuu.com"
+                    className="text-calcuu-primary hover:underline"
+                  >
+                    support@calcuu.com
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            {/* Final Statement */}
+            <section className="mb-8">
+              <div className="bg-calcuu-primary/5 border border-calcuu-primary/20 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-calcuu-secondary mb-3">
+                  Slotverklaring
+                </h3>
+                <p className="text-calcuu-text-sub leading-relaxed">
+                  Door gebruik te maken van de Calcuu app ga je akkoord met deze
+                  privacyverklaring.
+                </p>
+              </div>
+            </section>
+          </div>
+
+          {/* Back to Home Actions */}
+          <div className="text-center mt-12 pt-8 border-t border-calcuu-detail">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                onClick={() => navigate("/")}
+                size="lg"
+                className="bg-calcuu-primary hover:bg-calcuu-primary/90 text-white font-semibold px-8"
+              >
+                <Home className="w-5 h-5 mr-2" />
+                Terug naar Home
+              </Button>
+
+              <Button
+                onClick={() => navigate(-1)}
+                size="lg"
+                variant="outline"
+                className="border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold px-8"
+              >
+                <ArrowLeft className="w-5 h-5 mr-2" />
+                Vorige Pagina
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Privacy;
