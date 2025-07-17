@@ -162,13 +162,13 @@ const Calculator = () => {
                     />
                   </div>
                   <div className="text-sm text-gray-300">
-                    en je bespaart{" "}
+                    dat is totaal&nbsp;
                     <AnimatedNumber
                       value={timeWinHours * 12}
                       decimals={1}
                       duration={800}
-                    />{" "}
-                    uur per jaar
+                    />
+                    &nbsp;uur per jaar
                   </div>
                 </div>
               </div>
