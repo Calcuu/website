@@ -173,7 +173,9 @@ const Calculator = () => {
 
               <div className="mt-4 space-y-2">
                 <div className="text-xs text-gray-300">
-                  Hoe komen we aan dit bedrag?
+                  <strong style={{ color: "rgb(255, 255, 255)" }}>
+                    Hoe komen we aan dit bedrag?
+                  </strong>
                 </div>
                 <div className="text-xs text-gray-400 mb-3 leading-relaxed">
                   <p className="mb-3">
