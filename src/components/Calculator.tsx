@@ -45,8 +45,9 @@ const Calculator = () => {
             <div className="space-y-6 bg-white p-6 rounded-lg shadow-lg">
               <div className="text-sm text-gray-600 mb-4">
                 <p>
-                  Hoeveel offertes maak je per maand? Schuif de slider en zie
-                  direct je tijdwinst en kostenbesparing!
+                  Vul je uurloon in en geef, doormiddel van de slider, aan
+                  hoeveel offertes jij per maand maakt. Zie direct je tijdwinst
+                  en kostenbesparing inclusief een Calcuu abonnement!
                 </p>
               </div>
 
@@ -184,13 +185,8 @@ const Calculator = () => {
                     60% sneller.
                   </p>
                   <p>
-                    De tijd die je bespaart x jouw uurloon = jouw winst.
-                    <span style={{ color: "rgb(255, 255, 255)" }}>
-                      &nbsp;Het bedrag dat je hierboven ziet staan, is inclusief
-                      een Calcuu-abonnement
-                    </span>
-                    &nbsp;– je gaat er dus niets op achteruit, alleen maar op
-                    vooruit.
+                    De tijd die je bespaart x jouw uurloon = jouw winst. Je gaat
+                    er dus niets op achteruit, alleen maar op vooruit.
                   </p>
                 </div>
 
