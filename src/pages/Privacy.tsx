@@ -49,40 +49,40 @@ const Privacy = () => {
           <div className="mb-16">
             {/* Two-Column Header Layout */}
             <div className="bg-gradient-to-br from-calcuu-white to-calcuu-background border border-calcuu-detail rounded-2xl p-8 lg:p-12 shadow-lg max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                {/* Left Column - Logo & Company Info */}
-                <div className="text-center lg:text-left">
-                  <div className="flex justify-center lg:justify-start mb-6">
-                    <div className="bg-white rounded-full p-4 shadow-md">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+                {/* Left Column - Logo & Company Info (1/3) */}
+                <div className="text-center lg:text-left lg:col-span-1">
+                  <div className="flex justify-center lg:justify-start mb-4">
+                    <div className="bg-white rounded-full p-3 shadow-md">
                       <img
                         src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/logo-purple-spring-500x500px-9f1602?format=webp&width=800"
                         alt="Calcuu Logo"
-                        className="w-16 h-16"
+                        className="w-12 h-12"
                       />
                     </div>
                   </div>
 
                   <h1
-                    className="text-4xl lg:text-5xl font-bold text-calcuu-secondary mb-4"
+                    className="text-2xl lg:text-3xl font-bold text-calcuu-secondary mb-3"
                     style={{ fontFamily: "Toxigenesis, sans-serif" }}
                   >
                     CALCUU
                   </h1>
 
-                  <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm border border-calcuu-detail mb-4">
+                  <div className="inline-flex items-center gap-2 bg-white rounded-full px-3 py-1.5 shadow-sm border border-calcuu-detail mb-4">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-calcuu-secondary">
+                    <span className="text-xs font-medium text-calcuu-secondary">
                       Calcuu B.V.
                     </span>
-                    <span className="text-calcuu-text-sub">•</span>
-                    <span className="text-sm text-calcuu-text-sub">
+                    <span className="text-calcuu-text-sub text-xs">•</span>
+                    <span className="text-xs text-calcuu-text-sub">
                       KvK: 93209649
                     </span>
                   </div>
                 </div>
 
-                {/* Right Column - Privacy Title & Description */}
-                <div className="text-center lg:text-left">
+                {/* Right Column - Privacy Title & Description (2/3) */}
+                <div className="text-center lg:text-left lg:col-span-2">
                   <h2 className="text-3xl lg:text-4xl font-bold text-calcuu-secondary mb-4">
                     Privacyverklaring
                   </h2>
