@@ -1036,7 +1036,10 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Links</h4>
               <div className="space-y-2 text-sm text-gray-300">
                 <div>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/privacy"
+                    className="hover:text-white transition-colors"
+                  >
                     Privacy
                   </a>
                 </div>
