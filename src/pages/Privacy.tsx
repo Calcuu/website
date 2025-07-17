@@ -1,9 +1,61 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Home, ArrowLeft, Mail } from "lucide-react";
 
 const Privacy = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Update page title
+    document.title = "Privacyverklaring | Calcuu - Veilig en Transparant";
+
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Lees hoe Calcuu jouw persoonlijke gegevens beschermt. Transparante privacyverklaring conform AVG voor onze schilder app.",
+      );
+    }
+
+    // Add/update Open Graph tags for privacy page
+    const updateMetaTag = (property: string, content: string) => {
+      let metaTag = document.querySelector(`meta[property="${property}"]`);
+      if (metaTag) {
+        metaTag.setAttribute("content", content);
+      } else {
+        metaTag = document.createElement("meta");
+        metaTag.setAttribute("property", property);
+        metaTag.setAttribute("content", content);
+        document.head.appendChild(metaTag);
+      }
+    };
+
+    updateMetaTag("og:title", "Privacyverklaring | Calcuu");
+    updateMetaTag(
+      "og:description",
+      "Transparante privacyverklaring: hoe Calcuu jouw gegevens beschermt",
+    );
+    updateMetaTag("og:url", "https://www.calcuu.com/privacy");
+    updateMetaTag(
+      "og:image",
+      "https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F0043911fd70c4889b0c5599b2468c7da?format=webp&width=1200",
+    );
+
+    // Cleanup function to restore original tags when component unmounts
+    return () => {
+      document.title =
+        "Calcuu - Offerte App voor Schilders | Snel & Professioneel Calculeren";
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute(
+          "content",
+          "Met Calcuu maak je binnen 5 minuten een professionele offerte. Speciaal voor zzp'ers en schildersbedrijven. Snel, mobiel en foutloos calculeren. Probeer gratis!",
+        );
+      }
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-calcuu-white font-inter">
