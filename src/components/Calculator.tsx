@@ -184,6 +184,12 @@ const Calculator = () => {
                 <div className="text-xs text-gray-300">
                   Hoe komen we aan dit bedrag?
                 </div>
+                <div className="text-xs text-gray-400 mb-3 leading-relaxed">
+                  📝 Zonder Calcuu doe je 90 minuten over een offerte. Met
+                  Calcuu slechts 36 minuten! Dat scheelt 54 minuten per offerte.
+                  Die tijd × je uurloon = hoeveel je bespaart. Min de €45 per
+                  maand voor Calcuu = jouw winst! 🎯
+                </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-gray-300">Tijdwinst per maand</span>
                   <span className="text-white">
