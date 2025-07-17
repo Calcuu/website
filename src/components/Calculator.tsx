@@ -148,27 +148,27 @@ const Calculator = () => {
                     duration={800}
                   />
                 </div>
-                <div className="text-sm text-gray-300 mb-4">
-                  en je bespaart{" "}
-                  <AnimatedNumber
-                    value={timeWinHours}
-                    decimals={1}
-                    duration={600}
-                  />{" "}
-                  uur per maand
-                </div>
 
                 {/* Prominent Yearly Savings */}
                 <div className="bg-white/10 rounded-lg p-4 border border-white/20">
                   <div className="text-sm text-gray-200 mb-2">
-                    💰 Netto besparing per jaar
+                    Netto besparing per jaar
                   </div>
-                  <div className="text-5xl font-bold text-white">
+                  <div className="text-5xl font-bold text-white mb-2">
                     <AnimatedNumber
                       value={nettoSaving * 12}
                       prefix="€"
                       duration={1000}
                     />
+                  </div>
+                  <div className="text-sm text-gray-300">
+                    en je bespaart{" "}
+                    <AnimatedNumber
+                      value={timeWinHours * 12}
+                      decimals={1}
+                      duration={800}
+                    />{" "}
+                    uur per jaar
                   </div>
                 </div>
               </div>
