@@ -179,18 +179,18 @@ const Calculator = () => {
                 </div>
                 <div className="text-xs text-gray-400 mb-3 leading-relaxed">
                   <p className="mb-3">
-                    Normaal kost het werk opnemen, het berekenen en het
-                    uitwerken van een offerte je al snel 90 minuten. Met de
-                    Calcuu app doe je dit in een fractie van de tijd. (60%
-                    sneller)
+                    Normaal kost het werk opnemen, berekenen en het maken van
+                    een offerte al snel 90 minuten. Met de Calcuu app doe je dit
+                    60% sneller.
                   </p>
                   <p>
-                    De tijd die je bespaart x jouw uurloon = jouw winst.{" "}
+                    De tijd die je bespaart x jouw uurloon = jouw winst.
                     <span style={{ color: "rgb(255, 255, 255)" }}>
-                      Het bedrag dat je hierboven ziet staan, is inclusief een
-                      Calcuu-abonnement{" "}
+                      &nbsp;Het bedrag dat je hierboven ziet staan, is inclusief
+                      een Calcuu-abonnement
                     </span>
-                    – je gaat er dus niets op achteruit, alleen maar op vooruit.
+                    &nbsp;– je gaat er dus niets op achteruit, alleen maar op
+                    vooruit.
                   </p>
                 </div>
 
