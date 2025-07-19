@@ -1,27 +1,16 @@
 {
   "rewrites": [
     {
+      "source": "/privacy",
+      "destination": "/index.html"
+    },
+    {
       "source": "/",
       "destination": "/index.html"
     },
     {
-      "source": "/privacy",
+      "source": "/((?!sitemap\\.xml|robots\\.txt).*)",
       "destination": "/index.html"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/sitemap.xml",
-      "dest": "/sitemap.xml"
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html",
-      "status": 404
     }
   ],
   "headers": [
@@ -30,7 +19,11 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/xml"
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
         }
       ]
     },
@@ -39,7 +32,7 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "text/plain"
+          "value": "text/plain; charset=utf-8"
         }
       ]
     }
