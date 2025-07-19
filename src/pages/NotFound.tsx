@@ -8,10 +8,52 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Set proper meta tags for 404 page
+    document.title = "Pagina niet gevonden (404) | Calcuu";
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Deze pagina bestaat niet op Calcuu.com. Ga terug naar onze homepage voor de beste schilder app.",
+      );
+    }
+
+    // Add noindex for 404 page
+    let noindexMeta = document.querySelector('meta[name="robots"]');
+    if (noindexMeta) {
+      noindexMeta.setAttribute("content", "noindex, follow");
+    } else {
+      noindexMeta = document.createElement("meta");
+      noindexMeta.setAttribute("name", "robots");
+      noindexMeta.setAttribute("content", "noindex, follow");
+      document.head.appendChild(noindexMeta);
+    }
+
     console.error(
       "404 Error: User attempted to access non-existent route:",
       location.pathname,
     );
+
+    // Cleanup
+    return () => {
+      document.title =
+        "Calcuu - Offerte App voor Schilders | Snel & Professioneel Calculeren";
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute(
+          "content",
+          "Met Calcuu maak je binnen 5 minuten een professionele offerte. Speciaal voor zzp'ers en schildersbedrijven. Snel, mobiel en foutloos calculeren. Probeer gratis!",
+        );
+      }
+      const robotsMeta = document.querySelector('meta[name="robots"]');
+      if (robotsMeta) {
+        robotsMeta.setAttribute(
+          "content",
+          "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+        );
+      }
+    };
   }, [location.pathname]);
 
   return (

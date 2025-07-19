@@ -1,0 +1,5 @@
+# Handle SPA routing
+/*    /index.html   200
+
+# Ensure proper 404 status for non-existent pages
+/404  /index.html   404
