@@ -93,14 +93,16 @@ const ComingSoon = () => {
             </div>
           </div>
 
+          {/* Signup Introduction Text */}
+          <div className="text-center lg:text-left">
+            <p className="text-lg font-semibold text-calcuu-secondary mb-6">
+              Meld je aan voor vroege toegang en wees er als eerste bij als we
+              de app langzaam gaan uitrollen.
+            </p>
+          </div>
+
           {/* Email Signup */}
           <div className="bg-white rounded-2xl p-6 shadow-lg border border-calcuu-detail">
-            <h3 className="text-lg font-semibold text-calcuu-secondary mb-4">
-              <p className="p1">
-                Meld je aan voor vroege toegang en wees er als eerste bij als we
-                de app langzaam gaan uitrollen.
-              </p>
-            </h3>
             <p className="text-calcuu-text-sub mb-6">
               Ontvang exclusieve updates en krijg als eerste toegang tot Calcuu
               met speciale early bird korting.
