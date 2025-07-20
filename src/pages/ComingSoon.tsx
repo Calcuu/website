@@ -57,19 +57,20 @@ const ComingSoon = () => {
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-calcuu-secondary leading-tight">
-              Krijg Early Access
-              <span className="block text-calcuu-primary">tot Calcuu</span>
+              De app voor de{" "}
+              <span style={{ color: "rgb(91, 41, 222)" }}>vakschilder</span>
+              &nbsp;
             </h1>
             <p className="text-xl text-calcuu-text-sub leading-relaxed max-w-2xl">
-              Wees de eerste die 60% snellere offertes ervaart wanneer we
-              lanceren in september 2025. Plus exclusieve early bird prijzen.
+              De app die calculatie's binnen minuten omzet naar een offerte en
+              je klanten, uren en materiaalbeheer bijhoud.&nbsp;
             </p>
           </div>
 
           {/* Countdown Timer */}
           <div className="bg-white rounded-2xl p-6 shadow-lg border border-calcuu-detail">
             <h3 className="text-lg font-semibold text-calcuu-secondary mb-4 text-center">
-              Lancering over:
+              Lancering 1 september:
             </h3>
             <div className="grid grid-cols-4 gap-4">
               {[
@@ -95,7 +96,10 @@ const ComingSoon = () => {
           {/* Email Signup */}
           <div className="bg-white rounded-2xl p-6 shadow-lg border border-calcuu-detail">
             <h3 className="text-lg font-semibold text-calcuu-secondary mb-4">
-              Word Early Bird Gebruiker
+              <p className="p1">
+                Meld je aan voor vroege toegang en wees er als eerste bij als we
+                de app langzaam gaan uitrollen.
+              </p>
             </h3>
             <p className="text-calcuu-text-sub mb-6">
               Ontvang exclusieve updates en krijg als eerste toegang tot Calcuu
