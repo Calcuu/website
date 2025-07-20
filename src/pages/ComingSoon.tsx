@@ -180,21 +180,12 @@ const ComingSoon = () => {
             <div className="absolute inset-0 bg-calcuu-primary/20 rounded-3xl blur-3xl scale-110"></div>
 
             {/* Hero Image */}
-            <div className="relative">
+            <div className="flex justify-center items-center">
               <img
                 src={randomImage}
                 alt="Calcuu App Preview met Vakschilder"
-                className="w-full max-w-sm mx-auto drop-shadow-2xl"
+                className="w-full max-w-lg mx-auto drop-shadow-2xl"
               />
-
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-green-500 text-white rounded-full p-3 shadow-lg animate-bounce">
-                <span className="text-sm font-bold">Nieuw!</span>
-              </div>
-
-              <div className="absolute -bottom-4 -left-4 bg-calcuu-primary text-white rounded-full p-3 shadow-lg">
-                <span className="text-sm font-bold">2025</span>
-              </div>
             </div>
           </div>
         </div>
