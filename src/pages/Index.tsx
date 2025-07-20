@@ -5,7 +5,7 @@ import Calculator from "@/components/Calculator";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-calcuu-white font-inter">
+    <div className="min-h-screen bg-calcuu-white font-inter overflow-x-hidden max-w-full">
       {/* Navigation Menu */}
       <nav className="sticky top-0 z-50 bg-calcuu-white/95 backdrop-blur-sm border-b border-calcuu-detail">
         <div className="container mx-auto px-4">
