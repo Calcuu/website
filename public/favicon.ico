@@ -1,0 +1,4 @@
+<!-- Redirect to CDN favicon -->
+<script>
+window.location.href = 'https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2Fadf2cb8db802430a9f2ceb23153a9992?format=ico&width=32&height=32';
+</script>
