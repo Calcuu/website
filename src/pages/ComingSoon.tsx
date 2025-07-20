@@ -11,6 +11,19 @@ const ComingSoon = () => {
     seconds: 0,
   });
 
+  // Array of hero images
+  const heroImages = [
+    "https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F4f9cbf2a5b394949b1d5e2a4f4abc803?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F90bd20616bff4e61821744ae3f8acbae?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2Fbea4f13221bf4824b48bf50bc5c830ea?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F685ee88f74e04f8abb37afe86fc6e181?format=webp&width=800",
+  ];
+
+  // Select random image on component mount
+  const [randomImage] = useState(() => {
+    return heroImages[Math.floor(Math.random() * heroImages.length)];
+  });
+
   // Target date: September 1, 2025
   const targetDate = new Date("2025-09-01T00:00:00").getTime();
 
@@ -166,11 +179,11 @@ const ComingSoon = () => {
             {/* Glow Effect */}
             <div className="absolute inset-0 bg-calcuu-primary/20 rounded-3xl blur-3xl scale-110"></div>
 
-            {/* Phone Mockup */}
+            {/* Hero Image */}
             <div className="relative bg-white rounded-3xl p-8 shadow-2xl border border-calcuu-detail">
               <img
-                src="https://cdn.builder.io/api/v1/assets/4370c0c81082416ebba6e6fcedf1fc84/calcuu-offerte-a085b6?format=webp&width=800"
-                alt="Calcuu App Preview"
+                src={randomImage}
+                alt="Calcuu App Preview met Vakschilder"
                 className="w-full max-w-sm mx-auto rounded-2xl shadow-lg"
               />
 
