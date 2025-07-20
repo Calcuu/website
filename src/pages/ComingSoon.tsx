@@ -106,20 +106,20 @@ const ComingSoon = () => {
             </div>
           </div>
 
-          {/* Signup Introduction Text */}
-          <div className="text-center lg:text-left space-y-4">
-            <p className="text-lg font-semibold text-calcuu-secondary">
-              Meld je aan voor vroege toegang en wees er als eerste bij als we
-              de app langzaam gaan uitrollen.
-            </p>
-            <p className="text-calcuu-text-sub">
-              Ontvang exclusieve updates en krijg als eerste toegang tot Calcuu
-              met speciale early bird korting.
-            </p>
-          </div>
-
           {/* Email Signup */}
           <div className="bg-white rounded-2xl p-6 shadow-lg border border-calcuu-detail">
+            {/* Signup Introduction Text */}
+            <div className="text-center lg:text-left space-y-4 mb-6">
+              <p className="text-lg font-semibold text-calcuu-secondary">
+                Meld je aan voor vroege toegang en wees er als eerste bij als we
+                de app langzaam gaan uitrollen.
+              </p>
+              <p className="text-calcuu-text-sub">
+                Ontvang exclusieve updates en krijg als eerste toegang tot
+                Calcuu met speciale early bird korting.
+              </p>
+            </div>
+
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-calcuu-text-sub w-5 h-5" />
