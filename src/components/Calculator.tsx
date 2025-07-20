@@ -33,16 +33,16 @@ const Calculator = () => {
     setHourlyRate((prev) => Math.max(1, prev - 1));
 
   return (
-    <section className="py-16 lg:py-24 bg-calcuu-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+    <section className="py-16 lg:py-24 bg-calcuu-background overflow-x-hidden">
+      <div className="container mx-auto px-4 max-w-full">
+        <div className="max-w-4xl mx-auto overflow-x-hidden">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-calcuu-secondary mb-12">
             Hoeveel tijd scheelt het jou?
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 items-center max-w-full overflow-hidden">
             {/* Left Side - Calculator Input */}
-            <div className="space-y-6 bg-white p-6 rounded-lg shadow-lg">
+            <div className="space-y-6 bg-white p-4 lg:p-6 rounded-lg shadow-lg max-w-full overflow-hidden">
               <div className="text-sm text-gray-600 mb-4">
                 <p>
                   Vul je uurloon in en geef, doormiddel van de slider, aan
@@ -133,7 +133,7 @@ const Calculator = () => {
             {/* Right Side - Calculation Result */}
             <div
               style={{ backgroundColor: "#242447" }}
-              className="rounded-lg p-6 text-white"
+              className="rounded-lg p-4 lg:p-6 text-white max-w-full overflow-hidden"
             >
               <div className="text-center mb-4">
                 <div className="text-lg font-bold text-white mb-4">
