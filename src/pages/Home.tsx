@@ -307,7 +307,7 @@ const Home = () => {
                     <p className="text-calcuu-text-sub leading-relaxed">
                       Houd alles overzichtelijk zoals je uren per project, foto
                       documentatie, klantbeheer, materiaalbeheer en dat allemaal
-                      in één app.
+                      in ��én app.
                     </p>
                   </div>
                   <div className="flex flex-col ml-5 w-1/2 max-md:ml-0 max-md:w-full">
@@ -1082,4 +1082,4 @@ const Home = () => {
   );
 };
 
-export default Index;
+export default Home;
