@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
 import ComingSoon from "./pages/ComingSoon";
 import NotFound from "./pages/NotFound";
+import DevNav from "./components/DevNav";
 
 const queryClient = new QueryClient();
 
