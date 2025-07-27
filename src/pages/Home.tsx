@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Play, Download, Mail, Phone } from "lucide-react";
 import Calculator from "@/components/Calculator";
 
-const Index = () => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-calcuu-white font-inter overflow-x-hidden max-w-full">
       {/* Navigation Menu */}
