@@ -947,7 +947,7 @@ const Home = () => {
               <div
                 className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer"
                 onClick={() =>
-                  window.open("https://apps.apple.com/app/calcuu", "_blank")
+                  window.open("https://apps.apple.com/nl/app/calcuu/id1609226426", "_blank")
                 }
               >
                 <Download className="w-6 h-6" />
