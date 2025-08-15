@@ -79,12 +79,12 @@ const Home = () => {
               >
                 Functies
               </a>
-              <a
-                href="#demo"
-                className="text-calcuu-secondary hover:text-calcuu-primary transition-colors font-medium"
+              <button
+                onClick={scrollToVideoAndPlay}
+                className="text-calcuu-secondary hover:text-calcuu-primary transition-colors font-medium bg-transparent border-none cursor-pointer"
               >
                 Demo
-              </a>
+              </button>
               <a
                 href="#pricing"
                 className="text-calcuu-secondary hover:text-calcuu-primary transition-colors font-medium"
