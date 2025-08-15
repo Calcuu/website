@@ -960,7 +960,7 @@ const Home = () => {
                 className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition-colors cursor-pointer"
                 onClick={() =>
                   window.open(
-                    "https://play.google.com/store/apps/details?id=com.calcuu.app",
+                    "https://play.google.com/store/apps/details?id=com.calcuu.calcuu",
                     "_blank",
                   )
                 }
