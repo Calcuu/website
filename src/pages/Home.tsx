@@ -12,13 +12,24 @@ const Home = () => {
   };
 
   const scrollToVideoAndPlay = () => {
-    setIsVideoPlaying(true);
-    setTimeout(() => {
-      const demoSection = document.getElementById("demo");
-      if (demoSection) {
-        demoSection.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-    }, 100);
+    const demoSection = document.getElementById("demo");
+    if (demoSection) {
+      // First scroll to the section
+      demoSection.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      // Start video after scroll is complete and prevent any further scrolling
+      setTimeout(() => {
+        // Block all scroll events temporarily
+        document.body.style.overflow = 'hidden';
+
+        setIsVideoPlaying(true);
+
+        // Re-enable scrolling after video loads
+        setTimeout(() => {
+          document.body.style.overflow = 'auto';
+        }, 2000);
+      }, 1000);
+    }
   };
 
   return (
