@@ -363,6 +363,7 @@ const Home = () => {
                 size="lg"
                 variant="ghost"
                 className="bg-calcuu-white/90 hover:bg-calcuu-white text-calcuu-secondary rounded-full w-20 h-20 shadow-lg"
+                onClick={() => window.open("https://youtu.be/uL34L4Cy9cs", "_blank")}
               >
                 <Play className="w-8 h-8" />
               </Button>
