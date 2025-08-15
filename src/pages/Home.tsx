@@ -137,9 +137,15 @@ const Home = () => {
                   onClick={() => {
                     const demoSection = document.getElementById("demo");
                     if (demoSection) {
-                      demoSection.scrollIntoView({ behavior: "smooth" });
-                      // Start video after scroll
-                      setTimeout(() => setIsVideoPlaying(true), 800);
+                      demoSection.scrollIntoView({ behavior: "smooth", block: "center" });
+                      // Start video after scroll and ensure it stays in view
+                      setTimeout(() => {
+                        setIsVideoPlaying(true);
+                        // Small additional scroll to ensure video stays centered
+                        setTimeout(() => {
+                          demoSection.scrollIntoView({ behavior: "smooth", block: "center" });
+                        }, 100);
+                      }, 800);
                     }
                   }}
                 >
