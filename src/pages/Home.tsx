@@ -11,6 +11,37 @@ const Home = () => {
     setIsVideoPlaying(true);
   };
 
+  const scrollToVideoAndPlay = () => {
+    const demoSection = document.getElementById("demo");
+    if (demoSection) {
+      // Prevent any scroll restoration
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+
+      // Scroll to video
+      demoSection.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      // Start video with longer delay and additional scroll lock
+      setTimeout(() => {
+        setIsVideoPlaying(true);
+
+        // Lock scroll position after video starts
+        setTimeout(() => {
+          demoSection.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          // Additional scroll lock
+          const scrollY = window.scrollY;
+          setTimeout(() => {
+            if (Math.abs(window.scrollY - scrollY) > 100) {
+              demoSection.scrollIntoView({ behavior: "auto", block: "center" });
+            }
+          }, 500);
+        }, 200);
+      }, 1000);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-calcuu-white font-inter overflow-x-hidden max-w-full">
       {/* Navigation Menu */}
