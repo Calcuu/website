@@ -368,11 +368,16 @@ const Home = () => {
             <div className="relative bg-calcuu-detail rounded-2xl aspect-video overflow-hidden shadow-lg">
               {!isVideoPlaying ? (
                 <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={handlePlayVideo}>
-                  <div className="absolute inset-0 bg-gradient-to-br from-calcuu-primary/20 to-calcuu-primary/5"></div>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F1af5348599114d869b193511ef9c0717?format=webp&width=800"
+                    alt="Calcuu Demo Video Thumbnail"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/20 hover:bg-black/30 transition-all duration-300"></div>
                   <Button
                     size="lg"
                     variant="ghost"
-                    className="bg-calcuu-white/90 hover:bg-calcuu-white text-calcuu-secondary rounded-full w-20 h-20 shadow-lg relative z-10"
+                    className="bg-calcuu-white/90 hover:bg-calcuu-white text-calcuu-secondary rounded-full w-20 h-20 shadow-lg relative z-10 hover:scale-105 transition-transform duration-300"
                   >
                     <Play className="w-8 h-8" />
                   </Button>
