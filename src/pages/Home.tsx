@@ -365,15 +365,27 @@ const Home = () => {
           </p>
 
           <div className="max-w-4xl mx-auto">
-            <div className="relative bg-calcuu-detail rounded-2xl aspect-video flex items-center justify-center shadow-lg">
-              <Button
-                size="lg"
-                variant="ghost"
-                className="bg-calcuu-white/90 hover:bg-calcuu-white text-calcuu-secondary rounded-full w-20 h-20 shadow-lg"
-                onClick={() => window.open("https://youtu.be/uL34L4Cy9cs", "_blank")}
-              >
-                <Play className="w-8 h-8" />
-              </Button>
+            <div className="relative bg-calcuu-detail rounded-2xl aspect-video overflow-hidden shadow-lg">
+              {!isVideoPlaying ? (
+                <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={handlePlayVideo}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-calcuu-primary/20 to-calcuu-primary/5"></div>
+                  <Button
+                    size="lg"
+                    variant="ghost"
+                    className="bg-calcuu-white/90 hover:bg-calcuu-white text-calcuu-secondary rounded-full w-20 h-20 shadow-lg relative z-10"
+                  >
+                    <Play className="w-8 h-8" />
+                  </Button>
+                </div>
+              ) : (
+                <iframe
+                  src="https://www.youtube.com/embed/uL34L4Cy9cs?autoplay=1&rel=0"
+                  title="Calcuu Demo Video"
+                  className="w-full h-full rounded-2xl"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
             </div>
           </div>
         </div>
