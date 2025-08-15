@@ -17,7 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <DevNav />
+        {import.meta.env.DEV && <DevNav />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/privacy" element={<Privacy />} />
