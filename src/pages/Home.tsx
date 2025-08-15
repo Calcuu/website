@@ -19,7 +19,10 @@ const Home = () => {
 
       // Start video after scroll is complete
       setTimeout(() => {
-        const targetPosition = demoSection.offsetTop - (window.innerHeight / 2) + (demoSection.offsetHeight / 2);
+        const targetPosition =
+          demoSection.offsetTop -
+          window.innerHeight / 2 +
+          demoSection.offsetHeight / 2;
 
         setIsVideoPlaying(true);
 
