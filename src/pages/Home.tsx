@@ -134,6 +134,14 @@ const Home = () => {
                   size="lg"
                   variant="outline"
                   className="border-2 border-calcuu-primary text-calcuu-primary hover:bg-calcuu-primary hover:text-white font-semibold text-lg px-8 rounded-lg transition-all duration-300 hover:scale-105 h-12"
+                  onClick={() => {
+                    const demoSection = document.getElementById("demo");
+                    if (demoSection) {
+                      demoSection.scrollIntoView({ behavior: "smooth" });
+                      // Start video after scroll
+                      setTimeout(() => setIsVideoPlaying(true), 800);
+                    }
+                  }}
                 >
                   Bekijk demo video
                 </Button>
