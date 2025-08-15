@@ -17,17 +17,32 @@ const Home = () => {
       // First scroll to the section
       demoSection.scrollIntoView({ behavior: "smooth", block: "center" });
 
-      // Start video after scroll is complete and prevent any further scrolling
+      // Start video after scroll is complete
       setTimeout(() => {
-        // Block all scroll events temporarily
-        document.body.style.overflow = 'hidden';
+        const targetPosition = demoSection.offsetTop - (window.innerHeight / 2) + (demoSection.offsetHeight / 2);
 
         setIsVideoPlaying(true);
 
-        // Re-enable scrolling after video loads
-        setTimeout(() => {
-          document.body.style.overflow = 'auto';
-        }, 2000);
+        // Monitor and maintain scroll position for 3 seconds after video starts
+        let scrollCheckCount = 0;
+        const maxScrollChecks = 30; // Check for 3 seconds (30 * 100ms)
+
+        const maintainPosition = () => {
+          scrollCheckCount++;
+          if (scrollCheckCount > maxScrollChecks) return;
+
+          const currentPosition = window.scrollY;
+          const difference = Math.abs(currentPosition - targetPosition);
+
+          // If scroll position changed significantly, restore it
+          if (difference > 50) {
+            window.scrollTo({ top: targetPosition, behavior: "auto" });
+          }
+
+          setTimeout(maintainPosition, 100);
+        };
+
+        setTimeout(maintainPosition, 100);
       }, 1000);
     }
   };
