@@ -139,7 +139,7 @@ const Calculator = () => {
                 <div className="text-lg font-bold text-white mb-4">
                   Per maand bespaar je €&nbsp;
                   <AnimatedNumber value={nettoSaving} duration={800} />
-                  &nbsp;en&nbsp;
+                  &nbsp;dus&nbsp;
                   <AnimatedNumber
                     value={timeWinHours * 60}
                     decimals={0}
