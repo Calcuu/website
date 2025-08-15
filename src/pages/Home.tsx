@@ -1032,7 +1032,7 @@ const Home = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  <span>+31 6 12345678</span>
+                  <span>+31 6 21511498</span>
                 </div>
               </div>
             </div>
