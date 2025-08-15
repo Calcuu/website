@@ -367,7 +367,10 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <div className="relative bg-calcuu-detail rounded-2xl aspect-video overflow-hidden shadow-lg">
               {!isVideoPlaying ? (
-                <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={handlePlayVideo}>
+                <div
+                  className="absolute inset-0 flex items-center justify-center cursor-pointer"
+                  onClick={handlePlayVideo}
+                >
                   <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F4370c0c81082416ebba6e6fcedf1fc84%2F1af5348599114d869b193511ef9c0717?format=webp&width=800"
                     alt="Calcuu Demo Video Thumbnail"
