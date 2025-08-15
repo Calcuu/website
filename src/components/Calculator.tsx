@@ -193,6 +193,12 @@ const Calculator = () => {
                 <Button
                   style={{ backgroundColor: "#5B29DE" }}
                   className="w-full text-white font-semibold py-3 rounded-lg hover:opacity-90 transition-opacity mt-4"
+                  onClick={() => {
+                    const downloadSection = document.getElementById("download");
+                    if (downloadSection) {
+                      downloadSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
                 >
                   Start nu 14 dagen gratis
                 </Button>
