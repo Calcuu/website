@@ -395,10 +395,10 @@ const Home = () => {
                 </div>
               ) : (
                 <iframe
-                  src="https://www.youtube.com/embed/uL34L4Cy9cs?autoplay=1&rel=0"
+                  src="https://www.youtube.com/embed/uL34L4Cy9cs?autoplay=1&mute=1&rel=0&modestbranding=1&showinfo=0&controls=1"
                   title="Calcuu Demo Video"
                   className="w-full h-full rounded-2xl"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 />
               )}
