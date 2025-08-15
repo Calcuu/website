@@ -836,7 +836,7 @@ const Home = () => {
               <div className="mb-6">
                 <div className="monthly-price hidden">
                   <span className="text-4xl font-bold text-calcuu-secondary">
-                    €70
+                    €60
                   </span>
                   <span className="text-calcuu-text-sub ml-2">per maand</span>
                 </div>
